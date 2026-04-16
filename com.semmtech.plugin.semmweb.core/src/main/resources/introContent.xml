@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--  http://help.eclipse.org/juno/topic/org.eclipse.platform.doc.isv/guide/ua_intro_define_content.htm?cp=2_0_19_0_1_1 -->
+<introContent>
+    <!-- Root page -->
+    <page id="root" style="./html/style.css"  style-id="page">        
+        <title style-id="intro-header">Introduction to SEMMweb Editor</title>
+        <text>Welcome to the SEMMweb Editor. This editor allows its users to build and publish semantic models using the RDF/OWL standards.</text>        
+        <text>Each of the following links will provide you with more specific information:</text>        
+        <link label="Legend" url="./html/legend.html"  />
+        
+        <link label="Semmtech" url="http://www.semmtech.com" />
+        <link label="Web Ontology Language (OWL)" url="http://www.w3.org/2004/OWL/"  />
+        <link label="Linked Data Platform 1.0" url="http://www.w3.org/TR/ldp/"  />        
+        
+        <contentProvider id="recentlyOpenedOntologies" class="com.semmtech.plugin.semmweb.core.intro.RecentlyOpenedFiles">
+        	<text>No recently opened ontologies could be found.</text>
+        </contentProvider> 
+        
+<!--         <link label="Switch Perspectives" url="http://org.eclipse.ui.intro/switchPerspective" id="switch" /> -->
+<!--         <link label="Welcome HTML" url="http://org.eclipse.ui.intro/showPage?id=welcomeStatic" id="welcome" /> -->
+<!--         <link label="Google" url="http://org.eclipse.ui.intro/openBrowser?url=http://www.google.com" id="google" /> -->
+
+        <text>NOTE: This application is still in its BETA stage.</text>
+        <link label="Change Knowledge Level" url="http://org.eclipse.ui.intro/changeKnowledgeLevel" id="level" />
+        <link label="Go to Workbench" url="http://org.eclipse.ui.intro/close" id="workbench" />
+    </page>
+    
+    <!-- Standby page -->
+    <page id="standby" url="./html/legend.html"> 
+    </page>    
+    
+    <!-- Tutorials page -->
+    <page id="tutorials" style= "src/main/resources/html/style.css" style-id="page">
+        <title style-id="intro-header">Tutorials</title>    
+        <text>This page is under construction.</text>
+    </page>   
+        
+    <page id="welcomeStatic" url="./html/welcome.html" >
+    </page>
+    
+</introContent>
+
+        

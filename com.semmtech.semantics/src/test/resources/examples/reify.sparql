@@ -1,0 +1,44 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rei: <http://www.w3.org/2004/06/rei#> 
+PREFIX : <http://lemantle.com/>
+
+SELECT DISTINCT ?s ?p ?o 
+WHERE  {
+	{
+		_:s rdf:type rdf:Statement .
+		_:s rdf:subject ?s .
+		_:s rdf:predicate ?p .
+		_:s rdf:object ?o .
+		FILTER(NOT EXISTS { ?s ?p ?o . }) .
+	}
+	UNION 
+	{
+		_:r rdf:type rei:Statement .
+		_:r rei:subject _:rs .
+		_:r rei:predicate _:rp .
+		_:r rei:object ?ro .
+		
+		# Bind the subject and predicate to ?s and ?p
+		_:rs rei:uri ?suri .
+		_:rp rei:uri ?puri .		
+		BIND (IRI(?suri) AS ?s) . 
+		BIND (IRI(?puri) AS ?p) .
+		
+		# Bind the object to ?o
+		OPTIONAL 
+		{
+			?ro rei:value ?lit .
+			BIND(?lit AS ?o) .
+		}
+		OPTIONAL {
+			?ro rei:uri ?ouri .
+			BIND(IRI(?ouri) AS ?o) .
+		} 
+	}
+	UNION
+	{
+		?s ?p ?o .
+	} 
+}

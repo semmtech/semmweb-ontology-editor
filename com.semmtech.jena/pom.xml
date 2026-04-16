@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.semmtech</groupId>
+		<artifactId>semmtech-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>jena</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.jena</groupId>
+			<artifactId>apache-jena-libs</artifactId>
+			<version>2.11.0</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.nekohtml</groupId>
+			<artifactId>nekohtml</artifactId>
+			<version>1.9.22</version>
+		</dependency>
+		<dependency>
+			<groupId>org.semarglproject</groupId>
+			<artifactId>semargl-jena</artifactId>
+			<version>0.6.1</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>jena-core</artifactId>
+					<groupId>org.apache.jena</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.semmtech</groupId>
+			<artifactId>semmtech</artifactId>
+		</dependency>
+	</dependencies>
+
+
+
+</project>

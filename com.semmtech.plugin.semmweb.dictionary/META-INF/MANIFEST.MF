@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SEMMweb Dictionary Plug-in
+Bundle-SymbolicName: com.semmtech.plugin.semmweb.dictionary;singleton:=true
+Bundle-Version: 1.6.4.qualifier
+Bundle-Activator: com.semmtech.plugin.semmweb.dictionary.DictionaryPlugin
+Bundle-Vendor: Semmtech B.V.
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.semmtech.plugin.semmweb.core;bundle-version="1.4.4",
+ org.eclipse.ui.ide;bundle-version="3.7.0",
+ org.eclipse.ui.navigator;bundle-version="3.5.100",
+ org.eclipse.core.resources;bundle-version="3.7.100",
+ org.eclipse.ui.forms;bundle-version="3.5.100",
+ org.eclipse.help,
+ com.semmtech,
+ com.semmtech.jena,
+ com.semmtech.semantics,
+ com.semmtech.ui.plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .

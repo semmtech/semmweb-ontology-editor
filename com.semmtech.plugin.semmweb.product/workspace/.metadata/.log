@@ -1,0 +1,480 @@
+!SESSION 2015-08-07 16:21:43.358 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -eclipse.keyring C:\Users\Simone\AppData\Local\Temp\tycho1217950455977135329secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\Simone\AppData\Local\Temp\tycho1217950455977135329secure_storage
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.358
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\ini4j\ini4j\0.5.4\ini4j-0.5.4.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.414
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-tdb\1.0.0\jena-tdb-1.0.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.416
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-arq\2.11.0\jena-arq-2.11.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.419
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-core\2.11.0\jena-core-2.11.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.421
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-iri\1.0.0\jena-iri-1.0.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.432
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\httpcomponents\httpclient\4.2.3\httpclient-4.2.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.434
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\httpcomponents\httpcore\4.2.2\httpcore-4.2.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.441
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.442
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-jena\0.6.1\semargl-jena-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.444
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-core\0.6.1\semargl-core-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.446
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-rdfa\0.6.1\semargl-rdfa-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.447
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-rdf\0.6.1\semargl-rdf-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.449
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\xerces\xercesImpl\2.7.1\xercesImpl-2.7.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.490
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-model\2.7.14\sesame-model-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.492
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-util\2.7.14\sesame-util-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.505
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\topbraid\spin\1.3.1\spin-1.3.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.595
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-runtime\2.7.14\sesame-runtime-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.596
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-api\2.7.14\sesame-repository-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.598
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-query\2.7.14\sesame-query-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.600
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-api\2.7.14\sesame-rio-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.601
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-manager\2.7.14\sesame-repository-manager-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.603
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-event\2.7.14\sesame-repository-event-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.605
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-sail\2.7.14\sesame-repository-sail-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.606
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-api\2.7.14\sesame-sail-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.608
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryalgebra-model\2.7.14\sesame-queryalgebra-model-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.610
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryparser-api\2.7.14\sesame-queryparser-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.611
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-trig\2.7.14\sesame-rio-trig-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.613
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-turtle\2.7.14\sesame-rio-turtle-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.614
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-memory\2.7.14\sesame-sail-memory-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.616
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-inferencer\2.7.14\sesame-sail-inferencer-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.618
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryalgebra-evaluation\2.7.14\sesame-queryalgebra-evaluation-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.619
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-sparql\2.7.14\sesame-repository-sparql-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.621
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-http-client\2.7.14\sesame-http-client-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.622
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-http-protocol\2.7.14\sesame-http-protocol-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.624
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-ntriples\2.7.14\sesame-rio-ntriples-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.626
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryresultio-api\2.7.14\sesame-queryresultio-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.627
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.629
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryparser-sparql\2.7.14\sesame-queryparser-sparql-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.631
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryresultio-sparqlxml\2.7.14\sesame-queryresultio-sparqlxml-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.634
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-http\2.7.14\sesame-repository-http-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.637
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-contextaware\2.7.14\sesame-repository-contextaware-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.639
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-federation\2.7.14\sesame-sail-federation-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.642
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\com\franz\agraph-java-client\4.11\agraph-java-client-4.11.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.644
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.646
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\json\json\20141113\json-20141113.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.648
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\avalon-logkit\avalon-logkit\2.0\avalon-logkit-2.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.649
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\avalon-framework\avalon-framework\4.1.5\avalon-framework-4.1.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.671
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\antlr\antlr\3.2\antlr-3.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.673
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\antlr\antlr-runtime\3.2\antlr-runtime-3.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.675
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\antlr\stringtemplate\3.2\stringtemplate-3.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:21:43.677
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar.
+!SESSION 2015-08-07 16:22:55.703 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -eclipse.keyring C:\Users\Simone\AppData\Local\Temp\tycho7244920000598468176secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\Simone\AppData\Local\Temp\tycho7244920000598468176secure_storage
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.703
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\ini4j\ini4j\0.5.4\ini4j-0.5.4.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.771
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-tdb\1.0.0\jena-tdb-1.0.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.774
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-arq\2.11.0\jena-arq-2.11.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.777
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-core\2.11.0\jena-core-2.11.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.779
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-iri\1.0.0\jena-iri-1.0.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.795
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\httpcomponents\httpclient\4.2.3\httpclient-4.2.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.798
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\httpcomponents\httpcore\4.2.2\httpcore-4.2.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.805
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.807
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-jena\0.6.1\semargl-jena-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.809
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-core\0.6.1\semargl-core-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.812
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-rdfa\0.6.1\semargl-rdfa-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.814
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-rdf\0.6.1\semargl-rdf-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.816
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\xerces\xercesImpl\2.7.1\xercesImpl-2.7.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.853
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-model\2.7.14\sesame-model-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.855
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-util\2.7.14\sesame-util-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.869
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\topbraid\spin\1.3.1\spin-1.3.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.955
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-runtime\2.7.14\sesame-runtime-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.958
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-api\2.7.14\sesame-repository-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.960
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-query\2.7.14\sesame-query-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.963
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-api\2.7.14\sesame-rio-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.965
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-manager\2.7.14\sesame-repository-manager-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.968
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-event\2.7.14\sesame-repository-event-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.970
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-sail\2.7.14\sesame-repository-sail-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.973
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-api\2.7.14\sesame-sail-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.976
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryalgebra-model\2.7.14\sesame-queryalgebra-model-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.977
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryparser-api\2.7.14\sesame-queryparser-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.979
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-trig\2.7.14\sesame-rio-trig-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.981
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-turtle\2.7.14\sesame-rio-turtle-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.983
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-memory\2.7.14\sesame-sail-memory-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.984
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-inferencer\2.7.14\sesame-sail-inferencer-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.986
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryalgebra-evaluation\2.7.14\sesame-queryalgebra-evaluation-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.988
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-sparql\2.7.14\sesame-repository-sparql-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.990
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-http-client\2.7.14\sesame-http-client-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.992
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-http-protocol\2.7.14\sesame-http-protocol-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.993
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-ntriples\2.7.14\sesame-rio-ntriples-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.995
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryresultio-api\2.7.14\sesame-queryresultio-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.997
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:55.998
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryparser-sparql\2.7.14\sesame-queryparser-sparql-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.001
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryresultio-sparqlxml\2.7.14\sesame-queryresultio-sparqlxml-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.003
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-http\2.7.14\sesame-repository-http-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.009
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-contextaware\2.7.14\sesame-repository-contextaware-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.011
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-federation\2.7.14\sesame-sail-federation-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.012
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\com\franz\agraph-java-client\4.11\agraph-java-client-4.11.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.014
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.016
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\json\json\20141113\json-20141113.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.018
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\avalon-logkit\avalon-logkit\2.0\avalon-logkit-2.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.020
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\avalon-framework\avalon-framework\4.1.5\avalon-framework-4.1.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.040
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\antlr\antlr\3.2\antlr-3.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.042
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\antlr\antlr-runtime\3.2\antlr-runtime-3.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.044
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\antlr\stringtemplate\3.2\stringtemplate-3.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:22:56.045
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar.
+!SESSION 2015-08-07 16:23:48.488 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -eclipse.keyring C:\Users\Simone\AppData\Local\Temp\tycho5766317008062983927secure_storage
+Command-line arguments:  -eclipse.keyring C:\Users\Simone\AppData\Local\Temp\tycho5766317008062983927secure_storage
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.488
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\ini4j\ini4j\0.5.4\ini4j-0.5.4.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.572
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-tdb\1.0.0\jena-tdb-1.0.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.579
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-arq\2.11.0\jena-arq-2.11.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.581
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-core\2.11.0\jena-core-2.11.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.584
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\jena\jena-iri\1.0.0\jena-iri-1.0.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.603
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\httpcomponents\httpclient\4.2.3\httpclient-4.2.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.605
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\apache\httpcomponents\httpcore\4.2.2\httpcore-4.2.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.619
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.621
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-jena\0.6.1\semargl-jena-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.622
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-core\0.6.1\semargl-core-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.624
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-rdfa\0.6.1\semargl-rdfa-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.629
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\semarglproject\semargl-rdf\0.6.1\semargl-rdf-0.6.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.631
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\xerces\xercesImpl\2.7.1\xercesImpl-2.7.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.676
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-model\2.7.14\sesame-model-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.678
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-util\2.7.14\sesame-util-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.692
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\topbraid\spin\1.3.1\spin-1.3.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.784
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-runtime\2.7.14\sesame-runtime-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.786
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-api\2.7.14\sesame-repository-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.789
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-query\2.7.14\sesame-query-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.791
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-api\2.7.14\sesame-rio-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.794
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-manager\2.7.14\sesame-repository-manager-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.795
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-event\2.7.14\sesame-repository-event-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.797
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-sail\2.7.14\sesame-repository-sail-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.799
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-api\2.7.14\sesame-sail-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.801
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryalgebra-model\2.7.14\sesame-queryalgebra-model-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.803
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryparser-api\2.7.14\sesame-queryparser-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.804
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-trig\2.7.14\sesame-rio-trig-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.806
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-turtle\2.7.14\sesame-rio-turtle-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.808
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-memory\2.7.14\sesame-sail-memory-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.811
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-inferencer\2.7.14\sesame-sail-inferencer-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.813
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryalgebra-evaluation\2.7.14\sesame-queryalgebra-evaluation-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.815
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-sparql\2.7.14\sesame-repository-sparql-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.817
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-http-client\2.7.14\sesame-http-client-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.819
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-http-protocol\2.7.14\sesame-http-protocol-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.822
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-rio-ntriples\2.7.14\sesame-rio-ntriples-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.824
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryresultio-api\2.7.14\sesame-queryresultio-api-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.826
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.828
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryparser-sparql\2.7.14\sesame-queryparser-sparql-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.831
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-queryresultio-sparqlxml\2.7.14\sesame-queryresultio-sparqlxml-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.833
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-http\2.7.14\sesame-repository-http-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.835
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-repository-contextaware\2.7.14\sesame-repository-contextaware-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.837
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\openrdf\sesame\sesame-sail-federation\2.7.14\sesame-sail-federation-2.7.14.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.839
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\com\franz\agraph-java-client\4.11\agraph-java-client-4.11.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.840
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.843
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\json\json\20141113\json-20141113.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.845
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\avalon-logkit\avalon-logkit\2.0\avalon-logkit-2.0.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.847
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\avalon-framework\avalon-framework\4.1.5\avalon-framework-4.1.5.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.869
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\antlr\antlr\3.2\antlr-3.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.871
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\antlr\antlr-runtime\3.2\antlr-runtime-3.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.873
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\org\antlr\stringtemplate\3.2\stringtemplate-3.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-08-07 16:23:48.874
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Simone\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar.

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Easy Colortheme Switcher
+Bundle-SymbolicName: com.semmtech.plugin.utils.colortheme;singleton:=true
+Bundle-Version: 1.0.1.qualifier
+Bundle-Activator: com.semmtech.plugin.utils.colortheme.Activator
+Bundle-Vendor: Semmtech B.V.
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.github.eclipsecolortheme;bundle-version="0.12.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy

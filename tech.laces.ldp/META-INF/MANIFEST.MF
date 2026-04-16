@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Laces LDP Library
+Bundle-SymbolicName: tech.laces.ldp
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Semmtech B.V.
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.osgi;bundle-version="3.7.2",
+ com.semmtech,
+ com.semmtech.jena
+Export-Package: com.sun.jersey.api.client,
+ tech.laces.ldp;uses:="com.hp.hpl.jena.rdf.model",
+ tech.laces.ldp.api.message;uses:="tech.laces.ldp.api.message.content",
+ tech.laces.ldp.api.message.content
+Bundle-ClassPath: .,
+ lib/jersey/asm-3.1.jar,
+ lib/jersey/jackson-core-asl-1.9.2.jar,
+ lib/jersey/jackson-jaxrs-1.9.2.jar,
+ lib/jersey/jackson-mapper-asl-1.9.2.jar,
+ lib/jersey/jackson-xc-1.9.2.jar,
+ lib/jersey/jersey-bundle-1.17.jar,
+ lib/jersey/jersey-multipart-1.17.jar,
+ lib/jersey/jettison-1.1.jar
+Bundle-ActivationPolicy: lazy

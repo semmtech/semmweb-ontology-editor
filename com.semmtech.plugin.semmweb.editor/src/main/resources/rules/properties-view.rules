@@ -1,0 +1,12 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+    
+# 2013-08-19:
+# Rules and triples required for constructing properties tree
+[ -> table(rdf:type) ]
+[ -> table(rdfs:subClassOf) ]
+[ -> table(rdfs:subPropertyOf) ]
+[ (?A rdfs:subClassOf ?B) (?B rdfs:subClassOf ?C) -> (?A rdfs:subClassOf ?C) ] 
+[ (?X rdfs:subClassOf ?Y) notEqual(?X ?Y) -> [ (?a rdf:type ?Y) <- (?a rdf:type ?X) ] ]
+[ (?x rdf:type rdfs:ContainerMembershipProperty) -> (?x rdfs:subPropertyOf rdfs:member) ] 

@@ -1,0 +1,10 @@
+
+%package "com.semmtech.grammars.turtle" ;
+
+letter = 'a' ;
+digit = '0';
+
+character = letter | digit '_' ;
+
+identifier = letter , { letter | digit | '_' } ;
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Project Navigator" link_to="toc.xml#projectNavigator"> 
+	<topic href="html/projectNavigator/projectNavigator.html" label="Project Navigator"> 
+		<topic href="html/projectNavigator/icons.html" label="Icons"/>
+		<topic label="Model" href="html/projectNavigator/model.html" />
+  		<topic href="html/projectNavigator/import.html" label="Import"/>
+	</topic>
+</toc>

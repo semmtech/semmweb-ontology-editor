@@ -1,0 +1,13 @@
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# 2012-11-30:
+# Rules and triples required for constructing taxonomy tree
+# 2013-09-02:
+# Disabled all, an additional ModelValidator checks if these statements should be added, based on
+# a SPARQL query; then explictly adds them to the model!
+#[ -> (owl:Thing rdfs:subClassOf rdfs:Resource) ]
+#[ (?C rdf:type owl:Class) -> [  (?C rdfs:subClassOf owl:Thing) <- noValue(?C rdfs:subClassOf ?X) ] ]
+#[ (?C rdf:type rdfs:Class) -> [  (?C rdfs:subClassOf rdfs:Resource) <- noValue(?C rdfs:subClassOf ?X) ] ]
+#[ (owl:Thing rdfs:subClassOf owl:Thing) -> remove(0) ] 

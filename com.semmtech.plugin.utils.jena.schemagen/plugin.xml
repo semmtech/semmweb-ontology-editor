@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.exportWizards">
+      <category
+            id="com.semmtech.plugin.utils.jena"
+            name="Jena">
+      </category>
+      <wizard
+            category="com.semmtech.plugin.utils.jena"
+            class="com.semmtech.plugin.utils.jena.schemagen.wizards.JenaSchemagenWizard"
+            icon="icons/export-to-java.png"
+            id="com.semmtech.plugin.utils.jena.schemagen.wizards.jenaSchemagen"
+            name="Java Vocabulary">
+      </wizard>
+   </extension>
+
+</plugin>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="com.semmtech.plugin.semmweb.validation.toolbar.validation"
+               label="Validation">
+            <command
+                  commandId="com.semmtech.plugin.semmweb.validation.commands.runModelValidation"
+                  icon="icons/ontology_validate.png"
+                  id="com.semmtech.plugin.semmweb.validation.toolbar.runModelValidation"
+                  label="Run Model Validation"
+                  style="pulldown"
+                  tooltip="Run Model Validation">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:com.semmtech.plugin.semmweb.validation.toolbar.runModelValidation">
+         <command
+               commandId="com.semmtech.plugin.semmweb.validation.commands.runModelValidation"
+               icon="icons/ontology_validate.png"
+               label="1 RDFS"
+               style="push"
+               tooltip="Run RDFS Model Validation">
+            <parameter
+                  name="reasonerURI"
+                  value="http://jena.hpl.hp.com/2003/RDFSExptRuleReasoner">
+            </parameter>
+         </command>
+         <command
+               commandId="com.semmtech.plugin.semmweb.validation.commands.runModelValidation"
+               icon="icons/ontology_validate.png"
+               label="2 RDFS + OWL"
+               style="push"
+               tooltip="Run RDFS + OWL Model Validation">
+            <parameter
+                  name="reasonerURI"
+                  value="http://jena.hpl.hp.com/2003/OWLFBRuleReasoner">
+            </parameter>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.semmtech.plugin.semmweb.validation.handlers.RunSingleFileValidationHandler"
+            id="com.semmtech.plugin.semmweb.validation.commands.runSingleFileValidation"
+            name="Run Single File Validation">
+      </command>
+      <command
+            defaultHandler="com.semmtech.plugin.semmweb.validation.handlers.RunModelValidationHandler"
+            id="com.semmtech.plugin.semmweb.validation.commands.runModelValidation"
+            name="Run Model Validation">
+         <commandParameter
+               id="reasonerURI"
+               name="reasonerURI"
+               optional="true">
+         </commandParameter>
+      </command>
+      <command
+            defaultHandler="com.semmtech.plugin.semmweb.validation.handlers.RunResourceValidationHandler"
+            id="com.semmtech.plugin.semmweb.validation.commands.runResourceValidation"
+            name="Run Resource Validation">
+      </command>
+      <command
+            defaultHandler="com.semmtech.plugin.semmweb.validation.handlers.RunClassInstancesValidationHandler"
+            id="com.semmtech.plugin.semmweb.validation.commands.runClassInstancesValidation"
+            name="Run Class Instances Validation">
+      </command>
+      <command
+            defaultHandler="com.semmtech.plugin.semmweb.validation.handlers.RunClassSubclassesValidationHandler"
+            id="com.semmtech.plugin.semmweb.validation.commands.runClassSubclassesValidation"
+            name="Run Class Subclasses Validation">
+      </command>
+   </extension>
+   <extension
+         point="com.semmtech.plugin.semmweb.core.resourceContentToolBarActions">
+      <client
+            class="com.semmtech.plugin.semmweb.validation.actions.ResourceValidationAction">
+      </client>
+   </extension>
+
+</plugin>

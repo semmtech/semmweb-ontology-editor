@@ -1,0 +1,46 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lem:     <http://lemantle.com/> .
+
+lem:hasAspect 	a 	rdf:Property ;
+	rdfs:domain lem:Person ;
+	rdfs:range lem:Aspect .
+lem:Aspect		a 	owl:Class ;
+	owl:disjountWith lem:Concept .
+lem:Concept 	a 	owl:Class ;
+	owl:disjountWith lem:Aspect .
+
+lem:Pressure 	a 	lem:Aspect .
+lem:Length 		a 	lem:Aspect .
+lem:Concept_1   a	lem:Concept .
+
+lem:Person
+      a       owl:Class ;
+      rdfs:label "person" ;
+      rdfs:subClassOf [
+      	a owl:Restriction ;
+      	owl:onProperty lem:hasAspect ;
+      	owl:allValuesFrom lem:Aspect
+      ] .
+      
+
+lem:MikeHenrichs
+      a       lem:Person ;
+      lem:hasAspect lem:Pressure ;
+      lem:hasAspect lem:Concept_1 ;
+      rdfs:label "M.R. Henrichs" , "Mike Henrichs" .
+      
+     
+lem:Jan
+      a       lem:Person ;
+      rdfs:label "Jan" .
+      
+  
+      
+
+
+
+      
+      

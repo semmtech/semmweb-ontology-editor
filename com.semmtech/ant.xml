@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project> 
+<project name="com.semmtech" default="" basedir=".">
+	<property file="build.properties" />
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${dist.dir}" />
+	</target>
+
+	<target name="compile" depends="clean">
+		<mkdir dir="${build.dir}" />
+
+		<path id="classpath">
+			<fileset dir="${lib.dir}" includes="**/*.jar" />
+		</path>
+
+		<javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath" source="1.7" target="1.7" includeantruntime="false" />
+	</target>
+
+	<!-- Be sure to have the jarajar-1.4.jar in your Ant path -->
+	<target name="jarjar" depends="compile">
+		<!-- Uncomment the succcesive line to make it work again -->
+		<!-- <taskdef name="jarjar" classname="com.tonicsystems.jarjar.JarJarTask" /> -->
+		<mkdir dir="${dist.dir}" />
+		<!-- Uncomment if you want to use a hardcoded version number -->
+		<!-- <property name="version.number" value="1.0"/>
+		<buildnumber file="build.number"/> -->
+		<tstamp>
+			<format property="today" pattern="yyyyMMddHHmmss" />
+		</tstamp>
+
+		<echo message="Loading manifest from ${project.manifest}..." />
+		<loadproperties srcfile="${project.manifest}">
+			<filterchain>
+				<linecontainsregexp>
+					<regexp pattern="^Bundle-(Name|Version):" />
+				</linecontainsregexp>
+				<tokenfilter>
+					<replaceregex pattern=".qualifier$" replace="${today}" />
+				</tokenfilter>
+			</filterchain>
+		</loadproperties>
+
+		<property name="output.jar" value="${dist.dir}/com.semmtech-complete_${Bundle-Version}.jar" />
+		<jarjar jarfile="${output.jar}" manifest="${project.manifest}">
+			<fileset dir="${build.dir}" />
+			<zipfileset src="${lib.dir}/guava/guava-14.0-rc1.jar" />
+			<zipfileset src="${lib.dir}/apache/commons-io/commons-io-2.4.jar" />
+			<zipfileset src="${lib.dir}/apache/commons-lang/commons-lang3-3.1.jar" />
+			<zipfileset src="${lib.dir}/junit-4.9/junit-4.9.jar" />
+			<zipfileset src="${lib.dir}/ini4j/ini4j-0.5.2.jar" />
+			<zipfileset src="${lib.dir}/json-rpc/json-rpc-1.0.jar" />
+		</jarjar>
+
+		<!-- Set property which can be checked by the release target -->
+		<condition property="tofile.set">
+			<and>
+				<isset property="release.tofile" />
+				<not>
+					<equals arg1="${release.tofile}" arg2="" />
+				</not>
+			</and>
+		</condition>
+	</target>
+
+	<target name="release" depends="jarjar" if="tofile.set">
+		<copy file="${output.jar}" tofile="${release.tofile}" verbose="true" />
+	</target>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts>
+   <context id="ProjectNavigatorContext" title="Project Navigator">
+      <description>The Project Navigator is a hierarchical view where projects are the roots of the hierarchy</description>
+      <topic href="html/projectNavigator/icons.html" label="Icons"/>
+      <topic href="html/projectNavigator/projectNavigator.html" label="Project Navigator" />
+   </context>
+   <context id="ModelContext" title="Model">
+      <description>A Model is a logical collection of triples</description>
+      <topic href="html/projectNavigator/icons.html" label="Icons"/>
+      <topic href="html/projectNavigator/model.html" label="Model"/>
+      <topic href="html/projectNavigator/projectNavigator.html" label="Project Navigator" />
+   </context>
+    <context id="ImportContext" title="Import">
+      <description>An Import statement denote that a Model wants to extend the Imported Model</description>
+      <topic href="html/projectNavigator/icons.html" label="Icons"/>
+      <topic href="html/projectNavigator/import.html" label="Import" />
+      <topic href="html/projectNavigator/model.html" label="Model"/>
+      <topic href="html/projectNavigator/projectNavigator.html" label="Project Navigator" />
+   </context>
+</contexts>

@@ -1,0 +1,14 @@
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# 2013-08-19:
+# Rules and triples required for constructing instances tree
+[ -> table(rdf:type) ]
+[ -> table(rdfs:subClassOf) ]
+# The definition that owl:Thing is a sub class of rdfs:Resource must be supplied... ?
+[ -> (owl:Thing rdfs:subClassOf rdfs:Resource) ]
+[ (?C rdf:type rdfs:Class) noValue(?C, rdfs:subClassOf) -> (?C rdfs:subClassOf rdfs:Resource) ] 
+[ (?C rdf:type owl:Class) noValue(?C, rdfs:subClassOf) -> (?C rdfs:subClassOf owl:Thing) ] 
+[ (?X rdfs:subClassOf ?Y) notEqual(?X ?Y) -> [ (?a rdf:type ?Y) <- (?a rdf:type ?X) ] ]
+[ (owl:Thing rdfs:subClassOf owl:Thing) -> remove(0) ]

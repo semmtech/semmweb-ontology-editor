@@ -1,0 +1,10 @@
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+[ -> (owl:Thing rdfs:subClassOf rdfs:Resource) ]
+[ (?C rdf:type owl:Class) -> [  (?C rdfs:subClassOf owl:Thing) <- noValue(?C rdfs:subClassOf ?X) ] ]
+[ (owl:Thing rdfs:subClassOf owl:Thing) -> remove(0) ]
+[ (?x rdfs:subClassOf ?y) notEqual(?x ?y) -> [ (?a rdf:type ?y) <- (?a rdf:type ?x) ] ]
+[ (?list rdf:first ?y) -> [  (?list rdf:type rdf:List) <- noValue(?list rdf:type rdf:List) ] ]
+[ (?list rdf:rest ?y) -> [  (?list rdf:type rdf:List) <- noValue(?list rdf:type rdf:List) ] ]

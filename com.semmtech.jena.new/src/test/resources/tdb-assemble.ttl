@@ -1,0 +1,27 @@
+@prefix tdb:     <http://jena.hpl.hp.com/2008/tdb#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ja:      <http://jena.hpl.hp.com/2005/11/Assembler#> .
+
+[] ja:loadClass "com.hp.hpl.jena.tdb.TDB" .
+
+tdb:Dataset a rdfs:Class .
+tdb:GraphTDB a rdfs:Class .
+
+tdb:DatasetTDB rdfs:subClassOf ja:RDFDataset .
+tdb:GraphTDB rdfs:subClassOf ja:Model .
+
+<urn:dataset> rdf:type tdb:DatasetTDB ;
+    tdb:location "tdb" ;
+	tdb:unionDefaultGraph true .
+#	tdb:namedGraph 
+#		[
+#			rdf:type tdb:GraphTDB ;
+##			ja:graph [
+	#			rdf:type ja:MemoryModel ;
+	#		    ja:content 
+	#		   		[ ja:externalContent <file:ebm-2014-07-schema.ttl> ] 
+	#		]
+	#	] .	
+	
+	

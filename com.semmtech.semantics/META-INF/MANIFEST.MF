@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Core Semantics Library
+Bundle-SymbolicName: com.semmtech.semantics
+Bundle-Version: 1.2.14.qualifier
+Export-Package: com.semmtech.semantics,
+ com.semmtech.semantics.annotations,
+ com.semmtech.semantics.builders,
+ com.semmtech.semantics.examples,
+ com.semmtech.semantics.lod.header,
+ com.semmtech.semantics.model,
+ com.semmtech.semantics.model.impl,
+ com.semmtech.semantics.ontology,
+ com.semmtech.semantics.query,
+ com.semmtech.semantics.reasoner,
+ com.semmtech.semantics.repository,
+ com.semmtech.semantics.semm,
+ com.semmtech.semantics.semm.impl,
+ com.semmtech.semantics.skos,
+ com.semmtech.semantics.skos.impl,
+ com.semmtech.semantics.sparql,
+ com.semmtech.semantics.util,
+ com.semmtech.semantics.util.iterator,
+ com.semmtech.semantics.vocabulary,
+ com.semmtech.semantics.xml
+Bundle-Vendor: Semmtech B.V.
+Require-Bundle: com.semmtech,
+ com.semmtech.jena,
+ javax.servlet;bundle-version="2.5.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,
+ lib/openrdf/openrdf-sesame-2.6.8-onejar.jar,
+ lib/apache/commons-httpclient-3.1.jar,
+ lib/apache/commons-codec-1.3.jar
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RDFmeta Semantics Library
+Bundle-SymbolicName: com.semmtech.semantics.rdfmeta
+Bundle-Version: 1.2.2.qualifier
+Bundle-Activator: com.semmtech.semantics.rdfmeta.Activator
+Bundle-Vendor: Semmtech B.V.
+Require-Bundle: org.eclipse.core.runtime,
+ com.semmtech.semantics,
+ com.semmtech;bundle-version="1.2.1",
+ com.semmtech.jena;bundle-version="2.11.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Export-Package: com.semmtech.semantics.rdfmeta,
+ com.semmtech.semantics.rdfmeta.model,
+ com.semmtech.semantics.rdfmeta.model.impl
+Bundle-ClassPath: .

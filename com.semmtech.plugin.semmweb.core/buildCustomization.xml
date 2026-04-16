@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- Also see http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.pde.doc.user%2Ftasks%2Fpde_custom_callbacks.htm -->
+
+<project name="product_customization" >
+    
+    <target name="post.build.jars" >
+        <echo>Hello World!</echo>
+    	<touch file="C:/Temp/hello.txt" />
+    </target>
+    
+</project>

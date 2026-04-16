@@ -1,0 +1,715 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix spin:  <http://spinrdf.org/spin#> .
+@prefix sp:    <http://spinrdf.org/sp#> .
+@prefix spl:   <http://spinrdf.org/spl#> .
+@prefix smf:   <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix semmcore-f:  <http://www.semmweb.com/semmweb/core/functions#> .
+@prefix semmowl-f:   <http://www.semmweb.com/semmweb/owl/functions#> .
+
+semmowl-f:
+        a                owl:Ontology ;
+        rdfs:comment     "Ontology containing functions that work on OWL models."^^xsd:string ;
+        rdfs:label       "semmowl-f"^^xsd:string ;
+        owl:imports      <http://spinrdf.org/spl> .
+
+semmowl-f:Functions  a     spin:Function ;
+        rdfs:comment     "An abstract base class for all functions defined within semmowl. This class exists mainly to group all semmowl functions." ;
+        rdfs:label       "Functions"^^xsd:string ;
+        rdfs:subClassOf  spin:Functions ;
+        spin:abstract    true .
+        
+semmowl-f:InternalFunctions  a     spin:Function ;
+        rdfs:comment     "An abstract base class for all internal functions defined within semmowl. This class exists mainly to group all semmowl functions that should not be called by anything other than existing semmowl functions." ;
+        rdfs:label       "Functions"^^xsd:string ;
+        rdfs:subClassOf  semmowl-f:Functions ;
+        spin:abstract    true .
+
+
+
+        
+semmowl-f:satisfiesRestriction
+        a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to all the requirements placed on it by the given restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "satisfiesRestriction"^^xsd:string ;
+        rdfs:subClassOf     semmowl-f:Functions ;
+        spin:body           [ a             sp:Ask ;
+		                      sp:where  (
+		                        [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:satisfiesAllValuesFromRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2
+                                                ]
+                                ]
+                                [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:satisfiesSomeValuesFromRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2
+                                                ]
+                                ]
+                                [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:satisfiesHasValueRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2
+                                                ]
+                                ]
+							    [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:satisfiesMinCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2
+                                                ]
+                                ]
+                                [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:satisfiesMaxCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2
+                                                ]
+                                ]
+                                [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:satisfiesCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2
+                                                ]
+                                ]
+                                [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:satisfiesMinQualifiedCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2
+                                                ]
+                                ]
+                                [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:satisfiesMaxQualifiedCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2
+                                                ]
+                                ]
+                                [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:satisfiesQualifiedCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2
+                                                ]
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given restriction."^^xsd:string
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The restriction."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:labelTemplate  "satisfaction check of resource for a specific restriction (using {?arg1}, {?arg2})"^^xsd:string .
+
+
+
+
+semmowl-f:satisfiesAllValuesFromRestriction
+		a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to all the owl:allValuesFrom requirements placed on it by the given restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "satisfiesAllValuesFromRestriction"^^xsd:string ;
+        skos:editorialNote  "Calls spl:instanceOf to check each instance. That function might not work correctly for literals." ;
+        skos:editorialNote  "Function does not (yet) take into account any set theory constructions, such as owl:sameAs and owl:differentFrom, and owl:oneOf." ;
+        rdfs:subClassOf     semmowl-f:Functions ;
+        spin:body           [ a    sp:Ask ;
+                              sp:where      (
+                                [ a    sp:NotExists ;
+                                  sp:elements (
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:allValuesFrom ;
+                                      sp:object     _:b_onClass
+                                    ]
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:onProperty ;
+                                      sp:object     _:b_onProperty
+                                    ]
+                                    [ a   sp:TriplePath ;
+                                      sp:subject  _:b_property ;
+                                      sp:path     [ a           sp:ModPath ;
+                                                    sp:subPath  rdfs:subPropertyOf ;
+                                                    sp:modMin   0 ;
+                                                    sp:modMax   -2
+                                                  ] ;
+                                      sp:object   _:b_onProperty
+                                    ]
+                                    [ sp:subject    spin:_arg1 ;    # var: resource
+                                      sp:predicate  _:b_property ;
+                                      sp:object     _:b_object
+                                    ]
+                                    [ a   sp:Filter ;
+                                      sp:expression  [ a        sp:isURI ;
+                                                       sp:arg1  _:b_object
+                                                     ]
+                                    ]
+                                    [ a   sp:Filter ;
+                                      sp:expression  [ a        sp:not ;
+                                                       sp:arg1  [ a        spl:instanceOf ;
+                                                                  sp:arg1  _:b_object ;
+                                                                  sp:arg2  _:b_onClass
+                                                                ]
+                                                     ]
+                                    ]
+                                  )
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given allValuesFrom restriction."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The allValuesFrom restriction."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:labelTemplate  "AllValuesFrom satisfaction check for a resource (using {?arg1}, {?arg2})"^^xsd:string .
+
+
+
+
+semmowl-f:satisfiesSomeValuesFromRestriction
+		a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to all the owl:someValuesFrom requirements placed on it by the given restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "satisfiesSomeValuesFromRestriction"^^xsd:string ;
+        skos:editorialNote  "Calls semmowl-f:objectCount to check the current object count. That function might not work correctly for literals with a specific datatype." ;
+        skos:editorialNote  "Function does not (yet) take into account any set theory constructions, such as owl:sameAs and owl:differentFrom, and owl:oneOf." ;
+        rdfs:subClassOf     semmowl-f:Functions ;
+        spin:body           [ a    sp:Ask ;
+                              sp:where      (
+                                [ a    sp:NotExists ;
+                                  sp:elements (
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:someValuesFrom ;
+                                      sp:object     _:b_onClass
+                                    ]
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:onProperty ;
+                                      sp:object     _:b_onProperty
+                                    ]
+                                    [ a   sp:Let ;
+                                      sp:expression  [ a   semmcore-f:objectCount ;
+                                                       sp:arg1  spin:_arg1 ;    # var: resource
+                                                       sp:arg2  _:b_onProperty ;
+                                                       sp:arg3  true ;
+                                                       sp:arg4  _:b_onClass
+                                                     ] ;
+                                      sp:variable    _:b_objectCount
+                                    ]
+                                    [ a    sp:Filter ;
+                                      sp:expression  [ a    sp:lt ;
+                                                       sp:arg1  _:b_objectCount ;
+                                                       sp:arg2  1
+                                                     ]
+                                    ]
+                                  )
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given someValuesFrom restriction."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The someValuesFrom restriction."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:labelTemplate  "SomeValuesFrom satisfaction check for a resource (using {?arg1}, {?arg2})"^^xsd:string .
+
+
+
+
+semmowl-f:satisfiesHasValueRestriction
+		a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to all the owl:hasValue requirements placed on it by the given restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "satisfiesHasValueRestriction"^^xsd:string ;
+        skos:editorialNote  "Calls spl:hasValue to check the existence of the value." ;
+        rdfs:subClassOf     semmowl-f:Functions ;
+        spin:body           [ a    sp:Ask ;
+                              sp:where      (
+                                [ a    sp:NotExists ;
+                                  sp:elements (
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:hasValue ;
+                                      sp:object     _:b_object
+                                    ]
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:onProperty ;
+                                      sp:object     _:b_onProperty
+                                    ]
+                                    [ a   sp:Filter ;
+                                      sp:expression  [ a        sp:not ;
+                                                       sp:arg1  [ a        spl:hasValue ;
+                                                                  sp:arg1  spin:_arg1 ;     # var: resource
+                                                                  sp:arg2  _:b_onProperty ;
+                                                                  sp:arg3  _:b_object
+                                                                ]
+                                                     ]
+                                    ]
+                                  )
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given hasValue restriction."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The hasValue restriction."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:labelTemplate  "HasValue satisfaction check for a resource (using {?arg1}, {?arg2})"^^xsd:string .
+
+
+
+
+semmowl-f:satisfiesMinCardinalityRestriction
+		a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to all the owl:minCardinality requirements placed on it by the given restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "satisfiesMinCardinalityRestriction"^^xsd:string ;
+        rdfs:subClassOf     semmowl-f:Functions ;
+        spin:body           [ a             sp:Ask ;
+		                      sp:where  ( 
+							    [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:internal_satisfiesMinCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2 ;
+				                                  sp:arg3 owl:minCardinality
+                                                ]
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given (non-qualified) minCardinality restriction."^^xsd:string
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The (non-qualified) minCardinality restriction."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:labelTemplate  "satisfaction check of resource for a minCardinality restriction (using {?arg1}, {?arg2})"^^xsd:string .
+
+
+
+
+semmowl-f:satisfiesMaxCardinalityRestriction
+		a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to all the owl:maxCardinality requirements placed on it by the given restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "satisfiesMaxCardinalityRestriction"^^xsd:string ;
+        rdfs:subClassOf     semmowl-f:Functions ;
+        spin:body           [ a             sp:Ask ;
+		                      sp:where  ( 
+							    [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:internal_satisfiesMaxCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2 ;
+				                                  sp:arg3 owl:maxCardinality
+                                                ]
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given (non-qualified) maxCardinality restriction."^^xsd:string
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The (non-qualified) maxCardinality restriction."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:labelTemplate  "satisfaction check of resource for a maxCardinality restriction (using {?arg1}, {?arg2})"^^xsd:string .
+
+
+
+
+semmowl-f:satisfiesCardinalityRestriction
+		a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to all the owl:cardinality requirements placed on it by the given restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "satisfiesCardinalityRestriction"^^xsd:string ;
+        rdfs:subClassOf     semmowl-f:Functions ;
+        spin:body           [ a             sp:Ask ;
+		                      sp:where  (
+		                        [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:internal_satisfiesMinCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2 ;
+				                                  sp:arg3 owl:cardinality
+                                                ]
+                                ] 
+							    [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:internal_satisfiesMaxCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2 ;
+				                                  sp:arg3 owl:cardinality
+                                                ]
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given (non-qualified) cardinality restriction."^^xsd:string
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The (non-qualified) cardinality restriction."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:labelTemplate  "satisfaction check of resource for a cardinality restriction (using {?arg1}, {?arg2})"^^xsd:string .
+
+
+
+
+semmowl-f:satisfiesMinQualifiedCardinalityRestriction
+		a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to all the owl:minQualifiedCardinality requirements placed on it by the given restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "satisfiesMinQualifiedCardinalityRestriction"^^xsd:string ;
+        rdfs:subClassOf     semmowl-f:Functions ;
+        spin:body           [ a             sp:Ask ;
+		                      sp:where  ( 
+							    [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:internal_satisfiesMinQualifiedCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2 ;
+				                                  sp:arg3 owl:minQualifiedCardinality
+                                                ]
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given minQualifiedCardinality restriction."^^xsd:string
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The minQualifiedCardinality restriction."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:labelTemplate  "satisfaction check of resource for a minQualifiedCardinality restriction (using {?arg1}, {?arg2})"^^xsd:string .
+
+
+
+
+semmowl-f:satisfiesMaxQualifiedCardinalityRestriction
+		a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to all the owl:maxQualifiedCardinality requirements placed on it by the given restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "satisfiesMaxQualifiedCardinalityRestriction"^^xsd:string ;
+        rdfs:subClassOf     semmowl-f:Functions ;
+        spin:body           [ a             sp:Ask ;
+		                      sp:where  ( 
+							    [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:internal_satisfiesMaxQualifiedCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2 ;
+				                                  sp:arg3 owl:maxQualifiedCardinality
+                                                ]
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given maxQualifiedCardinality restriction."^^xsd:string
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The maxQualifiedCardinality restriction."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:labelTemplate  "satisfaction check of resource for a maxQualifiedCardinality restriction (using {?arg1}, {?arg2})"^^xsd:string .
+
+
+
+
+semmowl-f:satisfiesQualifiedCardinalityRestriction
+		a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to all the owl:qualifiedCardinality requirements placed on it by the given restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "satisfiesQualifiedCardinalityRestriction"^^xsd:string ;
+        rdfs:subClassOf     semmowl-f:Functions ;
+        spin:body           [ a             sp:Ask ;
+		                      sp:where  (
+		                        [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:internal_satisfiesMinQualifiedCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2 ;
+				                                  sp:arg3 owl:qualifiedCardinality
+                                                ]
+                                ] 
+							    [ a     sp:Filter ;
+                                  sp:expression [ a semmowl-f:internal_satisfiesMaxQualifiedCardinalityRestriction ;
+				                                  sp:arg1 spin:_arg1 ;
+				                                  sp:arg2 spin:_arg2 ;
+				                                  sp:arg3 owl:qualifiedCardinality
+                                                ]
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given qualifiedCardinality restriction."^^xsd:string
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The qualifiedCardinality restriction."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:labelTemplate  "satisfaction check of resource for a qualifiedCardinality restriction (using {?arg1}, {?arg2})"^^xsd:string .
+
+
+
+
+semmowl-f:internal_satisfiesMinCardinalityRestriction
+        a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to the lower bound requirements placed on it by the given owl:minCardinality or owl:cardinality restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "internal_satisfiesMinCardinalityRestriction"^^xsd:string ;
+        skos:editorialNote  "Calls semmowl-f:objectCount to check the current object count." ;
+        skos:editorialNote  "Function does not (yet) take into account any set theory constructions, such as owl:sameAs and owl:differentFrom, and owl:oneOf." ;
+        rdfs:subClassOf     semmowl-f:InternalFunctions ;
+		spin:private        true ;
+        spin:body           [ a    sp:Ask ;
+                              sp:where      (
+                                [ a    sp:NotExists ;
+                                  sp:elements (
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  spin:_arg3 ;       # var: owl:minCardinality / owl:cardinality
+                                      sp:object     _:b_minCardinality
+                                    ]
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:onProperty ;
+                                      sp:object     _:b_onProperty
+                                    ]
+									[ a   sp:Let ;
+                                      sp:expression  [ a   semmcore-f:objectCount ;
+                                                       sp:arg1  spin:_arg1 ;    # var: resource
+                                                       sp:arg2  _:b_onProperty ;
+                                                       sp:arg3  true
+                                                     ] ;
+                                      sp:variable    _:b_objectCount
+                                    ]
+                                    [ a    sp:Filter ;
+                                      sp:expression  [ a    sp:lt ;
+                                                       sp:arg1  _:b_objectCount ;
+                                                       sp:arg2  _:b_minCardinality
+                                                     ]
+                                    ]
+                                  )
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given (non-qualified) cardinality restriction."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The (non-qualified) cardinality restriction that puts a lower bound on a property (i.e. one that uses owl:minCardinality or owl:cardinality)."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg3 ;
+                              rdfs:comment   "The system property (owl:minCardinality or owl:cardinality)."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:labelTemplate  "Min cardinality satisfaction check for a resource (using {?arg1}, {?arg2}, {?arg3})"^^xsd:string .
+
+
+
+semmowl-f:internal_satisfiesMaxCardinalityRestriction
+        a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to the upper bound requirements placed on it by the given owl:maxCardinality or owl:cardinality restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "internal_satisfiesMaxCardinalityRestriction"^^xsd:string ;
+        skos:editorialNote  "Calls semmowl-f:objectCount to check the current object count." ;
+        skos:editorialNote  "Function does not (yet) take into account any set theory constructions, such as owl:sameAs and owl:differentFrom, and owl:oneOf." ;
+        rdfs:subClassOf     semmowl-f:InternalFunctions ;
+		spin:private        true ;
+        spin:body           [ a    sp:Ask ;
+                              sp:where      (
+                                [ a    sp:NotExists ;
+                                  sp:elements (
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  spin:_arg3 ;       # var: owl:maxCardinality / owl:cardinality
+                                      sp:object     _:b_maxCardinality
+                                    ]
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:onProperty ;
+                                      sp:object     _:b_onProperty
+                                    ]
+									[ a   sp:Let ;
+                                      sp:expression  [ a   semmcore-f:objectCount ;
+                                                       sp:arg1  spin:_arg1 ;    # var: resource
+                                                       sp:arg2  _:b_onProperty ;
+                                                       sp:arg3  true
+                                                     ] ;
+                                      sp:variable    _:b_objectCount
+                                    ]
+                                    [ a    sp:Filter ;
+                                      sp:expression  [ a    sp:gt ;
+                                                       sp:arg1  _:b_objectCount ;
+                                                       sp:arg2  _:b_maxCardinality
+                                                     ]
+                                    ]
+                                  )
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given (non-qualified) cardinality restriction."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The (non-qualified) cardinality restriction that puts an upper bound on a property (i.e. one that uses owl:maxCardinality or owl:cardinality)."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg3 ;
+                              rdfs:comment   "The system property (owl:maxCardinality or owl:cardinality)."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:labelTemplate  "Max cardinality satisfaction check for a resource (using {?arg1}, {?arg2}, {?arg3})"^^xsd:string .
+
+
+
+
+semmowl-f:internal_satisfiesMinQualifiedCardinalityRestriction
+        a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to the lower bound requirements placed on it by the given owl:minQualifiedCardinality or owl:qualifiedCardinality restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "internal_satisfiesMinQualifiedCardinalityRestriction"^^xsd:string ;
+        skos:editorialNote  "Calls semmowl-f:objectCount to check the current object count. That function might not work correctly for literals with a specific datatype." ;
+        skos:editorialNote  "Function does not (yet) take into account any set theory constructions, such as owl:sameAs and owl:differentFrom, and owl:oneOf." ;
+        rdfs:subClassOf     semmowl-f:InternalFunctions ;
+		spin:private        true ;
+        spin:body           [ a    sp:Ask ;
+                              sp:where      (
+                                [ a    sp:NotExists ;
+                                  sp:elements (
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  spin:_arg3 ;       # var: owl:minQualifiedCardinality / owl:qualifiedCardinality
+                                      sp:object     _:b_minCardinality
+                                    ]
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:onProperty ;
+                                      sp:object     _:b_onProperty
+                                    ]
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:onClass ;
+                                      sp:object     _:b_onClass
+                                    ]
+									[ a   sp:Let ;
+                                      sp:expression  [ a   semmcore-f:objectCount ;
+                                                       sp:arg1  spin:_arg1 ;    # var: resource
+                                                       sp:arg2  _:b_onProperty ;
+                                                       sp:arg3  true ;
+                                                       sp:arg4  _:b_onClass
+                                                     ] ;
+                                      sp:variable    _:b_objectCount
+                                    ]
+                                    [ a    sp:Filter ;
+                                      sp:expression  [ a    sp:lt ;
+                                                       sp:arg1  _:b_objectCount ;
+                                                       sp:arg2  _:b_minCardinality
+                                                     ]
+                                    ]
+                                  )
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given qualified cardinality restriction."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The qualified cardinality restriction that puts a lower bound on a property (i.e. one that uses owl:minQualifiedCardinality or owl:qualifiedCardinality)."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg3 ;
+                              rdfs:comment   "The system property (owl:minQualifiedCardinality or owl:qualifiedCardinality)."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:labelTemplate  "Min qualified cardinality satisfaction check for a resource (using {?arg1}, {?arg2}, {?arg3})"^^xsd:string .
+
+
+
+semmowl-f:internal_satisfiesMaxQualifiedCardinalityRestriction
+        a                   spin:Function ;
+        rdfs:comment        "Checks whether a given resource conforms to the upper bound requirements placed on it by the given owl:maxQualifiedCardinality or owl:qualifiedCardinality restriction (not also for any restrictions that are super classes of the given restriction)." ;
+        rdfs:label          "internal_satisfiesMaxQualifiedCardinalityRestriction"^^xsd:string ;
+        skos:editorialNote  "Calls semmowl-f:objectCount to check the current object count. That function might not work correctly for literals with a specific datatype." ;
+        skos:editorialNote  "Function does not (yet) take into account any set theory constructions, such as owl:sameAs and owl:differentFrom, and owl:oneOf." ;
+        rdfs:subClassOf     semmowl-f:InternalFunctions ;
+		spin:private        true ;
+        spin:body           [ a    sp:Ask ;
+                              sp:where      (
+                                [ a    sp:NotExists ;
+                                  sp:elements (
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  spin:_arg3 ;       # var: owl:maxQualifiedCardinality / owl:qualifiedCardinality
+                                      sp:object     _:b_maxCardinality
+                                    ]
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:onProperty ;
+                                      sp:object     _:b_onProperty
+                                    ]
+                                    [ sp:subject    spin:_arg2 ;       # var: Restriction resource
+                                      sp:predicate  owl:onClass ;
+                                      sp:object     _:b_onClass
+                                    ]
+									[ a   sp:Let ;
+                                      sp:expression  [ a   semmcore-f:objectCount ;
+                                                       sp:arg1  spin:_arg1 ;    # var: resource
+                                                       sp:arg2  _:b_onProperty ;
+                                                       sp:arg3  true ;
+                                                       sp:arg4  _:b_onClass
+                                                     ] ;
+                                      sp:variable    _:b_objectCount
+                                    ]
+                                    [ a    sp:Filter ;
+                                      sp:expression  [ a    sp:gt ;
+                                                       sp:arg1  _:b_objectCount ;
+                                                       sp:arg2  _:b_maxCardinality
+                                                     ]
+                                    ]
+                                  )
+                                ]
+                              )
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg1 ;
+                              rdfs:comment   "The resource to check for satisfying a given qualified cardinality restriction."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg2 ;
+                              rdfs:comment   "The qualified cardinality restriction that puts an upper bound on a property (i.e. one that uses owl:maxQualifiedCardinality or owl:qualifiedCardinality)."^^xsd:string ;
+                              spl:valueType  owl:Restriction
+                            ] ;
+        spin:constraint     [ a              spl:Argument ;
+                              spl:predicate  sp:arg3 ;
+                              rdfs:comment   "The system property (owl:maxQualifiedCardinality or owl:qualifiedCardinality)."^^xsd:string ;
+                              spl:valueType  rdf:Property
+                            ] ;
+        spin:labelTemplate  "Max qualified cardinality satisfaction check for a resource (using {?arg1}, {?arg2}, {?arg3})"^^xsd:string .
+
+
+
+
+_:b_minCardinality    sp:varName  "minCardinality"^^xsd:string .
+_:b_maxCardinality    sp:varName  "maxCardinality"^^xsd:string .
+_:b_onProperty        sp:varName  "onProperty"^^xsd:string .
+_:b_onClass           sp:varName  "onClass"^^xsd:string .
+_:b_objectCount       sp:varName  "objectCount"^^xsd:string .
+_:b_property          sp:varName  "property"^^xsd:string .
+_:b_object            sp:varName  "object"^^xsd:string .

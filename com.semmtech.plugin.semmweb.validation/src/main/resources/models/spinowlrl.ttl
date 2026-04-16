@@ -1,0 +1,551 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sp:    <http://spinrdf.org/sp#> .
+@prefix spl:   <http://spinrdf.org/spl#> .
+@prefix spif:  <http://spinrdf.org/spif#> .
+@prefix owlrl: <http://topbraid.org/spin/owlrl#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix spin:  <http://spinrdf.org/spin#> .
+
+owlrl:prp-symp  a        spin:Template ;
+        rdfs:comment     "OWL RL prp-symp"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-symp\nCONSTRUCT {\n    ?y ?p ?x .\n}\nWHERE {\n    ?p a owl:SymmetricProperty .\n    ?x ?p ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-uni  a         spin:Template ;
+        rdfs:comment     "OWL RL cls-uni"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-uni\nCONSTRUCT {\n    ?y a ?c .\n}\nWHERE {\n    ?c owl:unionOf ?x .\n    ?x <http://jena.hpl.hp.com/ARQ/list#member> ?ci .\n    ?y a ?ci .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-avf2  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-avf2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-avf2\nCONSTRUCT {\n    ?c2 rdfs:subClassOf ?c1 .\n}\nWHERE {\n    ?c1 owl:allValuesFrom ?y .\n    ?c1 owl:onProperty ?p1 .\n    ?c2 owl:allValuesFrom ?y .\n    ?c2 owl:onProperty ?p2 .\n    ?p1 rdfs:subPropertyOf ?p2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:eq-sym  a          spin:Template ;
+        rdfs:comment     "OWL RL eq-sym"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# eq-sym\nCONSTRUCT {\n    ?y owl:sameAs ?x .\n}\nWHERE {\n    ?x owl:sameAs ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-fp  a          spin:Template ;
+        rdfs:comment     "OWL RL prp-fp"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-fp\nCONSTRUCT {\n    ?y1 owl:sameAs ?y2 .\n}\nWHERE {\n    ?p a owl:FunctionalProperty .\n    ?x ?p ?y1 .\n    ?x ?p ?y2 .\n    FILTER (?y1 != ?y2) .\n}"^^xsd:string
+                         ] .
+
+owlrl:eq-rep-s  a        spin:Template ;
+        rdfs:comment     "OWL RL eq-rep-s"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# eq-rep-s\nCONSTRUCT {\n    ?s2 ?p ?o .\n}\nWHERE {\n    ?s owl:sameAs ?s2 .\n    ?s ?p ?o .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-inv2  a        spin:Template ;
+        rdfs:comment     "OWL RL prp-inv2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-inv2\nCONSTRUCT {\n    ?y ?p1 ?x .\n}\nWHERE {\n    ?p1 owl:inverseOf ?p2 .\n    ?x ?p2 ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-ifp  a         spin:Template ;
+        rdfs:comment     "OWL RL prp-ifp"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-ifp\nCONSTRUCT {\n    ?x1 owl:sameAs ?x2 .\n}\nWHERE {\n    ?p a owl:InverseFunctionalProperty .\n    ?x1 ?p ?y .\n    ?x2 ?p ?y .\n    FILTER (?x1 != ?x2) .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-spo  a         spin:Template ;
+        rdfs:comment     "OWL RL scm-spo"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-spo\nCONSTRUCT {\n    ?p1 rdfs:subPropertyOf ?p3 .\n}\nWHERE {\n    ?p1 rdfs:subPropertyOf ?p2 .\n    ?p2 rdfs:subPropertyOf ?p3 .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-int1  a        spin:Template ;
+        rdfs:comment     "OWL RL cls-int1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-int1\nCONSTRUCT {\n    ?y a ?c .\n}\nWHERE {\n    ?c owl:intersectionOf ?x .\n    ?x <http://jena.hpl.hp.com/ARQ/list#member> ?type .\n    ?y a ?type .\n    FILTER (!owlrl:listContainsExtraType(?y, ?x)) .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-eqp2  a        spin:Template ;
+        rdfs:comment     "OWL RL prp-eqp2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-eqp2\nCONSTRUCT {\n    ?x ?p1 ?y .\n}\nWHERE {\n    ?p1 owl:equivalentProperty ?p2 .\n    ?x ?p2 ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-eqc2  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-eqc2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-eqc2\nCONSTRUCT {\n    ?c1 owl:equivalentClass ?c2 .\n}\nWHERE {\n    ?c1 rdfs:subClassOf ?c2 .\n    ?c2 rdfs:subClassOf ?c1 .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-svf2  a        spin:Template ;
+        rdfs:comment     "OWL RL cls-svf2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-svf2\nCONSTRUCT {\n    ?u a ?x .\n}\nWHERE {\n    ?x owl:someValuesFrom owl:Thing .\n    ?x owl:onProperty ?p .\n    ?u ?p ?v .\n}"^^xsd:string
+                         ] .
+
+owlrl:cax-sco  a         spin:Template ;
+        rdfs:comment     "OWL RL cax-sco"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cax-sco\nCONSTRUCT {\n    ?x a ?c2 .\n}\nWHERE {\n    ?c1 rdfs:subClassOf ?c2 .\n    ?x a ?c1 .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-avf1  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-avf1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-avf1\nCONSTRUCT {\n    ?c1 rdfs:subClassOf ?c2 .\n}\nWHERE {\n    ?c1 owl:allValuesFrom ?y1 .\n    ?c1 owl:onProperty ?p .\n    ?c2 owl:allValuesFrom ?y2 .\n    ?c2 owl:onProperty ?p .\n    ?y1 rdfs:subClassOf ?y2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-npa2  a        spin:Template ;
+        rdfs:comment     "OWL RL prp-npa2"^^xsd:string ;
+        rdfs:label       "prp-npa2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-npa2\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?i .\n    _:b0 spin:violationPath ?p .\n    _:b0 rdfs:label \"Negative Property Assertion\" .\n}\nWHERE {\n    ?x owl:sourceIndividual ?i .\n    ?x owl:assertionProperty ?p .\n    ?x owl:targetValue ?lt .\n    ?i ?p ?lt .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-rng2  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-rng2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-rng2\nCONSTRUCT {\n    ?p1 rdfs:range ?c .\n}\nWHERE {\n    ?p2 rdfs:range ?c .\n    ?p1 rdfs:subPropertyOf ?p2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-eqp2  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-eqp2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-eqp2\nCONSTRUCT {\n    ?p1 owl:equivalentProperty ?p2 .\n}\nWHERE {\n    ?p1 rdfs:subPropertyOf ?p2 .\n    ?p2 rdfs:subPropertyOf ?p1 .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-inv1  a        spin:Template ;
+        rdfs:comment     "OWL RL prp-inv1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-inv1\nCONSTRUCT {\n    ?y ?p2 ?x .\n}\nWHERE {\n    ?p1 owl:inverseOf ?p2 .\n    ?x ?p1 ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-trp  a         spin:Template ;
+        rdfs:comment     "OWL RL prp-trp"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-trp\nCONSTRUCT {\n    ?x ?p ?z .\n}\nWHERE {\n    ?p a owl:TransitiveProperty .\n    ?x ?p ?y .\n    ?y ?p ?z .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-adp  a         spin:Template ;
+        rdfs:comment     "OWL RL prp-adp"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-adp\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?x .\n    _:b0 spin:violationPath ?p1 .\n    _:b0 rdfs:label \"Violation of owl:AllDisjointProperties\" .\n}\nWHERE {\n    ?z a owl:AllDisjointProperties .\n    ?z owl:members ?members .\n    ?members <http://jena.hpl.hp.com/ARQ/list#member> ?p1 .\n    ?x ?p1 ?y .\n    FILTER (?p1 != ?p2) .\n    ?x ?p2 ?y .\n    ?members <http://jena.hpl.hp.com/ARQ/list#member> ?p2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-maxqc4  a      spin:Template ;
+        rdfs:comment     "OWL RL cls-maxqc4"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-maxqc4\nCONSTRUCT {\n    ?y1 owl:sameAs ?y2 .\n}\nWHERE {\n    ?x owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger .\n    ?x owl:onProperty ?p .\n    ?x owl:onClass owl:Thing .\n    ?u a ?x .\n    ?u ?p ?y1 .\n    ?u ?p ?y2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-svf2  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-svf2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-svf2\nCONSTRUCT {\n    ?c1 rdfs:subClassOf ?c2 .\n}\nWHERE {\n    ?c1 owl:someValuesFrom ?y .\n    ?c1 owl:onProperty ?p1 .\n    ?c2 owl:someValuesFrom ?y .\n    ?c2 owl:onProperty ?p2 .\n    ?p1 rdfs:subPropertyOf ?p2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-eqp1  a        spin:Template ;
+        rdfs:comment     "OWL RL prp-eqp1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-eqp1\nCONSTRUCT {\n    ?x ?p2 ?y .\n}\nWHERE {\n    ?p1 owl:equivalentProperty ?p2 .\n    ?x ?p1 ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-eqc1  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-eqc1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-eqc1\nCONSTRUCT {\n    ?c1 rdfs:subClassOf ?c2 .\n    ?c2 rdfs:subClassOf ?c1 .\n}\nWHERE {\n    ?c1 owl:equivalentClass ?c2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-svf1  a        spin:Template ;
+        rdfs:comment     "OWL RL cls-svf1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-svf1\nCONSTRUCT {\n    ?u a ?x .\n}\nWHERE {\n    ?x owl:someValuesFrom ?y .\n    ?x owl:onProperty ?p .\n    ?u ?p ?v .\n    ?v a ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-spo2  a        spin:Template ;
+        rdfs:comment     "OWL RL prp-spo2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-spo2\nCONSTRUCT {\n    ?subject ?p ?object .\n}\nWHERE {\n    ?p owl:propertyChainAxiom ?x .\n    ?x owlrl:propertyChainHelper ( ?subject ?object ) .\n}"^^xsd:string
+                         ] .
+
+owl:Nothing  spin:constraint  [ a        sp:Construct ;
+                                sp:text  "CONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?this .\n    _:b0 rdfs:label \"Instance of owl:Nothing\" .\n}\nWHERE {\n}"^^xsd:string
+                              ] .
+
+owlrl:eq-ref  a          spin:Template ;
+        rdfs:comment     "OWL RL eq-ref"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# eq-ref\nCONSTRUCT {\n    ?s owl:sameAs ?s .\n    ?p owl:sameAs ?p .\n    ?o owl:sameAs ?o .\n}\nWHERE {\n    ?s ?p ?o .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-npa1  a        spin:Template ;
+        rdfs:comment     "OWL RL prp-npa1"^^xsd:string ;
+        rdfs:label       "prp-npa1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-npa1\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?i1 .\n    _:b0 spin:violationPath ?p .\n    _:b0 rdfs:label \"Negative Property Assertion\" .\n}\nWHERE {\n    ?x owl:sourceIndividual ?i1 .\n    ?x owl:assertionProperty ?p .\n    ?x owl:targetIndividual ?i2 .\n    ?i1 ?p ?i2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-eqp1  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-eqp1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-eqp1\nCONSTRUCT {\n    ?p1 rdfs:subPropertyOf ?p2 .\n    ?p2 rdfs:subPropertyOf ?p1 .\n}\nWHERE {\n    ?p1 owl:equivalentProperty ?p2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-rng1  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-rng1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-rng1\nCONSTRUCT {\n    ?p rdfs:range ?c2 .\n}\nWHERE {\n    ?p rdfs:range ?c1 .\n    ?c1 rdfs:subClassOf ?c2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:cax-eqc2  a        spin:Template ;
+        rdfs:comment     "OWL RL cax-eqc2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cax-eqc2\nCONSTRUCT {\n    ?x a ?c1 .\n}\nWHERE {\n    ?c1 owl:equivalentClass ?c2 .\n    ?x a ?c2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-maxqc3  a      spin:Template ;
+        rdfs:comment     "OWL RL cls-maxqc3"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-maxqc3\nCONSTRUCT {\n    ?y1 owl:sameAs ?y2 .\n}\nWHERE {\n    ?x owl:maxQualifiedCardinality \"1\"^^xsd:nonNegativeInteger .\n    ?x owl:onProperty ?p .\n    ?x owl:onClass ?c .\n    ?u a ?x .\n    ?u ?p ?y1 .\n    ?y1 a ?c .\n    ?u ?p ?y1 .\n    ?y2 a ?c .\n}"^^xsd:string
+                         ] .
+
+owlrl:cax-adc  a         spin:Template ;
+        rdfs:comment     "OWL RL cax-adc"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cax-adc\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?x .\n    _:b0 rdfs:label \"Shared instance of classes from an AllDisjointClasses block\" .\n}\nWHERE {\n    ?y a owl:AllDisjointClasses .\n    ?y owl:members ?members .\n    ?members <http://jena.hpl.hp.com/ARQ/list#member> ?c1 .\n    ?members <http://jena.hpl.hp.com/ARQ/list#member> ?c2 .\n    FILTER (?c1 != ?c2) .\n    ?x a ?c1 .\n    ?x a ?c2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-svf1  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-svf1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-svf1\nCONSTRUCT {\n    ?c1 rdfs:subClassOf ?c2 .\n}\nWHERE {\n    ?c1 owl:someValuesFrom ?y1 .\n    ?c1 owl:onProperty ?p .\n    ?c2 owl:someValuesFrom ?y2 .\n    ?c2 owl:onProperty ?p .\n    ?y1 rdfs:subClassOf ?y2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-dp  a          spin:Template ;
+        rdfs:comment     "OWL RL scm-dp"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-dp\nCONSTRUCT {\n    ?p rdfs:subPropertyOf ?p .\n    ?p owl:equivalentProperty ?p .\n}\nWHERE {\n    ?p a owl:DatatypeProperty .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-int  a         spin:Template ;
+        rdfs:comment     "OWL RL scm-int"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-int\nCONSTRUCT {\n    ?c rdfs:subClassOf ?cl .\n}\nWHERE {\n    ?c owl:intersectionOf ?x .\n    ?x <http://jena.hpl.hp.com/ARQ/list#member> ?cl .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-op  a          spin:Template ;
+        rdfs:comment     "OWL RL scm-op"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-op\nCONSTRUCT {\n    ?p rdfs:subPropertyOf ?p .\n    ?p owl:equivalentProperty ?p .\n}\nWHERE {\n    ?p a owl:ObjectProperty .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-spo1  a        spin:Template ;
+        rdfs:comment     "OWL RL prp-spo1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-spo1\nCONSTRUCT {\n    ?x ?p2 ?y .\n}\nWHERE {\n    ?p1 rdfs:subPropertyOf ?p2 .\n    ?x ?p1 ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-pdw  a         spin:Template ;
+        rdfs:comment     "OWL RL prp-pdw"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-pdw\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?x .\n    _:b0 spin:violationPath ?p1 .\n    _:b0 rdfs:label \"Property declared disjoint with\" .\n}\nWHERE {\n    ?p1 owl:propertyDisjointWith ?p2 .\n    ?x ?p1 ?y .\n    ?x ?p2 ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-com  a         spin:Template ;
+        rdfs:comment     "OWL RL cls-com"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "CONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?x .\n    _:b0 rdfs:label \"Resource is instance of two classes that have been declared owl:complementOf\" .\n}\nWHERE {\n    ?c1 owl:complementOf ?c2 .\n    ?x a ?c1 .\n    ?x a ?c2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-asyp  a        spin:Template ;
+        rdfs:comment     "OWL RL prp-asyp"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-asyp\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?x .\n    _:b0 spin:violationPath ?p .\n    _:b0 rdfs:label \"Asymmetric property\" .\n}\nWHERE {\n    ?p a owl:AsymmetricProperty .\n    ?x ?p ?y .\n    ?y ?p ?x .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-hv2  a         spin:Template ;
+        rdfs:comment     "OWL RL cls-hv2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-hv2\nCONSTRUCT {\n    ?u a ?x .\n}\nWHERE {\n    ?x owl:hasValue ?y .\n    ?x owl:onProperty ?p .\n    ?u ?p ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:eq-diff3  a        spin:Template ;
+        rdfs:comment     "OWL RL eq-diff3"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# eq-diff3\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?y1 .\n    _:b0 rdfs:label \"Violation of owl:AllDifferent\" .\n}\nWHERE {\n    ?x a owl:AllDifferent .\n    ?x owl:distinctMembers ?list .\n    ?list <http://jena.hpl.hp.com/ARQ/list#member> ?y1 .\n    ?list <http://jena.hpl.hp.com/ARQ/list#member> ?y2 .\n    FILTER (?y1 != ?y2) .\n    ?y1 owl:sameAs ?y2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:eq-rep-p  a        spin:Template ;
+        rdfs:comment     "OWL RL eq-rep-p"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# eq-rep-p\nCONSTRUCT {\n    ?s ?p2 ?o .\n}\nWHERE {\n    ?p owl:sameAs ?p2 .\n    ?s ?p ?o .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-hv  a          spin:Template ;
+        rdfs:comment     "OWL RL scm-hv"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-hv\nCONSTRUCT {\n    ?c1 rdfs:subClassOf ?c2 .\n}\nWHERE {\n    ?c1 owl:hasValue ?i .\n    ?c1 owl:onProperty ?p1 .\n    ?c2 owl:hasValue ?i .\n    ?c2 owl:onProperty ?p2 .\n    ?p1 rdfs:subPropertyOf ?p2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:cax-eqc1  a        spin:Template ;
+        rdfs:comment     "OWL RL cax-eqc1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cax-eqc1\nCONSTRUCT {\n    ?x a ?c2 .\n}\nWHERE {\n    ?c1 owl:equivalentClass ?c2 .\n    ?x a ?c1 .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-maxqc2  a      spin:Template ;
+        rdfs:comment     "OWL RL cls-maxqc2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-maxqc2\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?u .\n    _:b0 spin:violationPath ?p .\n    _:b0 rdfs:label \"Qualified max cardinality 0\" .\n}\nWHERE {\n    ?x owl:maxQualifiedCardinality \"0\"^^xsd:nonNegativeInteger .\n    ?x owl:onProperty ?p .\n    ?x owl:onClass owl:Thing .\n    ?u a ?x .\n    ?u ?p ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-avf  a         spin:Template ;
+        rdfs:comment     "OWL RL cls-avf"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-avf\nCONSTRUCT {\n    ?v a ?y .\n}\nWHERE {\n    ?x owl:allValuesFrom ?y .\n    ?x owl:onProperty ?p .\n    ?u a ?x .\n    ?u ?p ?v .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-irp  a         spin:Template ;
+        rdfs:comment     "OWL RL prp-irp"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-irp\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?x .\n    _:b0 spin:violationPath ?p .\n    _:b0 rdfs:label \"Irreflexive property\" .\n}\nWHERE {\n    ?p a owl:IrreflexiveProperty .\n    ?x ?p ?x .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-dom  a         spin:Template ;
+        rdfs:comment     "OWL RL prp-dom"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-dom\nCONSTRUCT {\n    ?x a ?c .\n}\nWHERE {\n    ?p rdfs:domain ?c .\n    ?x ?p ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-hv1  a         spin:Template ;
+        rdfs:comment     "OWL RL cls-hv1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-hv1\nCONSTRUCT {\n    ?u ?p ?y .\n}\nWHERE {\n    ?x owl:hasValue ?y .\n    ?x owl:onProperty ?p .\n    ?u a ?x .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-rng  a         spin:Template ;
+        rdfs:comment     "OWL RL prp-rng"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-rng\nCONSTRUCT {\n    ?y a ?c .\n}\nWHERE {\n    ?p rdfs:range ?c .\n    ?x ?p ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-maxc2  a       spin:Template ;
+        rdfs:comment     "OWL RL cls-maxc2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-maxc2\nCONSTRUCT {\n    ?y1 owl:sameAs ?y2 .\n}\nWHERE {\n    ?x owl:maxCardinality \"1\"^^xsd:nonNegativeInteger .\n    ?x owl:onProperty ?p .\n    ?u a ?x .\n    ?u ?p ?y1 .\n    ?u ?p ?y2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:eq-diff2  a        spin:Template ;
+        rdfs:comment     "OWL RL eq-diff2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# eq-diff2\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?y1 .\n    _:b0 rdfs:label \"Violation of owl:AllDifferent\" .\n}\nWHERE {\n    ?x a owl:AllDifferent .\n    ?x owl:members ?list .\n    ?list <http://jena.hpl.hp.com/ARQ/list#member> ?y1 .\n    ?list <http://jena.hpl.hp.com/ARQ/list#member> ?y2 .\n    FILTER (?y1 != ?y2) .\n    ?y1 owl:sameAs ?y2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:eq-rep-o  a        spin:Template ;
+        rdfs:comment     "OWL RL eq-rep-o"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# eq-rep-o\nCONSTRUCT {\n    ?s ?p ?o2 .\n}\nWHERE {\n    ?o owl:sameAs ?o2 .\n    ?s ?p ?o .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-cls  a         spin:Template ;
+        rdfs:comment     "OWL RL scm-cls"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-cls\nCONSTRUCT {\n    ?c rdfs:subClassOf ?c .\n    ?c owl:equivalentClass ?c .\n    ?c rdfs:subClassOf owl:Thing .\n    owl:Nothing rdfs:subClassOf ?c .\n}\nWHERE {\n    ?c a owl:Class .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-dom2  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-dom2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-dom2\nCONSTRUCT {\n    ?p1 rdfs:domain ?c .\n}\nWHERE {\n    ?p2 rdfs:domain ?c .\n    ?p1 rdfs:subPropertyOf ?p2 .\n}"^^xsd:string
+                         ] .
+
+<http://topbraid.org/spin/owlrl>
+        a                spin:LibraryOntology , owl:Ontology ;
+        rdfs:comment     "A collection of rules specified by the OWL RL specification in SPIN format. The rules have been encoded as SPIN templates and can be attached to a root class (such as owl:Thing) to achieve OWL inferencing on ontologies that import this file. The file owlrl-all has been created as a convenient out of the box solution for cases where all OWL 2 RL rules shall be used."^^xsd:string ;
+        owl:imports      <http://spinrdf.org/spin> ;
+        owl:versionInfo  "0.9.8"^^xsd:string .
+
+owlrl:cls-maxqc1  a      spin:Template ;
+        rdfs:comment     "OWL RL cls-maxqc1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-maxqc1\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?u .\n    _:b0 spin:violationPath ?p .\n    _:b0 rdfs:label \"Maximum qualified cardinality of 0\" .\n}\nWHERE {\n    ?x owl:maxQualifiedCardinality \"0\"^^xsd:nonNegativeInteger .\n    ?x owl:onProperty ?p .\n    ?x owl:onClass ?c .\n    ?u a ?x .\n    ?u ?p ?y .\n    ?y a ?c .\n}"^^xsd:string
+                         ] .
+
+owlrl:cax-dw  a          spin:Template ;
+        rdfs:comment     "OWL RL cax-dw"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cax-dw\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?x .\n    _:b0 rdfs:label \"Shared instance of disjoint classes\" .\n}\nWHERE {\n    ?c1 owl:disjointWith ?c2 .\n    ?x a ?c1 .\n    ?x a ?c2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:prp-key  a         spin:Template ;
+        rdfs:comment     "OWL RL prp-key"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# prp-key\nCONSTRUCT {\n    ?x owl:sameAs ?y .\n}\nWHERE {\n    ?c owl:hasKey ?u .\n    ?x a ?c .\n    ?y a ?c .\n    FILTER (?x != ?y) .\n    FILTER (!owlrl:keyViolationExists(?u, ?x, ?y)) .\n}"^^xsd:string
+                         ] .
+
+owlrl:listContainsExtraType
+        a                spin:Function ;
+        rdfs:comment     "Walks a given rdf:List (?arg2) and returns true if the given subject (?arg1) does not have a list element as rdf:type. This can be used to check whether the subject has all objects from a given list, by simply negating the result with the ! operator."^^xsd:string ;
+        rdfs:label       "list contains extra object"^^xsd:string ;
+        rdfs:subClassOf  spin:Functions ;
+        spin:body        [ a        sp:Ask ;
+                           sp:text  "ASK WHERE {\n    ?arg2 <http://jena.hpl.hp.com/ARQ/list#member> ?object .\n    NOT EXISTS {\n        ?arg1 a ?object .\n    } .\n}"^^xsd:string
+                         ] ;
+        spin:constraint  [ a              spl:Argument ;
+                           rdfs:comment   "The subject that is checked."^^xsd:string ;
+                           spl:predicate  sp:arg1 ;
+                           spl:valueType  rdfs:Resource
+                         ] ;
+        spin:constraint  [ a              spl:Argument ;
+                           rdfs:comment   "The rdf:List to walk through."^^xsd:string ;
+                           spl:predicate  sp:arg2 ;
+                           spl:valueType  rdf:List
+                         ] ;
+        spin:private     true ;
+        spin:returnType  xsd:boolean .
+
+owlrl:eq-trans  a        spin:Template ;
+        rdfs:comment     "OWL RL eq-trans"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# eq-trans\nCONSTRUCT {\n    ?x owl:sameAs ?z .\n}\nWHERE {\n    ?x owl:sameAs ?y .\n    ?y owl:sameAs ?z .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-maxc1  a       spin:Template ;
+        rdfs:comment     "OWL RL cls-maxc1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-maxc1\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?x .\n    _:b0 spin:violationPath ?p .\n    _:b0 rdfs:label \"owl:maxCardinality of 0\" .\n}\nWHERE {\n    ?x owl:maxCardinality \"0\"^^xsd:nonNegativeInteger .\n    ?x owl:onProperty ?p .\n    ?u a ?x .\n    ?u ?p ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:eq-diff1  a        spin:Template ;
+        rdfs:comment     "OWL RL eq-diff1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# eq-diff1\nCONSTRUCT {\n    _:b0 a spin:ConstraintViolation .\n    _:b0 spin:violationRoot ?x .\n    _:b0 spin:violationPath owl:sameAs .\n    _:b0 rdfs:label \"Violates owl:differentFrom\" .\n}\nWHERE {\n    ?x owl:sameAs ?y .\n    ?x owl:differentFrom ?y .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-int2  a        spin:Template ;
+        rdfs:comment     "OWL RL cls-int2"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-int2\nCONSTRUCT {\n    ?y a ?ci .\n}\nWHERE {\n    ?c owl:intersectionOf ?x .\n    ?x <http://jena.hpl.hp.com/ARQ/list#member> ?ci .\n    ?y a ?c .\n}"^^xsd:string
+                         ] .
+
+owlrl:cls-oo  a          spin:Template ;
+        rdfs:comment     "OWL RL cls-oo"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# cls-oo\nCONSTRUCT {\n    ?yi a ?c .\n}\nWHERE {\n    ?c owl:oneOf ?x .\n    ?x <http://jena.hpl.hp.com/ARQ/list#member> ?yi .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-dom1  a        spin:Template ;
+        rdfs:comment     "OWL RL scm-dom1"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-dom1\nCONSTRUCT {\n    ?p rdfs:domain ?c2 .\n}\nWHERE {\n    ?p rdfs:domain ?c1 .\n    ?c1 rdfs:subClassOf ?c2 .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-sco  a         spin:Template ;
+        rdfs:comment     "OWL RL scm-sco"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-sco\nCONSTRUCT {\n    ?c1 rdfs:subClassOf ?c3 .\n}\nWHERE {\n    ?c1 rdfs:subClassOf ?c2 .\n    ?c2 rdfs:subClassOf ?c3 .\n}"^^xsd:string
+                         ] .
+
+owlrl:scm-uni  a         spin:Template ;
+        rdfs:comment     "OWL RL scm-uni"^^xsd:string ;
+        rdfs:subClassOf  spin:Templates ;
+        spin:body        [ a        sp:Construct ;
+                           sp:text  "# scm-uni\nCONSTRUCT {\n    ?cl rdfs:subClassOf ?c .\n}\nWHERE {\n    ?c owl:unionOf ?x .\n    ?x <http://jena.hpl.hp.com/ARQ/list#member> ?cl .\n}"^^xsd:string
+                         ] .
+
+owlrl:keyViolationExists
+        a                spin:Function ;
+        rdfs:comment     "A helper function of the prp-key axiom." ;
+        rdfs:label       "key violation exists"^^xsd:string ;
+        rdfs:subClassOf  spin:Functions ;
+        spin:body        [ a        sp:Ask ;
+                           sp:text  "# Checks whether there is a value of a key property that\n# is different for the two instances arg2 and arg3\nASK WHERE {\n    ?arg1 <http://jena.hpl.hp.com/ARQ/list#member> ?p .\n    OPTIONAL {\n        ?arg2 ?p ?z1 .\n    } .\n    OPTIONAL {\n        ?arg3 ?p ?z2 .\n    } .\n    FILTER (((!bound(?z1)) || (!bound(?z2))) || (?z1 != ?z2)) .\n}"^^xsd:string
+                         ] ;
+        spin:constraint  [ a              spl:Argument ;
+                           rdfs:comment   "The first instance"^^xsd:string ;
+                           spl:predicate  sp:arg2 ;
+                           spl:valueType  rdfs:Resource
+                         ] ;
+        spin:constraint  [ a              spl:Argument ;
+                           rdfs:comment   "The list of key properties."^^xsd:string ;
+                           spl:predicate  sp:arg1 ;
+                           spl:valueType  rdf:List
+                         ] ;
+        spin:constraint  [ a              spl:Argument ;
+                           rdfs:comment   "The second instance"^^xsd:string ;
+                           spl:predicate  sp:arg3 ;
+                           spl:valueType  rdfs:Resource
+                         ] ;
+        spin:private     true ;
+        spin:returnType  xsd:boolean .

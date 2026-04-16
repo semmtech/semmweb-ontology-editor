@@ -1,0 +1,69 @@
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix semm: 	<http://www.semmweb.com/ns/public/2012/08/15/semm#> .
+@prefix vw:      <http://example.org/volkswagen#> .
+
+#@include <RDFS> .
+
+[ tableAll: -> tableAll()]
+
+# OWL inverse inference rules
+[ inverseOf: (?p owl:inverseOf ?q) -> (?q owl:inverseOf ?p) ]
+[ inverseA: (?p owl:inverseOf ?q) -> [ (?o ?q ?s) <- (?s ?p ?o) ] ]
+[ inverseB: (?p owl:inverseOf ?q) -> [ (?o ?p ?s) <- (?s ?q ?o) ] ]
+
+# Forward rules do not infer the backward subClass and type relations
+[ rdfs9Backwards: (?x rdf:type ?z) <- (?x rdf:type ?y) (?y rdfs:subClassOf ?z) ]
+
+# This rule creates instances of the role concept class defined as the 
+# subject role of the used property and sets the roleOf and hasRole 
+# properties for the actual holder and the role instance itself.
+[ roleRule:
+	(?p semm:subjectRole ?subjectRole)
+	(?p semm:objectRole ?objectRole)
+	(?subject ?p ?object)
+	
+	(?subject rdf:type ?subjectClass)
+	(?object rdf:type ?objectClass)
+	(?subjectClass rdfs:subClassOf ?subjectRestriction)
+	(?subjectRestriction rdf:type owl:Restriction)
+	(?subjectRestriction owl:onProperty ?p)
+	(?subjectRestriction owl:someValuesFrom ?someClass)
+	
+	strConcat(?subject, ?subjectUri)	
+	strConcat(?object, ?objectUri)
+	strConcat(?subjectClass, ?subjectClassUri)
+	strConcat(?objectClass, ?objectClassUri)
+	strConcat(?subjectRole, ?subjectRoleUri)
+	strConcat(?objectRole, ?objectRoleUri)
+	strConcat(?someClass, ?someClassUri)
+
+	regex(?subjectUri, "(^.*[/|#]).*$", ?subjectNs)
+	regex(?objectUri, "(^.*[/|#]).*$", ?objectNs)
+	regex(?subjectUri, ".*[/|#](.*)$", ?subjectName)
+	regex(?objectUri, ".*[/|#](.*)$", ?objectName)
+	regex(?subjectClassUri, ".*[/|#](.*)$", ?subjectClassName)
+	regex(?objectClassUri, ".*[/|#](.*)$", ?objectClassName)
+	regex(?subjectRoleUri, ".*[/|#](.*)$", ?subjectRoleName)
+	regex(?objectRoleUri, ".*[/|#](.*)$", ?objectRoleName)
+	regex(?someClassUri, ".*[/|#](.*)$", ?someClassName)
+
+	uriConcat(?subjectNs, ?subjectRoleName, ?subjectName, "Of", ?objectName, ?subjectRoleIndiv)
+	uriConcat(?objectNs, ?objectRoleName, ?objectName, "By", ?subjectName, ?objectRoleIndiv)
+	uriConcat(?subjectNs, ?subjectRoleName, ?subjectClassName, 'Of', ?someClassName, ?ss)
+	uriConcat(?subjectNs, ?objectRoleName, ?someClassName, 'By', ?subjectClassName, ?so)
+	
+	-> 
+	
+	[ createSubjectRoleType: (?subjectRoleIndiv rdf:type ?ss) <- equal(?someClassUri, ?objectClassUri) ]
+	[ createSubjectRoleOf: (?subjectRoleIndiv semm:roleOf ?subject) <-  ]
+	[ createObjectRoleType: (?objectRoleIndiv rdf:type ?so) <-  equal(?someClassUri, ?objectClassUri) ]
+	[ createObjectRoleOf: (?objectRoleIndiv semm:roleOf ?object) <-  ]
+	[ createSpecializedSubjectRole: (?ss rdf:type owl:Class) <- ]
+	[ subClassSpecializedSubjectRole: (?ss rdfs:subClassOf ?subjectRole) <- ]
+	[ createSpecializedObjectRole: (?so rdf:type owl:Class) <- ]
+	[ subClassSpecializedObjectRole: (?so rdfs:subClassOf ?objectRole) <- ]
+
+]

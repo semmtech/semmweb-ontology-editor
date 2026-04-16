@@ -1,0 +1,154 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.semmtech</groupId>
+		<artifactId>semmweb-parent</artifactId>
+		<version>2.1.14-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>com.semmtech.plugin.semmweb.product</artifactId>
+	<packaging>eclipse-repository</packaging>
+
+	<dependencies>
+		<!-- Notice that only the NON-Tycho dependency have been added even though 
+			in the MANIFEST.MF there is declared a dependency to the tycho-feature. This 
+			because Tycho can resolve dependencies from the MANIFEST.MF -->
+		<dependency>
+			<groupId>com.semmtech</groupId>
+			<artifactId>com.semmtech.plugin.semmweb.feature</artifactId>
+			<version>2.2.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<extensions>
+			<!-- Enabling retrieval of values stored in settings.xml. We need the 
+				server password to run the commands as sudo -->
+			<extension>
+				<groupId>com.github.shyiko.servers-maven-extension</groupId>
+				<artifactId>servers-maven-extension</artifactId>
+				<version>1.3.0</version>
+			</extension>
+
+			<!-- Provides the java implementation for the ssh and scp commands used 
+				by the wagon plugin -->
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh</artifactId>
+				<version>2.9</version>
+			</extension>
+		</extensions>
+
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<executions>
+					<execution>
+						<id>materialize-products</id>
+						<goals>
+							<!-- Creates product installations for the products defined in the 
+								project -->
+							<goal>materialize-products</goal>
+							<!-- Creates archives with the product installations -->
+							<goal>archive-products</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- Creates the p2 repository -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<version>${tycho.version}</version>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.8.2</version>
+				<configuration>
+					<!-- Avoid the heavy artifacts, created after the product exporting 
+						, to be deployed on Artifactory -->
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>wagon-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<!-- Run the release-1.0-add command on the p2 repo folder -->
+						<id>create-repo</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>sshexec</goal>
+						</goals>
+						<configuration>
+							<serverId>eclipse-publish-server</serverId>
+							<displayCommandOutputs>true</displayCommandOutputs>
+							<url>${server.deploy.url}</url>
+							<commands>
+								<!-- The last part of the command "> out.txt 2>&1 &" is needed to 
+									avoid strange wagon error, so keep it like that -->
+								<!-- NB: pay attention to the back slash in the end of the command. 
+									It is needed to execute the whole command as a single line as it is supposed 
+									to be executed. If the command changes the autoformat may screw it up -->
+								<command>
+									cd ${server.deploy.path} &amp;&amp; echo \
+									${settings.servers.eclipse-publish-server.password} | sudo -S \
+									./${deploy.phase}-1.0-add \
+									${server.deploy.folder}-${qualifiedVersion}	&gt; \
+									out.txt	2&gt;&amp;1 &amp; 
+								</command>
+							</commands>
+						</configuration>
+					</execution>
+					<execution>
+						<!-- Copy the p2 repository from target to the remote folder created 
+							with the release-1.0-add command -->
+						<id>publish</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>upload</goal>
+						</goals>
+						<configuration>
+							<serverId>eclipse-publish-server</serverId>
+							<fromDir>${basedir}/target/repository</fromDir>
+							<includes>binary/,features/,plugins/,artifacts.jar,content.jar</includes>
+							<optimize>true</optimize>
+							<url>scp://${server.deploy.url}/</url>
+							<toDir>${server.deploy.path}/${deploy.phase}-1.0/${server.deploy.folder}-${qualifiedVersion}</toDir>
+							<filePermissions>664</filePermissions>
+							<directoryPermissions>775</directoryPermissions>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>beta</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<!-- This variable determine which script is going to be executed on 
+					the remote server to create the repository. With the 'beta' value the script 
+					beta-1.0-add will be executed. -->
+				<deploy.phase>beta</deploy.phase>
+			</properties>
+		</profile>
+		<profile>
+			<id>release</id>
+			<properties>
+				<deploy.phase>release</deploy.phase>
+			</properties>
+		</profile>
+	</profiles>
+</project>

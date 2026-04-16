@@ -1,0 +1,72 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix artists: <http://www.example.com/artists#> .
+@prefix dc: 	 <http://purl.org/dc/elements/1.1/> .
+
+@prefix ex: <http://www.example.com/ex#> .
+
+artists:123 
+	a skos:Concept .
+	
+ex:Thesaurus a skos:ConceptScheme ;
+	dc:title "Thesaurus" ;
+	dc:creator "Mike Henrichs" ;
+	skos:hasTopConcept ex:Emotion ;
+	skos:hasTopConcept ex:SpottedBowerbird ;
+	skos:hasTopConcept ex:Milk .
+	
+ex:Milk a skos:Concept ;
+	skos:narrower ex:MilkBySourceAnimal .
+	
+ex:MilkBySourceAnimal a skos:Collection ;
+	rdfs:label "Milk by source animal" ;
+	skos:member ex:BuffaloMilk ;
+	skos:member ex:CowMilk ;
+	skos:member ex:GoatMilk ;
+	skos:member ex:SheepMilk .
+	
+ex:BuffaloMilk a skos:Concept .
+ex:CowMilk a skos:Concept .
+ex:GoatMilk a skos:Concept .
+ex:SheepMilk a skos:Concept .
+	
+ex:Animal a skos:Concept ;
+	skos:narrower ex:Bird .
+	
+ex:Bird a skos:Concept ;
+	skos:broader ex:Animal ;
+	skos:narrower ex:SpottedBowerbird .
+
+
+
+
+ex:SpottedBowerbird	a skos:Concept ;
+	skos:broader ex:Bird .
+
+ex:Emotion a skos:Concept ;
+	skos:narrower ex:Love ;
+	skos:narrower ex:Awe ;
+	skos:narrower ex:Joy ;
+	skos:prefLabel "Emotion"@en .
+	
+ex:Awe a skos:Concept ;
+	skos:scopeNote "Only used when in awe" ;
+	skos:broader ex:Emotion .
+
+ex:Joy a skos:Concept ;
+	skos:historyNote "Introduced in 1986" ;
+	skos:broader ex:Emotion .
+	
+ex:Love a skos:Concept ;
+	skos:broader ex:Emotion ;
+	skos:prefLabel "Love"@en ;
+	skos:altLabel "Affection"@en ;
+	skos:related ex:Beauty ;
+	skos:definition "String feeling of attraction towards, and affection for, another adult, or great affection for a friend or family member."@en .
+	
+ex:Beauty a skos:Concept ;
+	skos:prefLabel "Beauty" ;
+	skos:related ex:Love .

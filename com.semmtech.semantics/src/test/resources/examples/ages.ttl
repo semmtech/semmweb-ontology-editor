@@ -1,0 +1,43 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lem:     <http://lemantle.com/> .
+
+lem:Person
+      a       owl:Class ;
+      rdfs:label "person" .
+
+lem:hasPositiveInteger
+	a owl:DatatypeProperty ;
+	rdfs:range xsd:nonNegativeInteger .
+
+lem:personAge  owl:equivalentClass
+  [ rdf:type  rdfs:Datatype;
+    owl:onDatatype  xsd:integer;
+    owl:withRestrictions (
+       [ xsd:minInclusive  "0"^^xsd:integer ]
+       [ xsd:maxInclusive  "150"^^xsd:integer ] 
+    )
+  ] .
+
+  
+  lem:toddlerAge  owl:equivalentClass
+   [ rdf:type rdfs:Datatype;
+     owl:oneOf (  "1"^^xsd:integer  "2"^^xsd:integer )
+   ] .
+  
+  lem:MikeHenrichs
+      a       lem:Person ;
+      lem:personAge "10"^^xsd:integer ;
+      lem:hasPositiveInteger "200"^^xsd:integer ;
+      rdfs:label "M.R. Henrichs" , "Mike Henrichs" .
+      
+     
+lem:Jan
+      a       lem:Person ;
+      lem:personAge "151"^^xsd:integer ;
+      lem:toddlerAge "4"^^xsd:integer ;
+      rdfs:label "Jan" .
+      
+      

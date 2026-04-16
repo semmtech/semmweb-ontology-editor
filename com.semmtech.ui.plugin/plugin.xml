@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            adaptableType="com.semmtech.ui.plugin.viewers.PendingElement"
+            class="com.semmtech.ui.plugin.BaseAdapterFactory">
+         <adapter
+               type="org.eclipse.ui.model.IWorkbenchAdapter">
+         </adapter>
+         <adapter
+               type="org.eclipse.ui.model.IWorkbenchAdapter3">
+         </adapter>
+      </factory>
+   </extension>
+
+</plugin>

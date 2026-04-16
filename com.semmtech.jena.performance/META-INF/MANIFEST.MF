@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Performance
+Bundle-SymbolicName: com.semmtech.jena.performance
+Bundle-Version: 1.0.1.qualifier
+Bundle-Activator: com.semmtech.jena.performance.Activator
+Bundle-Vendor: Semmtech B.V.
+Require-Bundle: org.eclipse.core.runtime,
+ com.semmtech;bundle-version="1.3.6",
+ com.semmtech.jena;bundle-version="2.12.3"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Export-Package: com.semmtech.jena.performance.sparql

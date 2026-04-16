@@ -1,0 +1,71 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gtf:     <http://www.semmweb.com/ns/public/2012/03/30/gellish-table-format/> .
+@prefix test:    <http://www.test.com/> .
+@prefix semm:    <http://www.semmweb.com/ns/public/2012/03/30/semm/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix gellish:  <http://www.semmweb.com/ns/public/2012/05/15/gellish/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+test:Colour
+      a       owl:Class ;
+      rdfs:subClassOf gellish:Aspect .
+
+test:P101
+      a       test:Pump .
+
+test:_3_m
+      a       test:Pump .
+
+test:TBTL85
+      a       test:Beetle .
+
+test:Length
+      a       owl:Class ;
+      rdfs:subClassOf gellish:Aspect .
+
+gellish:PhysicalObject
+      a       owl:Class ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom gellish:Aspect ;
+                owl:onProperty gellish:hasAspect
+              ] .
+
+test:HighPressurePump
+      a       owl:Class ;
+      rdfs:subClassOf gellish:PhysicalObject , test:Pump .
+
+test:Pressure
+      a       owl:Class ;
+      rdfs:subClassOf gellish:Aspect .
+
+test:Pump
+      a       owl:Class ;
+      rdfs:label "pump"@en ;
+      rdfs:subClassOf gellish:PhysicalObject ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:minQualifiedCardinality
+                        "1"^^xsd:int ;
+                owl:onClass test:Length ;
+                owl:onProperty gellish:hasAspect
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:minQualifiedCardinality
+                        "0"^^xsd:int ;
+                owl:onClass gellish:PhysicalObject ;
+                owl:onProperty test:relation
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:minQualifiedCardinality
+                        "0"^^xsd:int ;
+                owl:onClass test:Colour ;
+                owl:onProperty gellish:hasAspect
+              ] .
+
+test:Beetle
+      a       owl:Class ;
+      rdfs:subClassOf gellish:PhysicalObject .

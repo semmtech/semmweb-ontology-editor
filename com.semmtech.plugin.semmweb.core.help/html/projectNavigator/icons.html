@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Icon Usage</title>
+<link rel="stylesheet" href="../doc.css" type="text/css">
+<link rel="stylesheet" href="../book.css" type="text/css">
+<script type="text/javascript" src="PLUGINS_ROOT/org.eclipse.help/livehelp.js">
+</script>
+<!-- <link rel="stylesheet" href="PLUGINS_ROOT/PRODUCT_PLUGIN/book.css" -->
+</head>
+<body>
+	<h1>Icon Usage</h1>
+
+	<h2>Project Navigator Icons</h2>
+
+	<p>This table shows the icons used in the Project Navigator. Keep
+		in mind that some of them could be used in more than one place. Anyway
+		the meaning of each icon is always unique even if it is placed in
+		different places.</p>
+
+	<table border="1" cellpadding="3" cellspacing="0">
+
+		<tr>
+			<td>Icons</td>
+			<td>Name</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td><img alt="Semantic Project Icon"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core/icons/semmweb_project_white.png" /></td>
+			<td>Semantic Project</td>
+			<td>A collection of above components including
+				interrelationships, to be used by a modeller for overview and
+				ease-of-accessibility. Furthermore is serves as a means for storing
+				preferences and temporary caching of models relevant within the
+				scope of the project.</td>
+		</tr>
+		<tr>
+			<td><img alt="Project Models Icon"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core/icons/ontology_explorer_2.png" /></td>
+			<td>Model Collection</td>
+			<td>Virtual folder that contains the Models of the Project. The
+				models are treated as a logical structure highlighting some specific
+				aspects of it.</td>
+		</tr>
+		<tr>
+			<td><img alt="Workspace Model Icon"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core/icons/ontology_file.png" /></td>
+			<td>Workspace Model</td>
+			<td>Denote a Model that lies into a Project of the workspace.
+				This icon can be found either under the Model Collection or under
+				the Imports of another Model. In the first case it can be expanded
+				to see additional information: Imports and Namespaces</td>
+		</tr>
+		<tr>
+			<td><img alt="External Model Icon"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core/icons/model_web.png" /></td>
+			<td>External Model</td>
+			<td>Denote a Model that lies outside of the Workspace. That can
+				be either a file in the HD or a Web resource. It is used only for
+				the Imports</td>
+		</tr>
+		<tr>
+			<td><img alt=">Model Imports Icon"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core/icons/imports_folder_2.png" /></td>
+			<td>Import Collection</td>
+			<td>Virtual folder that contains the all Imports used by Model.
+				It also contains the Indirect Imports or rather the Imports of
+				Imports</td>
+		</tr>
+		<tr>
+			<td><img alt="Cached Model Icon"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core/icons/ontology_pinned.png" /></td>
+			<td>Cached Model</td>
+			<td>Denote a local cache of an External Model. Caching a remote
+				Model can bring great improvement to the Editor performance.
+				Moreover make sure that a Model can be always loaded independently
+				of its availability</td>
+		</tr>
+		<tr>
+			<td><img alt="Namespace Collection Icon"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core/icons/folder.png" /></td>
+			<td>Namespace Collection</td>
+			<td>Virtual folder that contains all the Namespaces used by a
+				Model</td>
+		</tr>
+		<tr>
+			<td><img alt="Namespace Icon"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core/icons/ontology.png" /></td>
+			<td>Namespace</td>
+			<td>A Namespace URI are used to provide resources with a shared
+				location</td>
+		</tr>
+	</table>
+
+	<h2>Project Navigator Icon Overlays</h2>
+
+	<p>This table shows the overlays applied to the icon in the Project
+		Navigator. An overlay is a small image applied over an icon. An
+		overlay is used to add additional information about the state of an
+		item.</p>
+
+	<table border="1" cellpadding="3" cellspacing="0">
+
+		<tr>
+			<td>Overlay</td>
+			<td>Name</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td><img alt="Error Overlay"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core/icons/overlays/error_ovr.gif" /></td>
+			<td>Download/Parse error</td>
+			<td>Created in the bottom-left corner of a Model or an Import if
+				they are malformed or impossible to reach</td>
+		</tr>
+		<tr>
+			<td><img alt="Inherited Overlay"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core/icons/overlays/inherited_overlay.png" /></td>
+			<td>Indirect Import</td>
+			<td>Created in the top-left corner of an Import if it is
+				indirect</td>
+		</tr>
+		<tr>
+			<td><img alt="Version Control Overlay"
+				src="PLUGINS_ROOT/com.semmtech.plugin.semmweb.core.help/html/icons/svn/ovr/version_controlled.gif" /></td>
+			<td>Under SVN Control</td>
+			<td>Created in the bottom-right corner of any kind of file.
+				Indicate that the marked file is under SVN Version control</td>
+		</tr>
+	</table>
+</body>
+</html>

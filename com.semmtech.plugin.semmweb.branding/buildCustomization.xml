@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Also see http://help.eclipse.org/kepler/index.jsp?topic=%2Forg.eclipse.pde.doc.user%2Ftasks%2Fpde_custom_callbacks.htm -->
+
+<project name="productCustomization" default="pre.@dot">
+    
+    <target name="pre.@dot" if="buildtag" depends="test" description="Patch buildtag (if it exists) into plugin.xml">
+        <!-- <replace file="plugin.xml" token="$DEVELOPER$" value="${buildtag}" /> -->
+        <echo>Build tag is: ${buildtag}</echo>
+    </target>
+    
+    <target name="test" >
+        <echo>Test within buildCustomization.xml</echo>
+    </target>
+</project>

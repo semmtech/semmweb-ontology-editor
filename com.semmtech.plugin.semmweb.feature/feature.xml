@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.semmtech.plugin.semmweb.feature"
+      label="SEMMweb Editor"
+      version="2.3.0.qualifier"
+      provider-name="Semmtech B.V."
+      plugin="com.semmtech.plugin.semmweb.branding">
+
+   <description url="http://editor.semmweb.com/description">
+      This feature contains the set of SEMMweb Editor plug-ins.
+   </description>
+
+   <copyright url="http://editor.semmweb.com/copyright">
+      SEMMweb Editor (c) Copyright Semmtech B.V., Hoofddorp 2011-2016, 2026. All rights reserved.
+   </copyright>
+
+   <license url="http://editor.semmweb.com/license">
+      Software License Agreement
+
+(visit http://editor.semmweb.com/license for Dutch version of this agreement)
+
+Please read this software license agreement (&quot;License&quot;) carefully before using Semmtech software (&quot;Software&quot;).  By using Semmtech Software, you are agreeing to be bound by the terms of this License. If you do not agree to the terms of this License, do not use the software. If you do not agree to the terms of the License, you may return the Software to the place where you obtained it.  By clicking &quot;agree&quot; you explicitly accept the terms of this license agreement. 
+
+1. General. The Software and documentation accompanying this License whether on disk, in read only memory, on any other media or in any other form (collectively the &quot;Software&quot;) are licensed, not sold, to you by Semmtech B.V. (&quot;Semmtech&quot;) for use only under the terms of this License. Semmtech reserves all rights not expressly granted to you. The rights granted herein are limited to Semmtech and its licensors&apos; intellectual property rights in the Software and do not include any other patents or intellectual property rights. 
+
+The terms of this License will govern any Software upgrades provided by Semmtech that replace and/or supplement the original Software product, unless such upgrade is accompanied by a separate license in which case the terms of that license will govern. Semmtech is no longer obliged to offer maintenance and support of previous versions three months after a release of a newer version of the Software.
+
+2. Use and restrictions 
+A. Subject to the terms and conditions of this License, you are granted a non-exclusive, not transferable license to install and use the Software. 
+B. Except as and only to the extent expressly permitted in this License or by applicable law, you may not copy, decompile, reverse engineer, disassemble, modify, or create derivative works of the Semmtech Software or any part thereof. 
+C. The Licence is restricted to you and your company and cannot be used by other companies or their employees.
+D. You are responsible for careful handling of possible login information handed to you by the Software and you are accountable for all use of the login information. You are not allowed to transfer login information to third parties/others or let third parties/others use your login information if the act is conflicting with the interests of Semmtech. 
+E. It is not allowed to use the Software if you are employed by or owner of a company that provides services such as provided by Semmtech or that develops, distributes or sells software with comparable functionality.
+F. Semmtech has the right to undertake technical measures in order to protect the Software against unpermitted use. Semmtech is entitled to check, if needed on location, if the agreement is complied with.
+G. Semmtech has the right to improve the Software in its own discretion and to enrich or renew Software through new releases of the Software. Semmtech will notify you if changes affect you. 
+H. If you identify a Bug in the Software we request you to describe the bug in as much detail as possible and at most within three work days. It concerns information needed for reproduction of a Bug.
+I. After receiving notifications Semmtech will execute standard procedures and do its utmost to restore bugs or to make improvements in newer versions of the Software. Results will be communicated with you depending on level of urgency and term defined by Semmtech. Semmtech has the right to offer temporary solutions, work-arounds, or to implement problem preventing functionality in the Software.
+J. If Semmtech offers data storage and Software via the Internet or intranet (&quot;Hosting&quot;) than Semmtech will put in a commercially reasonable effort to offer you 24 hours a day, seven days a week the latest version of the Software, except for planned unavailability for maintenance. Maintenance will be executed within announced time frames and not within office hours as much as possible.
+K. Semmtech has the right to contract third parties for Hosting.
+L. If Semmtech is responsible for Hosting than Semmtech will put in as much effort as can reasonably be expected to secure information for loss, theft and unauthorized access. If you use the Software on your local computer, then you are responsible for storage and making back ups and security.
+M. If Semmtech is responsible for Hosting than Semmtech will make sure there is made a minimum of one daily backup of data files. This backup is made only to prevent loss in case of calamities like fire or brown outs in order to be able to continue Hosting. The backups will not be transferred.
+N. If Semmtech is not responsible for Hosting then installation and maintenance of required hard and software is your responsibility.
+O. Semmtech will not look into your data, unless Semmtech is forced to by judicial order or by law.
+P. You remain, at any circumstances, owner of your data created with the Software.
+
+3. Use of Third party material and open source programs
+A. The files created by you and contained by the Software are your property, but Semmtech and or licensors of Semmtech have the exclusive ownership of the Software.
+B. The Software may enable you to access and use content, data, information, applications or other material of third parties (&quot;Third party Material&quot;). Semmtech takes no responsibility for correctness or completeness of information provided by third parties. The use of Third party material can be subject of additional terms. You are expected to be informed of and agree upon third party terms if you make use of Third party material.
+C. The Software possibly presents or contains Third party material or make the before mentioned available or may contain links to Third party material. By using the Software you acknowledge and accept that it is not the obligation of Semmtech to inspect or evaluate legitimacy, decency, timeliness, consistency, applicability, quality, conformance with property rights or any other aspect of such Third party material or links to third parties. Semmtech accepts no responsibility at all for such material.
+D. You acknowledge that open source programs are distributed under the terms of the open source license applicable to each such program and only such license. Any rights associated with open source programs are applicable to only that program and not to any programs owned by Semmtech or its licensors. Where required by open source licenses the appropriate references are made in Software. 
+E. You acknowledge that you need to obtain your own copy, own account or own subscription of any program that is identified by Semmtech as Third part material that is embedded in Software and required to use Software.
+F. Third party material is made available for your convenience. You agree upon not using Third party material in any way conflicting with the interests of the third party or its legal rights and that Semmtech cannot be hold responsible for incorrect use from your part.
+
+4. Consent to Use of Data. 
+By accepting the terms of the License you agree that Semmtech and its subsidiaries and agents may collect, maintain, process and use diagnostic, technical, usage and related information, that is gathered periodically to facilitate the provision of software updates, product support and other services to you (if any) related to the Software, and to verify compliance with the terms of this License. Semmtech may use this information, as long as it is collected in a form that does not personally identify you, to provide and improve products and services. 
+
+5. Transfer. 
+You may not rent, lease, lend, redistribute or sublicense the Software. 
+
+6. Termination. 
+This License is effective until terminated. Your rights under this License will 
+terminate automatically without notice from Semmtech if you fail to comply with any term(s) of this License. Upon the termination of this License, you must cease all use of the Semmtech Software and destroy all copies, full or partial, of the Software. Sections regarding ownership shall survive any such termination. 
+
+7. Disclaimer of Warranties. 
+A. You expressly acknowledge and agree that, to the extent permitted by applicable law, use of the software and services is at your sole risk and that the entire risk as to satisfactory quality, performance, accuracy and effort is with you. 
+B. To the maximum extent permitted by applicable law, the Software and services are provided &quot;as is&quot; and &quot;as available&quot;, with all faults and without warranty of any kind, and Semmtech and Semmtech&apos;s licensors hereby disclaim all warranties and conditions with respect to the software and services, either express, implied or statutory, including, but not limited to, the implied warranties and/or conditions of merchantability, satisfactory quality, fitness for a particular purpose, accuracy, quiet enjoyment, and non-infringement of third party rights. 
+C. Semmtech does not warrant against interference with your enjoyment of the Software and services, that the functions contained in or services performed by the Software will meet your requirements, that the operation of the Software and services will be uninterrupted or error-free, that any services will be corrected, or that defects in the Software or services will be corrected, or that the Software will be compatible or work with any third party software, applications or third party services. Installations of this Software may affect the usability of third party software, applications or third party services.
+D. You further acknowledge that the software and services are not intended or suitable for use in situations or environments where the failure or time delays of, or errors or inaccuracies in, the content, data or information provided by the Software or services could lead to death, personal injury, or severe physical or environmental damage. 
+E. No oral or written information or advice given by Semmtech shall create a warranty.  
+
+8. Limitation of Liability. 
+A. To the extent not prohibited by applicable law, in no event shall Semmtech be liable for personal injury, or any incidental, special, indirect or consequential damages whatsoever, including, without limitation, damages for loss of profits, corruption or loss of data, failure to transmit or receive any data, business interruption or any other commercial damages or losses, arising out of or related to your use of or inability to use the Software or services or any third party software or applications in conjunction with the Software, however caused, regardless of the theory of liability (contract, tort or otherwise) and even if Semmtech has been advised of the possibility of such damages. In no event shall Semmtech&apos;s total liability to you for all damages (other than as may be required by applicable law in cases involving personal injury) exceed the amount of one thousand euro (€ 1000.00). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose. 
+
+9. Complete Agreement; Governing Language. 
+This License constitutes the entire agreement between the parties with respect to the use of the Software licensed hereunder and supersedes all prior or contemporaneous understandings regarding such subject matter, with the exception of any additional terms and conditions you are required to. No amendment to or modification of this License will be binding unless in writing and signed by Semmtech. Any translation of this License is done for local requirements and in the event of a dispute between the English and any non-English versions, the English version of this License shall govern, to the extent not prohibited by local law in your jurisdiction. 
+
+10. Controlling Law and Severability. 
+This License will be governed by and construed in accordance with the laws of the Netherlands. If for any reason a court of competent jurisdiction finds any provision, or portion thereof, to be unenforceable, the remainder of this License shall continue in full force and effect.  
+
+11. Intellectual Property
+A. All rights, including intellectual property rights, regarding the Software and documentation lay with Semmtech and its licensors. Excluding open source components from third parties.
+B. it is not allowed to remove, edit any copyright, brand name, trade name,  or any other intellectual property right. Nor to distribute it to third parties.
+C. All proposals, request for improvement and/or recommendations or any other feedback regarding the Software provided by you, including all changes and improvements resulting from it, are the intellectual property of Semmtech.
+
+12. Third Party Notices. 
+A. Portions of the Software utilize or include third party software and other copyrighted material. Acknowledgements, licensing terms and disclaimers for such material are contained in the electronic documentation for the Software, and your use of such material is governed by their respective terms. By using the Software, you agree that your use of the Software is governed by this agreement and/or the terms and conditions of any applicable license agreements or notices indicated or referenced below. If you do not agree to the terms and conditions of this agreement and the terms and conditions of any applicable license agreement or notices indicated or referenced below, then you may not use the content. Some of the other license agreements may include (but are not limited to):
+
+- Eclipse Public License Version 1.0 (http://www.eclipse.org/legal/epl-v10.html.)
+- Eclipse Distribution License Version 1.0 (available at http://www.eclipse.org/licenses/edl-v1.0.html)
+- Common Public License Version 1.0 (available at http://www.eclipse.org/legal/cpl-v10.html)
+- Apache Software License 1.1 (available at http://www.apache.org/licenses/LICENSE)
+- Apache Software License 2.0 (available at http://www.apache.org/licenses/LICENSE-2.0)
+- Metro Link Public License 1.00 (available at http://www.opengroup.org/openmotif/supporters/metrolink/license.html)
+- Mozilla Public License Version 1.1 (available at http://www.mozilla.org/MPL/MPL-1.1.html)
+   </license>
+
+   <includes
+         id="org.eclipse.platform"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.equinox.p2.user.ui"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="org.eclipse.osgi" version="3.7.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.expressions" version="3.4.300" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.intro" version="3.4.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide.application" version="1.0.300" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.filesystem" version="1.3.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.editors" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="3.7.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.navigator" version="3.5.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.forms" version="3.5.101" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.zest.core" version="1.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.zest.layouts" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.help" version="3.5.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.variables" version="3.2.500" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.ui" version="3.7.102" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.search" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.7.101" match="greaterOrEqual"/>
+      <import plugin="com.semmtech.plugin.semmweb.core" version="1.4.4" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.7.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.forms" version="3.5.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.navigator" version="3.5.101" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="3.7.2" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.navigator.resources" version="3.4.300" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.core" version="3.7.1" match="greaterOrEqual"/>
+      <import plugin="javax.servlet" version="2.5.0" match="greaterOrEqual"/>
+      <import plugin="com.semmtech" version="1.2.1" match="greaterOrEqual"/>
+      <import plugin="com.semmtech.jena" version="2.11.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="3.6.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.security.ui" version="1.0.0" match="compatible"/>
+      <import plugin="com.ibm.icu"/>
+      <import plugin="org.eclipse.equinox.p2.artifact.repository"/>
+      <import plugin="org.eclipse.equinox.p2.core"/>
+      <import plugin="org.eclipse.equinox.p2.director"/>
+      <import plugin="org.eclipse.equinox.p2.metadata"/>
+      <import plugin="org.eclipse.equinox.p2.metadata.repository"/>
+      <import plugin="org.eclipse.equinox.p2.repository"/>
+      <import plugin="org.eclipse.equinox.simpleconfigurator"/>
+      <import plugin="org.eclipse.equinox.p2.engine"/>
+      <import plugin="org.eclipse.equinox.p2.operations"/>
+      <import plugin="org.eclipse.equinox.p2.updatechecker"/>
+   </requires>
+
+   <plugin
+         id="com.semmtech"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.cryptography"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.semmtech.grammars"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.jena"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.plugin.semmweb.branding"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="com.semmtech.plugin.semmweb.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.plugin.semmweb.core.search"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.plugin.semmweb.dictionary"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.plugin.semmweb.editor"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.plugin.semmweb.sparql"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.semantics"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.semantics.rdfmeta"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.spin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.ui.plugin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.ui.sdk"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.equinox.p2.ui.sdk.scheduler"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.ui.views.log"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.plugin.semmweb.validation"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.jena.performance"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.plugin.semmweb.core.help"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.semmtech.plugin.semmweb.laces.ldp"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="tech.laces.ldp"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

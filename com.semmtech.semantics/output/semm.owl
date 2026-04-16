@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:semm="http://www.semmweb.com/ns/public/2012/03/30/semm/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.semmweb.com/ns/public/2012/03/30/semm/">
+  <owl:Ontology rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/">
+    <dc:publisher>Semmtech B.V.</dc:publisher>
+    <dc:description xml:lang="en">The SEMM upper ontology.</dc:description>
+    <dc:creator>Mike Henrichs</dc:creator>
+    <dc:title>The Semmtech SEMM upper ontology</dc:title>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/RoleHolder"/>
+  <owl:Class rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/RoleConcept"/>
+  <owl:Class rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/Dimension"/>
+  <owl:Class rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/Unit"/>
+  <owl:Class rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/Qualification"/>
+  <owl:Class rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/QualificationWithUoM">
+    <rdfs:subClassOf rdf:resource="http://www.semmweb.com/ns/public/2012/03/30/semm/Qualification"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/BaseUnit">
+    <rdfs:subClassOf rdf:resource="http://www.semmweb.com/ns/public/2012/03/30/semm/Unit"/>
+  </owl:Class>
+  <rdf:Property rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/objectRole">
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">requires as role-2</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has object role</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Property>
+  <rdf:Property rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/hasValue"/>
+  <rdf:Property rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/plays"/>
+  <rdf:Property rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/hasUnit"/>
+  <rdf:Property rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/hasDimension"/>
+  <rdf:Property rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/dependsOn"/>
+  <rdf:Property rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/canPlay"/>
+  <rdf:Property rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/subjectRole">
+    <rdfs:label xml:lang="en">requires as role-1</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has subject role</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Property>
+  <semm:BaseUnit rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/Second"/>
+  <semm:Unit rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/Mile"/>
+  <semm:Unit rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/Centimeter"/>
+  <semm:BaseUnit rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/Kilometer"/>
+  <semm:Unit rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/Foot"/>
+  <semm:Unit rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/Hour"/>
+  <semm:Unit rdf:about="http://www.semmweb.com/ns/public/2012/03/30/semm/Minute"/>
+</rdf:RDF>

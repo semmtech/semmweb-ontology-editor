@@ -1,0 +1,25 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rei:   <http://www.w3.org/2004/06/rei#> 
+PREFIX : <http://www.lemantle.com/>
+
+SELECT ?subject ?predicate ?object ?status ?created
+WHERE {
+	{
+		?subject ?predicate ?object .
+	}
+	UNION {
+		?s rdf:type rdf:Statement .
+		?s rdf:subject ?subject .
+		?s rdf:predicate ?predicate .
+		?s rdf:object ?object .	
+		OPTIONAL {	
+			?s :status ?status .
+		}
+		OPTIONAL {	
+			?s :created ?created .
+		}
+		FILTER (NOT EXISTS { ?s :status :Deleted }) .
+	}	
+}

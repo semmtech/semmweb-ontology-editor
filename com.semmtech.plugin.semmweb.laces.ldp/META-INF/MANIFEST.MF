@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SEMMweb Laces LDP Plug-in
+Bundle-SymbolicName: com.semmtech.plugin.semmweb.laces.ldp;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.semmtech.plugin.semmweb.laces.ldp.LDPPlugin
+Bundle-Vendor: Semmtech B.V.
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.semmtech.ui.plugin,
+ org.eclipse.core.expressions;bundle-version="3.4.300",
+ com.semmtech,
+ tech.laces.ldp,
+ com.semmtech.plugin.semmweb.core;bundle-version="1.9.1",
+ com.semmtech.jena;bundle-version="2.12.7"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: com.hp.hpl.jena.rdf.model,
+ com.semmtech.semantics.util,
+ org.eclipse.core.resources,
+ org.eclipse.ui.navigator,
+ tech.laces.ldp

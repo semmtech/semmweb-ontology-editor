@@ -1,0 +1,8 @@
+Options:
+ - useDefaultGraphUnion = 
+ - ignoreImports = If true imports are not imported and added to the TDB Dataset
+ - separateImports = Models which import other models will be 
+ - includeRDF
+ - includeRDFS
+ - includeOWL
+ - include

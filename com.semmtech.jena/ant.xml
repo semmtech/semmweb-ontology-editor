@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<project name="com.semmtech.jena" default="" basedir=".">
+	<property file="build.properties" />
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${dist.dir}" />
+	</target>
+
+	<path id="classpath">
+		<fileset dir="${lib.jena.2.11}">
+			<include name="**/*.jar" />
+			<exclude name="**/xercesImpl*" />
+			<exclude name="**/xml-apis*" />
+		</fileset>
+		<fileset dir="${lib.jena.2.6}">
+			<include name="**/xercesImpl*.jar" />
+		</fileset>
+	</path>
+	
+	<target name="compile" depends="clean">
+		<mkdir dir="${build.dir}" />
+		<javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath" source="1.7" target="1.7" includeantruntime="false" />
+	</target>
+
+	<target name="dataset" depends="compile">
+		<java classname="com.semmtech.jena.datasets.DatasetTest" classpathref="classpath" />
+	</target>
+
+	<!-- Be sure to have the jarajar-1.4.jar in your Ant path -->
+	<target name="jarjar">
+		<!-- Uncomment the succcesive line to make it work again -->
+		<!-- <taskdef name="jarjar" classname="com.tonicsystems.jarjar.JarJarTask" /> -->
+		<mkdir dir="${dist.dir}" />
+		<tstamp>
+			<format property="today" pattern="yyyyMMddHHmmss" />
+		</tstamp>
+		<echo message="Loading manifest from ${project.manifest}..." />
+		<loadproperties srcfile="${project.manifest}">
+			<filterchain>
+				<linecontainsregexp>
+					<regexp pattern="^Bundle-(Name|Version):" />
+				</linecontainsregexp>
+				<tokenfilter>
+					<replaceregex pattern=".qualifier$" replace="${today}" />
+				</tokenfilter>
+			</filterchain>
+		</loadproperties>
+
+		<property name="output.jar" value="${dist.dir}/com.semmtech.jena-complete_${Bundle-Version}.jar" />
+		<jarjar jarfile="${output.jar}" manifest="${project.manifest}">
+			<!-- <fileset dir="${build.dir}"/> -->
+			<zipfileset src="${lib.jena.2.11}/commons-codec-1.6.jar" />
+			<zipfileset src="${lib.jena.2.11}/httpclient-4.2.3.jar" />
+			<zipfileset src="${lib.jena.2.11}/httpcore-4.2.2.jar" />
+			<zipfileset src="${lib.jena.2.11}/jcl-over-slf4j-1.6.4.jar" />
+			<zipfileset src="${lib.jena.2.11}/jena-arq-2.11.0.jar" />
+			<zipfileset src="${lib.jena.2.11}/jena-core-2.11.0.jar" />
+			<zipfileset src="${lib.jena.2.11}/jena-iri-1.0.0.jar" />
+			<zipfileset src="${lib.jena.2.11}/jena-sdb-1.4.0.jar" />
+			<zipfileset src="${lib.jena.2.11}/jena-tdb-1.0.0.jar" />
+			<zipfileset src="${lib.jena.2.11}/log4j-1.2.16.jar" />
+			<zipfileset src="${lib.jena.2.11}/slf4j-api-1.6.4.jar" />
+			<zipfileset src="${lib.jena.2.11}/slf4j-log4j12-1.6.4.jar" />
+			<zipfileset src="${lib.jena.2.11}/xercesImpl-2.7.1.jar" />
+		</jarjar>
+
+		<!-- Set property which can be checked by the release target -->
+		<condition property="tofile.set">
+			<and>
+				<isset property="release.tofile" />
+				<not>
+					<equals arg1="${release.tofile}" arg2="" />
+				</not>
+			</and>
+		</condition>
+	</target>
+
+	<target name="release" depends="jarjar" if="tofile.set">
+		<copy file="${output.jar}" tofile="${release.tofile}" />
+	</target>
+
+</project>

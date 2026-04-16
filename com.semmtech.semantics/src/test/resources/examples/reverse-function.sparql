@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rei:   <http://www.w3.org/2004/06/rei#> 
+PREFIX : <http://www.lemantle.com/>
+PREFIX func: <http://www.semmweb.com/functions#>
+PREFIX apf: <http://jena.hpl.hp.com/ARQ/property#>
+PREFIX eclipse: <http://www.semmweb.com/eclipse#>
+
+SELECT DISTINCT ?subject ?type ?text ?image
+WHERE {
+	?subject rdf:type ?type .
+	?subject eclipse:workbenchAdapter(?text ?image) .
+	
+}
+ORDER BY (LCASE(?text)) 

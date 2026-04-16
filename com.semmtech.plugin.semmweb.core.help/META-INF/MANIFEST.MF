@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SEMMweb Core Help
+Bundle-SymbolicName: com.semmtech.plugin.semmweb.core.help;singleton:=true
+Bundle-Version: 1.0.1.qualifier
+Bundle-Activator: org.semmtech.plugin.semmweb.core.help.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.help.ui,
+ org.eclipse.help.webapp,
+ org.eclipse.equinox.http.jetty
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Semmtech B.V.

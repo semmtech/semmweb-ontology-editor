@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SEMMweb SPARQL Plug-in
+Bundle-SymbolicName: com.semmtech.plugin.semmweb.sparql;singleton:=true
+Bundle-Version: 1.2.5.qualifier
+Bundle-Activator: com.semmtech.plugin.semmweb.sparql.SparqlPlugin
+Bundle-Vendor: Semmtech B.V.
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.semmtech.jena,
+ com.semmtech,
+ com.semmtech.plugin.semmweb.core,
+ com.semmtech.grammars,
+ com.semmtech.semantics,
+ com.semmtech.semantics.rdfmeta,
+ com.semmtech.ui.plugin,
+ org.eclipse.ui.editors;bundle-version="3.7.0",
+ org.eclipse.jface.text;bundle-version="3.7.2",
+ org.eclipse.ui.forms;bundle-version="3.5.101",
+ org.eclipse.ui.ide;bundle-version="3.7.0",
+ org.eclipse.core.resources;bundle-version="3.7.101",
+ org.eclipse.ui.navigator.resources;bundle-version="3.4.300",
+ org.eclipse.core.filesystem;bundle-version="1.3.100",
+ org.eclipse.debug.core;bundle-version="3.7.1",
+ org.eclipse.debug.ui;bundle-version="3.7.102",
+ org.eclipse.ui.navigator;bundle-version="3.5.101",
+ org.eclipse.core.variables;bundle-version="3.2.500"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .

@@ -1,0 +1,158 @@
+Software License Agreement
+
+(Scroll down for Dutch version of this agreement)
+
+Please read this software license agreement ("License") carefully before using Semmtech software (“Software”).  By using Semmtech Software, you are agreeing to be bound by the terms of this License. If you do not agree to the terms of this License, do not use the software. If you do not agree to the terms of the License, you may return the Software to the place where you obtained it.  By clicking "agree” you explicitly accept the terms of this license agreement. 
+
+1. General. The Software and documentation accompanying this License whether on disk, in read only memory, on any other media or in any other form (collectively the "Software") are licensed, not sold, to you by Semmtech B.V. ("Semmtech") for use only under the terms of this License. Semmtech reserves all rights not expressly granted to you. The rights granted herein are limited to Semmtech and its licensors' intellectual property rights in the Software and do not include any other patents or intellectual property rights. 
+
+The terms of this License will govern any Software upgrades provided by Semmtech that replace and/or supplement the original Software product, unless such upgrade is accompanied by a separate license in which case the terms of that license will govern. Semmtech is no longer obliged to offer maintenance and support of previous versions three months after a release of a newer version of the Software.
+
+2. Use and restrictions 
+A. Subject to the terms and conditions of this License, you are granted a non-exclusive, not transferable license to install and use the Software. 
+B. Except as and only to the extent expressly permitted in this License or by applicable law, you may not copy, decompile, reverse engineer, disassemble, modify, or create derivative works of the Semmtech Software or any part thereof. 
+C. The Licence is restricted to you and your company and cannot be used by other companies or their employees.
+D. You are responsible for careful handling of possible login information handed to you by the Software and you are accountable for all use of the login information. You are not allowed to transfer login information to third parties/others or let third parties/others use your login information if the act is conflicting with the interests of Semmtech. 
+E. It is not allowed to use the Software if you are employed by or owner of a company that provides services such as provided by Semmtech or that develops, distributes or sells software with comparable functionality.
+F. Semmtech has the right to undertake technical measures in order to protect the Software against unpermitted use. Semmtech is entitled to check, if needed on location, if the agreement is complied with.
+G. Semmtech has the right to improve the Software in its own discretion and to enrich or renew Software through new releases of the Software. Semmtech will notify you if changes affect you. 
+H. If you identify a Bug in the Software we request you to describe the bug in as much detail as possible and at most within three work days. It concerns information needed for reproduction of a Bug.
+I. After receiving notifications Semmtech will execute standard procedures and do its utmost to restore bugs or to make improvements in newer versions of the Software. Results will be communicated with you depending on level of urgency and term defined by Semmtech. Semmtech has the right to offer temporary solutions, work-arounds, or to implement problem preventing functionality in the Software.
+J. If Semmtech offers data storage and Software via the Internet or intranet (“Hosting”) than Semmtech will put in a commercially reasonable effort to offer you 24 hours a day, seven days a week the latest version of the Software, except for planned unavailability for maintenance. Maintenance will be executed within announced time frames and not within office hours as much as possible.
+K. Semmtech has the right to contract third parties for Hosting.
+L. If Semmtech is responsible for Hosting than Semmtech will put in as much effort as can reasonably be expected to secure information for loss, theft and unauthorized access. If you use the Software on your local computer, then you are responsible for storage and making back ups and security.
+M. If Semmtech is responsible for Hosting than Semmtech will make sure there is made a minimum of one daily backup of data files. This backup is made only to prevent loss in case of calamities like fire or brown outs in order to be able to continue Hosting. The backups will not be transferred.
+N. If Semmtech is not responsible for Hosting then installation and maintenance of required hard and software is your responsibility.
+O. Semmtech will not look into your data, unless Semmtech is forced to by judicial order or by law.
+P. You remain, at any circumstances, owner of your data created with the Software.
+
+3. Use of Third party material and open source programs
+A. The files created by you and contained by the Software are your property, but Semmtech and or licensors of Semmtech have the exclusive ownership of the Software.
+B. The Software may enable you to access and use content, data, information, applications or other material of third parties (“Third party Material”). Semmtech takes no responsibility for correctness or completeness of information provided by third parties. The use of Third party material can be subject of additional terms. You are expected to be informed of and agree upon third party terms if you make use of Third party material.
+C. The Software possibly presents or contains Third party material or make the before mentioned available or may contain links to Third party material. By using the Software you acknowledge and accept that it is not the obligation of Semmtech to inspect or evaluate legitimacy, decency, timeliness, consistency, applicability, quality, conformance with property rights or any other aspect of such Third party material or links to third parties. Semmtech accepts no responsibility at all for such material.
+D. You acknowledge that open source programs are distributed under the terms of the open source license applicable to each such program and only such license. Any rights associated with open source programs are applicable to only that program and not to any programs owned by Semmtech or its licensors. Where required by open source licenses the appropriate references are made in Software. 
+E. You acknowledge that you need to obtain your own copy, own account or own subscription of any program that is identified by Semmtech as Third part material that is embedded in Software and required to use Software.
+F. Third party material is made available for your convenience. You agree upon not using Third party material in any way conflicting with the interests of the third party or its legal rights and that Semmtech cannot be hold responsible for incorrect use from your part.
+
+4. Consent to Use of Data. 
+By accepting the terms of the License you agree that Semmtech and its subsidiaries and agents may collect, maintain, process and use diagnostic, technical, usage and related information, that is gathered periodically to facilitate the provision of software updates, product support and other services to you (if any) related to the Software, and to verify compliance with the terms of this License. Semmtech may use this information, as long as it is collected in a form that does not personally identify you, to provide and improve products and services. 
+
+5. Transfer. 
+You may not rent, lease, lend, redistribute or sublicense the Software. 
+
+6. Termination. 
+This License is effective until terminated. Your rights under this License will 
+terminate automatically without notice from Semmtech if you fail to comply with any term(s) of this License. Upon the termination of this License, you must cease all use of the Semmtech Software and destroy all copies, full or partial, of the Software. Sections regarding ownership shall survive any such termination. 
+
+7. Disclaimer of Warranties. 
+A. You expressly acknowledge and agree that, to the extent permitted by applicable law, use of the software and services is at your sole risk and that the entire risk as to satisfactory quality, performance, accuracy and effort is with you. 
+B. To the maximum extent permitted by applicable law, the Software and services are provided “as is” and “as available”, with all faults and without warranty of any kind, and Semmtech and Semmtech’s licensors hereby disclaim all warranties and conditions with respect to the software and services, either express, implied or statutory, including, but not limited to, the implied warranties and/or conditions of merchantability, satisfactory quality, fitness for a particular purpose, accuracy, quiet enjoyment, and non-infringement of third party rights. 
+C. Semmtech does not warrant against interference with your enjoyment of the Software and services, that the functions contained in or services performed by the Software will meet your requirements, that the operation of the Software and services will be uninterrupted or error-free, that any services will be corrected, or that defects in the Software or services will be corrected, or that the Software will be compatible or work with any third party software, applications or third party services. Installations of this Software may affect the usability of third party software, applications or third party services.
+D. You further acknowledge that the software and services are not intended or suitable for use in situations or environments where the failure or time delays of, or errors or inaccuracies in, the content, data or information provided by the Software or services could lead to death, personal injury, or severe physical or environmental damage. 
+E. No oral or written information or advice given by Semmtech shall create a warranty.  
+
+8. Limitation of Liability. 
+A. To the extent not prohibited by applicable law, in no event shall Semmtech be liable for personal injury, or any incidental, special, indirect or consequential damages whatsoever, including, without limitation, damages for loss of profits, corruption or loss of data, failure to transmit or receive any data, business interruption or any other commercial damages or losses, arising out of or related to your use of or inability to use the Software or services or any third party software or applications in conjunction with the Software, however caused, regardless of the theory of liability (contract, tort or otherwise) and even if Semmtech has been advised of the possibility of such damages. In no event shall Semmtech’s total liability to you for all damages (other than as may be required by applicable law in cases involving personal injury) exceed the amount of one thousand euro (€1000.00). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose. 
+
+9. Complete Agreement; Governing Language. 
+This License constitutes the entire agreement between the parties with respect to the use of the Software licensed hereunder and supersedes all prior or contemporaneous understandings regarding such subject matter, with the exception of any additional terms and conditions you are required to. No amendment to or modification of this License will be binding unless in writing and signed by Semmtech. Any translation of this License is done for local requirements and in the event of a dispute between the English and any non-English versions, the English version of this License shall govern, to the extent not prohibited by local law in your jurisdiction. 
+
+10. Controlling Law and Severability. 
+This License will be governed by and construed in accordance with the laws of the Netherlands. If for any reason a court of competent jurisdiction finds any provision, or portion thereof, to be unenforceable, the remainder of this License shall continue in full force and effect.  
+
+11. Intellectual Property
+A. All rights, including intellectual property rights, regarding the Software and documentation lay with Semmtech and its licensors. Excluding open source components from third parties.
+B. it is not allowed to remove, edit any copyright, brand name, trade name,  or any other intellectual property right. Nor to distribute it to third parties.
+C. All proposals, request for improvement and/or recommendations or any other feedback regarding the Software provided by you, including all changes and improvements resulting from it, are the intellectual property of Semmtech.
+
+12. Third Party Notices. 
+A. Portions of the Software utilize or include third party software and other copyrighted material. Acknowledgements, licensing terms and disclaimers for such material are contained in the electronic documentation for the Software, and your use of such material is governed by their respective terms. By using the Software, you agree that your use of the Software is governed by this agreement and/or the terms and conditions of any applicable license agreements or notices indicated or referenced below. If you do not agree to the terms and conditions of this agreement and the terms and conditions of any applicable license agreement or notices indicated or referenced below, then you may not use the content. Some of the other license agreements may include (but are not limited to):
+
+- Eclipse Public License Version 1.0 (http://www.eclipse.org/legal/epl-v10.html.)
+- Eclipse Distribution License Version 1.0 (available at http://www.eclipse.org/licenses/edl-v1.0.html)
+- Common Public License Version 1.0 (available at http://www.eclipse.org/legal/cpl-v10.html)
+- Apache Software License 1.1 (available at http://www.apache.org/licenses/LICENSE)
+- Apache Software License 2.0 (available at http://www.apache.org/licenses/LICENSE-2.0)
+- Metro Link Public License 1.00 (available at http://www.opengroup.org/openmotif/supporters/metrolink/license.html)
+- Mozilla Public License Version 1.1 (available at http://www.mozilla.org/MPL/MPL-1.1.html)
+
+
+Softwarelicentieovereenkomst 
+
+Lees deze softwarelicentieovereenkomst ("Licentie") aandachtig door voordat u de Semmtech software (“Software”) gebruikt. Door de Software in gebruik te nemen, verklaart u zich akkoord met de voorwaarden van de Licentie. Indien u het niet eens bent met de 
+voorwaarden van deze licentie, dient u de software niet te gebruiken. Indien u het niet eens bent met de voorwaarden van deze licentie, kunt u de software retourneren aan de plaats waar u deze hebt verkregen. Door te klikken op “agree” bevestigt u expliciet de voorwaarden van de licentie.
+
+1. Algemeen. De software en bijbehorende documentatie bij deze licentie, hetzij op schijf, in "read only"-geheugen of op enig ander medium of in enig andere vorm (gezamenlijk de “Software” genoemd), worden aan u in licentie gegeven, niet verkocht, door Semmtech BV. (hierna "Semmtech" genoemd), uitsluitend voor gebruik onder de voorwaarden van deze licentie.
+Semmtech behoudt zich alle rechten voor die niet uitdrukkelijk aan u zijn toegekend. De rechten die u hierbij worden toegekend, beperken zich tot de intellectueeleigendomsrechten van Semmtech en licentiegevers van Semmtech met betrekking tot de Software en omvatten geen andere 
+rechten.
+
+De voorwaarden van deze licentie gelden tevens voor alle upgrades van de Software die door Semmtech worden geleverd ter vervanging van dan wel als aanvulling op de oorspronkelijke Software, tenzij de betreffende upgrade een afzonderlijke licentie bevat, in welk geval de voorwaarden van deze afzonderlijke licentie van toepassing zijn. Drie maanden na het vrijgeven van een nieuwe versie van de Software is Semmtech niet meer verplicht tot onderhoud en ondersteuning van eerdere versies. 
+
+
+2. Toegestaan gebruik van Software en beperkingen. 
+A. Krachtens de voorwaarden van deze licentie wordt u hierbij het niet-exclusieve, niet-overdraagbare recht verleend om de Software te installeren en te gebruiken. 
+B. Behalve waar en uitsluitend in zoverre als dat expliciet is toegestaan krachtens deze licentie of door de toepasselijke wetgeving, is het u niet toegestaan de Software geheel of gedeeltelijk te kopiëren, te decompileren, aan reverse engineering te onderwerpen of te disassembleren, aan te passen of van de Software of gedeelten daarvan afgeleide werken te creëren. 
+C. Het gebruik is beperkt tot de bedrijfsvoering van u en uw onderneming en mag niet worden gebruikt voor de bedrijfsvoering van derden. 
+D. U dient zorgvuldig om te gaan met en u bent verantwoordelijk voor eventuele login gegevens verstrekt door de Software en u bent aansprakelijk voor ieder gebruik van login gegevens. Het is niet toegestaan gegevens aan derden/anderen te verstrekken of door derden/anderen te laten gebruiken wanneer dit conflicterend is met de belangen van Semmtech. 
+E. Het is niet toegestaan de Software te gebruiken als u in dienst bent van of eigenaar bent van een onderneming die  soortgelijke diensten levert als Semmtech of software ontwikkelt, distribueert of verkoopt met een vergelijkbare functionaliteit als software van Semmtech. 
+F. Semmtech is gerechtigd om technische maatregelen te nemen ter bescherming van de Software tegen onrechtmatig gebruik. Semmtech behoudt het recht om, indien nodig op locatie , te controleren of op juiste wijze overeenkomsten worden nageleefd. 
+G. Semmtech is gerechtigd om de Software naar eigen inzicht te verbeteren, te verrijken en te vernieuwen in de vorm van nieuwe releases van de software. Voor zover van belang zal Semmtech u op de hoogte brengen van wijzigingen. 
+H. Indien u een Fout in de Software constateert dan verzoeken wij u dit zo gedetailleerd mogelijk en uiterlijk binnen drie werkdagen te melden. Het gaat hierbij onder andere om informatie die nodig is voor het reproduceren van de Fout. 
+I. Na ontvangst van meldingen zal Semmtech zich overeenkomstig zijn gebruikelijke procedures naar beste vermogen inspannen Fouten te herstellen en/of verbeteringen aan te brengen in nieuwe versies van de software. De resultaten zullen afhankelijk van de urgentie op de door Semmtech te bepalen wijze en termijn aan u ter beschikking worden gesteld. Semmtech is gerechtigd tijdelijke oplossingen dan wel programma-omwegen of probleem vermijdende beperkingen in de software aan te brengen. 
+J. In het geval dat Semmtech opslag van gegevens of ter beschikking stellen van de Software via internet of intranet (“Hosting”) voor rekening neemt, zal  Semmtech commercieel redelijke inspanningen leveren om 24 uur per dag, 7 dagen per week de laatste versie van de Software beschikbaar te stellen, met uitzondering van geplande niet-beschikbaarheid voor onderhoudswerkzaamheden. Onderhoudswerkzaamheden zullen zoveel mogelijk binnen vooraf aangekondigde tijdsperioden en zoveel mogelijk buiten kantooruren plaatsvinden. 
+K. Semmtech is gerechtigd om, onder beheer van Semmtech, derden in te schakelen bij Hosting. 
+L. In het geval Semmtech verantwoordelijk is voor Hosting, spant Semmtech zich in om gegevensbestanden, zo goed als redelijkerwijs mogelijk is, te beveiligen tegen verlies, diefstal en ongeautoriseerde toegang. Indien u lokaal  werkt met Software, bent u zelf verantwoordelijk voor het opslaan en voor beveiliging van gegevensbestanden en bent u zelf verantwoordelijk voor het maken van back-ups. 
+M. In het geval Semmtech verantwoordelijk is voor Hosting zal Semmtech waarborgen dat er regelmatig en minimaal één maal per dag een back-up wordt gemaakt van de gegevensbestanden. Deze back-up wordt uitsluitend gemaakt om in geval van calamiteiten zoals brand of stroomstoring de Hosting dienst te kunnen continueren. Deze back-up wordt niet verstrekt. 
+N. In het geval Semmtech niet verantwoordelijk is voor Hosting, dient u zelf te zorgen voor de installatie en onderhoud van de benodigde hard- en software. 
+O. Semmtech onthoudt zich van het inzien van uw gegevensbestanden, tenzij Semmtech hiertoe krachtens de wet een verordening, een gerechtelijk bevel of bij besluit van een overheidsinstantie verplicht is. 
+P. U blijft te allen tijde eigenaar van de gegevens die met de Software zijn vastgelegd. 
+
+3. Gebruik Materiaal van derden 
+A. De gegevensbestanden welke de Software bevat en door u zijn gemaakt, zijn uw eigendom, maar Semmtech en/of Semmtech licentiegever(s) behouden het eigendomsrecht met betrekking tot de Software. 
+B. De Software stelt u mogelijk in staat toegang te krijgen tot en gebruik te maken van inhoud, gegevens, informatie, toepassingen of ander materiaal van derden (“Materiaal van derden”). Semmtech kan niet aansprakelijk worden gesteld voor de correctheid of volledigheid van informatie die door derden wordt geleverd. Uw gebruik van inhoud van derden kan zijn onderworpen aan aanvullende voorwaarden. U wordt geacht de voorwaarden van derden te kennen en te accepteren wanneer u van inhoud van derden gebruik maakt.
+C. De Software toont of omvat mogelijk Materiaal van derden of maakt het eerder genoemde mogelijk beschikbaar, of bevat mogelijk verwijzingen naar Materiaal van derden. Door de Software te gebruiken, erkent en accepteert u dat het niet tot de taak van Semmtech kan worden gerekend om de inhoud, de juistheid, de volledigheid, de tijdigheid, de geldigheid, de naleving van het auteursrecht, de wettigheid, de fatsoenlijkheid of de kwaliteit of enig ander aspect van dergelijk materiaal van derden of dergelijke verwijzingen naar derden te inspecteren en te evalueren. Semmtech accepteert geen enkele aansprakelijkheid of verantwoordelijkheid ten aanzien van dergelijk materiaal 
+D. U erkent dat eventuele open source programma’s gedistribueerd zijn onder voorwaarden van de licentie behorende bij het betreffende programma en beperkt tot die voorwaarden. Rechten behorende bij open source programma’s zijn enkel van toepassing op deze programma’s en niet op de Software van Semmtech en licentiegevers van Semmtech.
+E. U stemt ermee in dat u een eigen kopie, account of abonnement aanschaft van programma’s die door Semmtech als Third party material als zodanig zijn aangegeven als onderdeel zijn van de Software en nodig zijn voor het gebruik van de Software.
+F. Materiaal van derden wordt uitsluitend ter beschikking gesteld voor uw gemak. U stemt ermee in dat u materiaal van derden niet zult gebruiken op een wijze die inbreuk maakt op de rechten van enige andere partij of dergelijke rechten op enigerlei wijze schaadt, en dat Semmtech niet verantwoordelijk kan worden gesteld voor dergelijk onjuist gebruik van uw kant. 
+
+4. Toestemming tot gebruik gegevens. 
+Door de software te gebruiken accepteert u dat Semmtech en dochterondernemingen en vertegenwoordigers van Semmtech gebruiksinformatie, diagnostische en technische informatie en hieraan gerelateerde informatie mogen verzamelen, beheren, verwerken en gebruiken. Deze informatie wordt periodiek verzameld om software-updates, productondersteuning en andere aan de Software gerelateerde diensten te bieden en om te controleren of de voorwaarden van deze licentie worden nageleefd. Semmtech mag deze informatie gebruiken, voor zover deze in een zodanige vorm wordt verzameld dat u persoonlijk kunt worden geïdentificeerd, met het oogmerk producten en diensten te leveren of te verbeteren. 
+
+5. Overdracht. 
+Het is u niet toegestaan de Software te (doen) verhuren, te (doen) leasen, in gebruik te (doen) geven, te herdistribueren of in sublicentie te geven. 
+
+6. Beëindiging. 
+De Licentie is van kracht totdat deze wordt beëindigd. Uw rechten 
+ingevolge de Licentie vervallen automatisch, zonder aankondiging van Semmtech, als u niet voldoet aan een of meer van de voorwaarden van de Licentie. Nadat de geldigheid van de Licentie is verlopen, dient u elk gebruik van de Software te staken en alle volledige of gedeeltelijke kopieën van de Software die in uw bezit zijn, te vernietigen. Alle paragrafen van deze licentieovereenkomst met betrekking tot eigendomsrechten zullen na een dergelijke beëindiging van kracht blijven.
+
+7. Geen garantie. 
+A. U erkent en aanvaardt uitdrukkelijk dat, in zoverre dat is toegestaan op grond van de toepasselijke wetgeving, gebruik van de Software en diensten uitsluitend voor uw eigen risico is en dat het volledige risico voor voldoende kwaliteit, prestaties, nauwkeurigheid en werking bij u ligt.
+B. Voor zover als is toegestaan door de toepasselijke wetgeving, worden de Software en diensten “In de staat waarin deze op het moment van aankoop verkeren (op ‘as is’ of ‘as available’ basis), met alle fouten en zonder enige garantie geleverd en Semmtech en licentiegever(s) van Semmtech sluitend hierbij uitdrukkelijk alle garantie, expliciet en impliciet dan wel voortvloeiend uit wettelijke rechten, uit, daaronder begrepen maar niet beperkt tot alle denkbare garanties van verhandelbaarheid, voldoende kwaliteit, geschiktheid voor een bepaald doel, nauwkeurigheid, ongestoord gebruik en navolging van auteursrechten van derden met betrekking tot de Software en diensten.
+C. Semmtech geeft geen garantie tegen verstoring van uw gebruik van de Software en diensten en garandeert niet dat de functies die vervat in, of diensten die worden uitgevoerd of verleend door de Software aan uw eisen zullen voldoen of dat met de software of diensten ononderbroken of foutloos zal kunnen worden gewerkt, dat enige dienst vrijblijvend beschikbaar zal worden gesteld, dat gebreken in de Software en diensten zullen orden gecorrigeerd, of dat de software, toepassingen of diensten van derden. De installatie van deze software kan van invloed zijn op de bruikbaarheid van software, toepassingen of diensten van derden.
+D. U erkent bovendien dat de Software en diensten niet zijn bedoeld en niet geschikt zijn voor gebruik in situaties of omgevingen waarin problemen met of vertraagde vrijgave van de software of diensten, of fouten of onnauwkeurigheden in de inhoud, gegevens of informatie afkomstig van de Software of diensten, kunnen leiden tot de dood, persoonlijk letsel of ernstige schade aan de omgeving.
+E. Geen enkele mondelinge of schriftelijke informatie of kennisgeving van de zijde van Semmtech of een door Semmtech geautoriseerde vertegenwoordiger kan een garantie inhouden.
+
+8. Beperking van aansprakelijkheid. 
+A. Voor zover als is toegestaan door de toepasselijke wetgeving zal Semmtech in geen enkele geval aansprakelijk zijn voor persoonlijk letsel, of voor enigerlei bijzonder, indirecte schade of gevolgschade, daaronder begrepen zonder enige beperking schade door verlies van omzet, beschadiging of verlies van gegevens, het niet kunnen verzenden of ontvangen van gegevens, onderbreking van de bedrijfsvoering, of voor enige andere commerciele schade of enig ander commercieel verlies dat het gevolg is van of verband houdt met uw gebruik van of onvermogen tot gebruik van de Software en –diensten, of enige software of toepassingen van derden in de combinatie met de Software, door welke oorzaak dan ook, ongeacht de aansprakelijkheidsgrond die wordt aangevoerd (niet-nakoming, onrechtmatige daad of anderszins), en zelf als Semmtech gewezen is op de mogelijkheid van dergelijke schade.In geen geval zal Semmtech totale aansprakelijkheid voor alle schade meer bedragen dan duizend Euro (€1000,00). De voornoemde beperkingen zijn ook van toepassing als de hierboven vermelde verhaalsaansprakelijkheid niet aan zijn wezenlijke doel voldoet. 
+
+9. Toepasselijk recht en deelbaarheid. 
+Deze licentie is opgesteld volgens en zal onderworpen zijn aan de Nederlandse wet.In het geval dat enige bepaling van deze overeenkomst of een gedeelte daarvan door een bevoegde rechter nietig of anderszins niet-bindend geacht zal worden, zullen de overige bepalingen van deze licentie onverkort van kracht blijven. 
+
+10. Volledige overeenkomst; taalversie. 
+Deze licentie vormt de volledige overeenkomst tussen partijen met betrekking tot het gebruik van de Software waarop hierbij een licentie wordt verleend en gaat uit boven alle voorgaande of gelijktijdige overeenkomsten betreffende dit onderwerp. Aanpassingen of wijzigingen van deze licentieovereenkomst zijn slechts geldig voor zover deze zijn opgesteld in schriftelijke vorm en zijn ondertekend door Semmtech. Vertalingen van deze licentie zijn gemaakt ten behoeve van plaatselijke vereisten. In het geval van een verschil tussen de Engelse en de niet-Engelse versie geldt de Engelse versie van deze licentie, voor zover dat niet door de plaatselijk geldende wetgeving in uw rechtsgebied is verboden. 
+
+11. Intellectueel eigendom
+A. Alle rechten, waaronder intellectuele eigendomsrechten, met betrekking tot de Software en documentatie, rust bij Semmtech of diens licentiegevers. Exclusief open source componenten van derden.
+B. Het is niet toegestaan auteursrechten, merken, handelsnamen of enig ander recht van intellectuele eigendom uit de programmatuur, software, databestanden, apparatuur of materialen te verwijderen of te wijzigen of deze aan derden te verstrekken. 
+C. Alle voorstellen, verbeteringsverzoeken, aanbevelingen of andere door u gegeven feedback met betrekking tot het gebruik en de werking van de Software, alsmede alle aangebrachte wijzigingen en uitbreidingen, zijn het intellectueel eigendomsrecht van Semmtech. 
+
+12. Auteursrechten van derden. 
+A. In gedeelten van de Software wordt Software of ander materiaal gebruikt waarvan het auteursrecht bij andere fabrikanten berust. Auteursrechtinformatie, licentievoorwaarden en beperkingen van aansprakelijkheid voor dergelijk materiaal zijn opgenomen in de online elektronische documentatie bij de Software en het gebruik van dergelijk materiaal is onderworpen aan de daarop van toepassing zijnde voorwaarden. Door gebruik te maken van de Software erkent u dat het gebruik valt onder de voorwaarden van deze overeenkomst en/of de voorwaarden in welke andere licentieovereenkomst of notificatie waar hier naar verwezen wordt. Als u niet akkoord gaat met de voorwaarden van deze overeenkosmt of welke andere licentieovereenkomst of notificatie dan ook waar hier naar verwezen wordt, dan is het niet toegestaan de Software te gebruiken. Sommige van de licentieovereenkomsten betreffen, maar zijn niet gelimiteerd tot:
+
+- Eclipse Public License Version 1.0 (http://www.eclipse.org/legal/epl-v10.html.)
+- Eclipse Distribution License Version 1.0 (http://www.eclipse.org/licenses/edl-v1.0.html)
+- Common Public License Version 1.0 (http://www.eclipse.org/legal/cpl-v10.html)
+- Apache Software License 1.1 (http://www.apache.org/licenses/LICENSE)
+- Apache Software License 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+- Metro Link Public License 1.00 (http://www.opengroup.org/openmotif/supporters/metrolink/license.html)
+- Mozilla Public License Version 1.1 (http://www.mozilla.org/MPL/MPL-1.1.html)

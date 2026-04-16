@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="semmwebEditor"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            description="The SEMMweb Editor product allows users to work with and create semantic files."
+            name="SEMMweb Editor">
+         <property
+               name="appName"
+               value="SEMMweb Editor">
+         </property>
+         <property
+               name="introTitle"
+               value="Welcome to SEMMweb Editor">
+         </property>
+         <property
+               name="aboutImage"
+               value="icons/product_image.png">
+         </property>
+         <property
+               name="aboutText"
+               value="SEMMweb Editor by Semmtech B.V.&#x0A;&#x0A;Combining plug-ins and features from Eclipse and Semmtech, &#x0A;the SEMMweb Editor aims at offering an integrated development    &#x0A;environment for semantic files and projects.&#x0A;&#x0A;For more information about the plug-ins and feature please&#x0A;see the Installation Details.&#x0A;&#x0A;This product includes software developed by the&#x0A;Apache Software Foundation http://apache.org/">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/cloud-closed-shadow-16.png,icons/cloud-closed-shadow-32.png,icons/cloud-closed-shadow-48.png,icons/cloud-closed-shadow-64.png,icons/cloud-closed-shadow-128.png">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="808080">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="10,238,360,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="10,258,360,12">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro">
+      <introProductBinding
+            introId="com.semmtech.plugin.semmweb.core.intro.coreIntro"
+            productId="com.semmtech.plugin.semmweb.branding.semmwebEditor">
+      </introProductBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.splashHandlers">
+      <splashHandler
+            class="com.semmtech.plugin.semmweb.branding.SplashHandler"
+            id="com.semmtech.plugin.semmweb.branding.splashHandler">
+      </splashHandler>
+      <splashHandlerProductBinding
+            productId="com.semmtech.plugin.semmweb.branding.semmwebEditor"
+            splashId="com.semmtech.plugin.semmweb.branding.splashHandler">
+      </splashHandlerProductBinding>
+   </extension>
+   <extension
+         point="com.semmtech.plugin.semmweb.core.startPageContentProviders">
+      <client
+            class="com.semmtech.plugin.semmweb.branding.intro.ProductInfoContentProvider">
+      </client>
+   </extension>
+
+
+</plugin>

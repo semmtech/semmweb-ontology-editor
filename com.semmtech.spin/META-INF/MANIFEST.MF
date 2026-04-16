@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SPIN Library
+Bundle-SymbolicName: com.semmtech.spin
+Bundle-Version: 1.0.5.qualifier
+Bundle-Activator: com.semmtech.spin.Activator
+Bundle-Vendor: Semmtech B.V.
+Require-Bundle: org.eclipse.osgi;bundle-version="3.7.2",
+ com.semmtech,
+ com.semmtech.jena
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ lib/spin-1.3.1/spin-1.3.1.jar
+Export-Package: com.semmtech.spin.constraints,
+ com.semmtech.spin.inference,
+ com.semmtech.spin.system,
+ org.topbraid.spin.arq,
+ org.topbraid.spin.constraints,
+ org.topbraid.spin.inference,
+ org.topbraid.spin.model,
+ org.topbraid.spin.system,
+ org.topbraid.spin.vocabulary

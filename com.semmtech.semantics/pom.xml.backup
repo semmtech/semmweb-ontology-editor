@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<artifactId>semantics</artifactId>
+	<packaging>jar</packaging>
+
+	<repositories>
+		<repository>
+			<id>clojars.org</id>
+			<url>http://clojars.org/repo</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.semmtech</groupId> -->
+<!-- 			<artifactId>jena</artifactId> -->
+<!-- 		</dependency> -->
+
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>1.19</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openrdf.sesame</groupId>
+			<artifactId>sesame-model</artifactId>
+			<version>2.7.14</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openrdf.sesame</groupId>
+			<artifactId>sesame-runtime</artifactId>
+			<version>2.7.14</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Skip the test compilation to avoid problem with agraph classpath -->
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>default-testCompile</id>
+						<phase>test-compile</phase>
+						<goals>
+							<goal>testCompile</goal>
+						</goals>
+						<configuration>
+							<skip>true</skip>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<groupId>com.semmtech</groupId>
+	<version>1.0.0-SNAPSHOT</version>
+</project>

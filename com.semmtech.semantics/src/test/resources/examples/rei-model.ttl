@@ -1,0 +1,80 @@
+@prefix :      <http://www.lemantle.com/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rei:   <http://www.w3.org/2004/06/rei#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+[ owl:imports  owl: ] .
+
+[ a              rdf:Statement ;
+  rdf:object     "This is Mike" ;
+  rdf:predicate  rdfs:comment ;
+  rdf:subject    :Mike ;
+  :created       "2014-05-08 13:21" ;
+  :status        :Approved
+] .
+
+:created  a         rdf:Property ;
+        rdfs:label  "created on" .
+
+:       a            owl:Ontology ;
+        owl:imports  rei: .
+
+[ a              rdf:Statement ;
+  rdf:object     "This is NOT Mike" ;
+  rdf:predicate  rdfs:comment ;
+  rdf:subject    :Mike ;
+  :created       "2014-05-08 15:17" ;
+  :status        :Deleted
+] .
+
+:Approved  a        :Status ;
+        rdfs:label  "ZApproved" .
+
+[ a           :Languages ;
+  :languages  ( "en" "nl" "" )
+] .
+
+[ a              rdf:Statement ;
+  rdf:object     owl:Class ;
+  rdf:predicate  rdf:type ;
+  rdf:subject    :Reified ;
+  :created       "2014-05-09 9:30"
+] .
+
+:Mike   a       owl:Thing .
+
+:Status  a          owl:Class ;
+        rdfs:label  "status" .
+
+[ a              rdf:Statement ;
+  rdf:object     "something reified" ;
+  rdf:predicate  rdfs:label ;
+  rdf:subject    :Reified ;
+  :created       "2014-05-09 9:31"
+] .
+
+:status  a          rdf:Property ;
+        rdfs:label  "has status" .
+
+:Person  a          owl:Class ;
+        rdfs:label  "persoon"@nl , "person"@en .
+
+[ a              rei:Statement ;
+  :created       [ rei:value  "2014-05-08 12:05" ] ;
+  rei:object     [ rei:uri  "http://www.lemantle.com/Person" ] ;
+  rei:predicate  [ rei:uri  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ] ;
+  rei:subject    [ rei:uri  "http://www.lemantle.com/Mike" ]
+] .
+
+:Denied  a      :Status .
+
+:Deleted  a     :Status .
+
+[ a              rei:Statement ;
+  :created       [ rei:value  "2014-05-08 12:00" ] ;
+  rei:object     [ rei:value  "Mike" ] ;
+  rei:predicate  [ rei:uri  "http://www.w3.org/2000/01/rdf-schema#label" ] ;
+  rei:subject    [ rei:uri  "http://www.lemantle.com/Mike" ]
+] .

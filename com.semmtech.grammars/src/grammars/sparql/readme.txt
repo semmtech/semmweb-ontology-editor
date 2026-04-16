@@ -1,0 +1,1 @@
+NOTE: The file "Sparql.g.disabled" should be renamed to "Sparql.g" in order to automatically generate new lexer and parser classes. 

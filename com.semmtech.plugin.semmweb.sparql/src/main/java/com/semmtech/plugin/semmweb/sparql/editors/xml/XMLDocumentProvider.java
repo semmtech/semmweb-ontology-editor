@@ -1,0 +1,38 @@
+/********************************************************************************
+ * Copyright (c) 2011-2016, 2026 Semmtech B.V., Hoofddorp.
+ *    ___  _____ __  __ __  __ _____ _____ ___ _   _ 
+ *   / __|| ____|  \/  |  \/  |_   _| ____/ __| | | |
+ *   \__ \|  _| | |\/| | |\/| | | | |  _|| |  | |_| |
+ *    __) | |___| |  | | |  | | | | | |__| |__|  _  |
+ *   |___/|_____|_|  |_|_|  |_| |_| |_____\___|_| |_| B.V.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ ********************************************************************************/
+
+package com.semmtech.plugin.semmweb.sparql.editors.xml;
+
+
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.jface.text.IDocument;
+import org.eclipse.jface.text.IDocumentPartitioner;
+import org.eclipse.jface.text.rules.FastPartitioner;
+import org.eclipse.ui.editors.text.FileDocumentProvider;
+
+
+public class XMLDocumentProvider extends FileDocumentProvider {
+
+    protected IDocument createDocument(Object element) throws CoreException {
+        IDocument document = super.createDocument(element);
+        if (document != null) {
+            IDocumentPartitioner partitioner = new FastPartitioner(new XMLPartitionScanner(),
+                    new String[] { XMLPartitionScanner.XML_TAG, XMLPartitionScanner.XML_COMMENT });
+            partitioner.connect(document);
+            document.setDocumentPartitioner(partitioner);
+        }
+        return document;
+    }
+}

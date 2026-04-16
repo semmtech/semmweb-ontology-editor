@@ -1,0 +1,1147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='C:\targets\eclipse-platform-3.7.2-win32\eclipse\.eclipseextension' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1418740002300'/>
+    <property name='org.eclipse.update.site.policy' value='USER-EXCLUDE'/>
+    <property name='org.eclipse.update.site.list' value=''/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='110'>
+    <artifact classifier='osgi.bundle' id='org.eclipse.zest.layouts.source' version='1.1.0.201308190730'>
+      <properties size='2'>
+        <property name='artifact.size' value='88718'/>
+        <property name='download.size' value='88718'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.zest.layouts.source_1.1.0.201308190730.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.zest.layouts.source_1.1.0.201308190730.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.linux.ppc64' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2366815'/>
+        <property name='download.size' value='2366815'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.linux.ppc64_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.linux.ppc64_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.update.core.win32.source' version='3.2.200.v20100512'>
+      <properties size='2'>
+        <property name='artifact.size' value='12902'/>
+        <property name='download.size' value='12902'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.update.core.win32.source_3.2.200.v20100512.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.update.core.win32.source_3.2.200.v20100512.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.zest' version='1.5.1.201308190730'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/features/org.eclipse.zest_1.5.1.201308190730/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\features\org.eclipse.zest_1.5.1.201308190730'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.aix.ppc.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1991885'/>
+        <property name='download.size' value='1991885'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.aix.ppc.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.aix.ppc.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.draw2d' version='3.9.1.201308190730'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/features/org.eclipse.draw2d_3.9.1.201308190730/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\features\org.eclipse.draw2d_3.9.1.201308190730'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.draw2d.source' version='3.9.0.201308190730'>
+      <properties size='2'>
+        <property name='artifact.size' value='528219'/>
+        <property name='download.size' value='528219'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.draw2d.source_3.9.0.201308190730.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.draw2d.source_3.9.0.201308190730.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.linux.s390' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2328429'/>
+        <property name='download.size' value='2328429'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.linux.s390_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.linux.s390_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.linux.s390x' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2364176'/>
+        <property name='download.size' value='2364176'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.linux.s390x_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.linux.s390x_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.win32.x86_64.source' version='1.0.0.v20110502'>
+      <properties size='2'>
+        <property name='artifact.size' value='14200'/>
+        <property name='download.size' value='14200'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.security.win32.x86_64.source_1.0.0.v20110502.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.security.win32.x86_64.source_1.0.0.v20110502.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.junit' version='3.7.0.v20110928-1453'>
+      <properties size='2'>
+        <property name='artifact.size' value='420649'/>
+        <property name='download.size' value='420649'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.junit_3.7.0.v20110928-1453.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.junit_3.7.0.v20110928-1453.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.win32.win32.x86_64' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2607389'/>
+        <property name='download.size' value='2607389'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.win32.win32.x86_64_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.win32.win32.x86_64_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.apt.core' version='3.3.500.v20110420-1015'>
+      <properties size='2'>
+        <property name='artifact.size' value='364145'/>
+        <property name='download.size' value='364145'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.apt.core_3.3.500.v20110420-1015.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.apt.core_3.3.500.v20110420-1015.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.hpux.ia64_32' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2247451'/>
+        <property name='download.size' value='2247451'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.hpux.ia64_32_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.hpux.ia64_32_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.cocoa.source' version='1.1.0.I20101109-0800'>
+      <properties size='2'>
+        <property name='artifact.size' value='18619'/>
+        <property name='download.size' value='18619'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.ui.cocoa.source_1.1.0.I20101109-0800.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.ui.cocoa.source_1.1.0.I20101109-0800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.junit.core' version='3.7.0.v20110928-1453'>
+      <properties size='2'>
+        <property name='artifact.size' value='145058'/>
+        <property name='download.size' value='145058'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.junit.core_3.7.0.v20110928-1453.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.junit.core_3.7.0.v20110928-1453.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.compiler.apt' version='1.0.400.v0110816-0800'>
+      <properties size='2'>
+        <property name='artifact.size' value='153813'/>
+        <property name='download.size' value='153813'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.compiler.apt_1.0.400.v0110816-0800.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.compiler.apt_1.0.400.v0110816-0800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.win32.source' version='3.2.200.v20110928-1505'>
+      <properties size='2'>
+        <property name='artifact.size' value='14305'/>
+        <property name='download.size' value='14305'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.ui.win32.source_3.2.200.v20110928-1505.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.ui.win32.source_3.2.200.v20110928-1505.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.net.win32.x86_64' version='1.0.100.I20110331-0827'>
+      <properties size='2'>
+        <property name='artifact.size' value='28204'/>
+        <property name='download.size' value='28204'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.core.net.win32.x86_64_1.0.100.I20110331-0827.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.core.net.win32.x86_64_1.0.100.I20110331-0827.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.net.linux.x86' version='1.1.200.I20110419-0800'>
+      <properties size='2'>
+        <property name='artifact.size' value='36813'/>
+        <property name='download.size' value='36813'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.core.net.linux.x86_1.1.200.I20110419-0800.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.core.net.linux.x86_1.1.200.I20110419-0800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.zest.core' version='1.5.0.201308190730'>
+      <properties size='2'>
+        <property name='artifact.size' value='145801'/>
+        <property name='download.size' value='145801'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.zest.core_1.5.0.201308190730.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.zest.core_1.5.0.201308190730.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.gtk.solaris.x86' version='1.1.100.v20110505'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.gtk.solaris.x86_1.1.100.v20110505/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.gtk.solaris.x86_1.1.100.v20110505'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.zest.source' version='1.5.1.201308190730'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/features/org.eclipse.zest.source_1.5.1.201308190730/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\features\org.eclipse.zest.source_1.5.1.201308190730'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.win32.win32.x86_64' version='1.1.100.v20110502'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.100.v20110502/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.100.v20110502'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem.win32.x86_64' version='1.1.300.v20110423-0524'>
+      <properties size='2'>
+        <property name='artifact.size' value='28376'/>
+        <property name='download.size' value='28376'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.core.filesystem.win32.x86_64_1.1.300.v20110423-0524.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.core.filesystem.win32.x86_64_1.1.300.v20110423-0524.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.gtk.aix.ppc' version='1.1.0.v20110530'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.gtk.aix.ppc_1.1.0.v20110530/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.gtk.aix.ppc_1.1.0.v20110530'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.cocoa.macosx.x86_64' version='1.1.101.v20120109-1504'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.101.v20120109-1504/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.cocoa.macosx.x86_64_1.1.101.v20120109-1504'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem.linux.x86_64' version='1.2.0.v20110423-0524'>
+      <properties size='2'>
+        <property name='artifact.size' value='9549'/>
+        <property name='download.size' value='9549'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.core.filesystem.linux.x86_64_1.2.0.v20110423-0524.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.core.filesystem.linux.x86_64_1.2.0.v20110423-0524.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.launching.macosx.source' version='3.2.100.v20111006_r372'>
+      <properties size='2'>
+        <property name='artifact.size' value='14597'/>
+        <property name='download.size' value='14597'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.launching.macosx.source_3.2.100.v20111006_r372.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.launching.macosx.source_3.2.100.v20111006_r372.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.aix.ppc64.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1992614'/>
+        <property name='download.size' value='1992614'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.aix.ppc64.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.aix.ppc64.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.hpux.ia64_32.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1989542'/>
+        <property name='download.size' value='1989542'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.hpux.ia64_32.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.hpux.ia64_32.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.hamcrest.core' version='1.1.0.v20090501071000'>
+      <properties size='2'>
+        <property name='artifact.size' value='27827'/>
+        <property name='download.size' value='27827'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.hamcrest.core_1.1.0.v20090501071000.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ant.ui' version='3.5.101.v20120110-1739'>
+      <properties size='2'>
+        <property name='artifact.size' value='960006'/>
+        <property name='download.size' value='960006'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.ant.ui_3.5.101.v20120110-1739.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.ant.ui_3.5.101.v20120110-1739.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.cocoa.macosx.x86_64.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1869881'/>
+        <property name='download.size' value='1869881'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.cocoa.macosx.x86_64.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.cocoa.macosx.x86_64.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core.manipulation' version='1.4.0.v20110928-1453'>
+      <properties size='2'>
+        <property name='artifact.size' value='86528'/>
+        <property name='download.size' value='86528'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.core.manipulation_1.4.0.v20110928-1453.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.core.manipulation_1.4.0.v20110928-1453.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem.macosx' version='1.3.0.v20110423-0524'>
+      <properties size='2'>
+        <property name='artifact.size' value='12611'/>
+        <property name='download.size' value='12611'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.core.filesystem.macosx_1.3.0.v20110423-0524.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.core.filesystem.macosx_1.3.0.v20110423-0524.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.debug' version='3.7.1.v20111006_r372'>
+      <properties size='2'>
+        <property name='artifact.size' value='820079'/>
+        <property name='download.size' value='820079'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.debug_3.7.1.v20111006_r372.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.debug_3.7.1.v20111006_r372.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.launching.macosx' version='3.2.100.v20111006_r372'>
+      <properties size='2'>
+        <property name='artifact.size' value='18143'/>
+        <property name='download.size' value='18143'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.launching.macosx_3.2.100.v20111006_r372.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.launching.macosx_3.2.100.v20111006_r372.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.carbon.source' version='4.0.100.I20101109-0800'>
+      <properties size='2'>
+        <property name='artifact.size' value='11836'/>
+        <property name='download.size' value='11836'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.ui.carbon.source_4.0.100.I20101109-0800.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.ui.carbon.source_4.0.100.I20101109-0800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt' version='3.7.2.v201202080800'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt_3.7.2.v201202080800/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt_3.7.2.v201202080800'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.cocoa.macosx.x86_64' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2200909'/>
+        <property name='download.size' value='2200909'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.cocoa.macosx.x86_64_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.cocoa.macosx.x86_64_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.cocoa.macosx.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1869754'/>
+        <property name='download.size' value='1869754'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.cocoa.macosx.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.cocoa.macosx.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.draw2d.source' version='3.9.1.201308190730'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/features/org.eclipse.draw2d.source_3.9.1.201308190730/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\features\org.eclipse.draw2d.source_3.9.1.201308190730'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.junit4' version='4.8.1.v20100525'>
+      <properties size='2'>
+        <property name='artifact.size' value='6023'/>
+        <property name='download.size' value='6023'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.junit4_4.8.1.v20100525.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.junit4_4.8.1.v20100525.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.cocoa.macosx' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2294463'/>
+        <property name='download.size' value='2294463'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.cocoa.macosx_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.cocoa.macosx_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.macosx' version='1.100.100.v20100503'>
+      <properties size='2'>
+        <property name='artifact.size' value='15758'/>
+        <property name='download.size' value='15758'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.security.macosx_1.100.100.v20100503.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.security.macosx_1.100.100.v20100503.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.cocoa.macosx' version='1.1.101.v20120109-1504'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.cocoa.macosx_1.1.101.v20120109-1504/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.cocoa.macosx_1.1.101.v20120109-1504'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.solaris.x86' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2211031'/>
+        <property name='download.size' value='2211031'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.solaris.x86_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.solaris.x86_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.draw2d.doc.isv' version='3.9.0.201308190730'>
+      <properties size='2'>
+        <property name='artifact.size' value='2069165'/>
+        <property name='download.size' value='2069165'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.draw2d.doc.isv_3.9.0.201308190730.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.draw2d.doc.isv_3.9.0.201308190730.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.junit' version='4.8.2.v4_8_2_v20110321-1705'>
+      <properties size='2'>
+        <property name='artifact.size' value='202592'/>
+        <property name='download.size' value='202592'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.junit_4.8.2.v4_8_2_v20110321-1705.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.junit.runtime' version='3.4.300.v20110928-1453'>
+      <properties size='2'>
+        <property name='artifact.size' value='52250'/>
+        <property name='download.size' value='52250'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.junit.runtime_3.4.300.v20110928-1453.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.junit.runtime_3.4.300.v20110928-1453.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.debug.ui' version='3.6.1.v20111006_r372'>
+      <properties size='2'>
+        <property name='artifact.size' value='1359226'/>
+        <property name='download.size' value='1359226'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.debug.ui_3.6.1.v20111006_r372.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.debug.ui_3.6.1.v20111006_r372.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.linux.x86_64.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1992616'/>
+        <property name='download.size' value='1992616'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_64.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.linux.x86_64.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.apt.pluggable.core' version='1.0.400.v20110305-1450'>
+      <properties size='2'>
+        <property name='artifact.size' value='32474'/>
+        <property name='download.size' value='32474'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.apt.pluggable.core_1.0.400.v20110305-1450.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.apt.pluggable.core_1.0.400.v20110305-1450.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.zest.core.source' version='1.5.0.201308190730'>
+      <properties size='2'>
+        <property name='artifact.size' value='111281'/>
+        <property name='download.size' value='111281'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.zest.core.source_1.5.0.201308190730.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.zest.core.source_1.5.0.201308190730.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.gtk.linux.x86' version='1.1.100.v20110505'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_1.1.100.v20110505/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.gtk.linux.x86_1.1.100.v20110505'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.win32.x86.source' version='1.0.200.v20100503'>
+      <properties size='2'>
+        <property name='artifact.size' value='14138'/>
+        <property name='download.size' value='14138'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.security.win32.x86.source_1.0.200.v20100503.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.security.win32.x86.source_1.0.200.v20100503.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.gtk.solaris.sparc' version='1.1.100.v20110505'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.gtk.solaris.sparc_1.1.100.v20110505/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.gtk.solaris.sparc_1.1.100.v20110505'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.gtk.linux.ppc64' version='1.0.100.v20110505'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.gtk.linux.ppc64_1.0.100.v20110505/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.gtk.linux.ppc64_1.0.100.v20110505'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.gtk.aix.ppc64' version='1.1.0.v20110530'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.gtk.aix.ppc64_1.1.0.v20110530/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.gtk.aix.ppc64_1.1.0.v20110530'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.linux.x86_64' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2485855'/>
+        <property name='download.size' value='2485855'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_64_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.linux.x86_64_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.compiler.tool' version='1.0.100.v_B79_R37x'>
+      <properties size='2'>
+        <property name='artifact.size' value='57031'/>
+        <property name='download.size' value='57031'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.compiler.tool_1.0.100.v_B79_R37x.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.compiler.tool_1.0.100.v_B79_R37x.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.equinox.executable' version='3.5.1.v20111216-1653-7P7NFUIFIbaUcU77s0KQWHw5HZTZ'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/features/org.eclipse.equinox.executable_3.5.1.v20111216-1653-7P7NFUIFIbaUcU77s0KQWHw5HZTZ/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\features\org.eclipse.equinox.executable_3.5.1.v20111216-1653-7P7NFUIFIbaUcU77s0KQWHw5HZTZ'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.gtk.linux.s390x' version='1.1.100.v20110505'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.gtk.linux.s390x_1.1.100.v20110505/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.gtk.linux.s390x_1.1.100.v20110505'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.ui' version='3.7.2.v20120109-1427'>
+      <properties size='2'>
+        <property name='artifact.size' value='10212674'/>
+        <property name='download.size' value='10212674'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.ui_3.7.2.v20120109-1427.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.ui_3.7.2.v20120109-1427.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.junit4.runtime' version='1.1.200.v20110928-1453'>
+      <properties size='2'>
+        <property name='artifact.size' value='18425'/>
+        <property name='download.size' value='18425'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.junit4.runtime_1.1.200.v20110928-1453.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.junit4.runtime_1.1.200.v20110928-1453.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.apt.ui' version='3.3.300.v20110305-1450'>
+      <properties size='2'>
+        <property name='artifact.size' value='68070'/>
+        <property name='download.size' value='68070'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.apt.ui_3.3.300.v20110305-1450.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.apt.ui_3.3.300.v20110305-1450.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.update.core.linux.source' version='3.2.200.v20100512'>
+      <properties size='2'>
+        <property name='artifact.size' value='9330'/>
+        <property name='download.size' value='9330'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.update.core.linux.source_3.2.200.v20100512.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.update.core.linux.source_3.2.200.v20100512.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jdt' version='3.7.2.v20120120-1414-7z8gFcuFMP7BW5XTz0jLTnz0l9B1'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/features/org.eclipse.jdt_3.7.2.v20120120-1414-7z8gFcuFMP7BW5XTz0jLTnz0l9B1/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\features\org.eclipse.jdt_3.7.2.v20120120-1414-7z8gFcuFMP7BW5XTz0jLTnz0l9B1'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem.aix.ppc' version='1.1.0.v20110423-0524'>
+      <properties size='2'>
+        <property name='artifact.size' value='8770'/>
+        <property name='download.size' value='8770'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.core.filesystem.aix.ppc_1.1.0.v20110423-0524.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.core.filesystem.aix.ppc_1.1.0.v20110423-0524.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.macosx.source' version='1.100.100.v20100503'>
+      <properties size='2'>
+        <property name='artifact.size' value='27249'/>
+        <property name='download.size' value='27249'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.security.macosx.source_1.100.100.v20100503.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.security.macosx.source_1.100.100.v20100503.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.views.log' version='1.0.400.v20130515-2009'>
+      <properties size='2'>
+        <property name='artifact.size' value='139749'/>
+        <property name='download.size' value='139749'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.ui.views.log_1.0.400.v20130515-2009.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.ui.views.log_1.0.400.v20130515-2009.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem.solaris.sparc' version='1.2.0.v20110423-0524'>
+      <properties size='2'>
+        <property name='artifact.size' value='9136'/>
+        <property name='download.size' value='9136'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.core.filesystem.solaris.sparc_1.2.0.v20110423-0524.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.core.filesystem.solaris.sparc_1.2.0.v20110423-0524.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.junit' version='3.8.2.v3_8_2_v20100427-1100'>
+      <properties size='2'>
+        <property name='artifact.size' value='119475'/>
+        <property name='download.size' value='119475'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.junit_3.8.2.v3_8_2_v20100427-1100.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.junit_3.8.2.v3_8_2_v20100427-1100.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem.hpux.ia64_32' version='1.0.100.v20110423-0524'>
+      <properties size='2'>
+        <property name='artifact.size' value='13498'/>
+        <property name='download.size' value='13498'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.core.filesystem.hpux.ia64_32_1.0.100.v20110423-0524.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.core.filesystem.hpux.ia64_32_1.0.100.v20110423-0524.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.doc.user' version='3.7.1.r372_v20111103'>
+      <properties size='2'>
+        <property name='artifact.size' value='7471667'/>
+        <property name='download.size' value='7471667'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.doc.user_3.7.1.r372_v20111103.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.doc.user_3.7.1.r372_v20111103.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.launching' version='3.6.1.v20111006_r372'>
+      <properties size='2'>
+        <property name='artifact.size' value='305897'/>
+        <property name='download.size' value='305897'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.update.core.linux' version='3.2.200.v20100512'>
+      <properties size='2'>
+        <property name='artifact.size' value='8339'/>
+        <property name='download.size' value='8339'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.update.core.linux_3.2.200.v20100512.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.update.core.linux_3.2.200.v20100512.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem.linux.x86' version='1.4.0.v20110423-0524'>
+      <properties size='2'>
+        <property name='artifact.size' value='9256'/>
+        <property name='download.size' value='9256'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.core.filesystem.linux.x86_1.4.0.v20110423-0524.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.core.filesystem.linux.x86_1.4.0.v20110423-0524.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ant.launching' version='1.0.101.v20120110-1739'>
+      <properties size='2'>
+        <property name='artifact.size' value='150271'/>
+        <property name='download.size' value='150271'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.ant.launching_1.0.101.v20120110-1739.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.ant.launching_1.0.101.v20120110-1739.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.cocoa' version='1.1.0.I20101109-0800'>
+      <properties size='2'>
+        <property name='artifact.size' value='27109'/>
+        <property name='download.size' value='27109'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.ui.cocoa_1.1.0.I20101109-0800.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.ui.cocoa_1.1.0.I20101109-0800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.linux.ppc64.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1991356'/>
+        <property name='download.size' value='1991356'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.linux.ppc64.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.linux.ppc64.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.aix.ppc' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2223677'/>
+        <property name='download.size' value='2223677'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.aix.ppc_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.aix.ppc_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.linux.s390x.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1990141'/>
+        <property name='download.size' value='1990141'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.linux.s390x.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.linux.s390x.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.zest.layouts' version='1.1.0.201308190730'>
+      <properties size='2'>
+        <property name='artifact.size' value='130510'/>
+        <property name='download.size' value='130510'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.zest.layouts_1.1.0.201308190730.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.zest.layouts_1.1.0.201308190730.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.compare.win32.source' version='1.0.200.I20110510-0800'>
+      <properties size='2'>
+        <property name='artifact.size' value='19979'/>
+        <property name='download.size' value='19979'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.compare.win32.source_1.0.200.I20110510-0800.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.compare.win32.source_1.0.200.I20110510-0800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.security.win32.x86_64' version='1.0.0.v20110502'>
+      <properties size='2'>
+        <property name='artifact.size' value='34273'/>
+        <property name='download.size' value='34273'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.security.win32.x86_64_1.0.0.v20110502.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.security.win32.x86_64_1.0.0.v20110502.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.solaris.x86.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1986896'/>
+        <property name='download.size' value='1986896'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.solaris.x86.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.solaris.x86.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.zest.sdk' version='1.5.1.201308190730'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/features/org.eclipse.zest.sdk_1.5.1.201308190730/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\features\org.eclipse.zest.sdk_1.5.1.201308190730'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.gtk.linux.x86_64' version='1.1.100.v20110505'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.100.v20110505/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.100.v20110505'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.aix.ppc64' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2264988'/>
+        <property name='download.size' value='2264988'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.aix.ppc64_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.aix.ppc64_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.linux.x86' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2305649'/>
+        <property name='download.size' value='2305649'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.linux.x86_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.solaris.sparc.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1987784'/>
+        <property name='download.size' value='1987784'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.solaris.sparc.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.solaris.sparc.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.win32.win32.x86.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2394693'/>
+        <property name='download.size' value='2394693'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.win32.win32.x86.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.win32.win32.x86.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.win32.win32.x86_64.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2395154'/>
+        <property name='download.size' value='2395154'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.win32.win32.x86_64.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.win32.win32.x86_64.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.carbon.macosx.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1819221'/>
+        <property name='download.size' value='1819221'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.carbon.macosx.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.carbon.macosx.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.launching.ui.macosx' version='1.0.100.v20111006_r372'>
+      <properties size='2'>
+        <property name='artifact.size' value='54492'/>
+        <property name='download.size' value='54492'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.launching.ui.macosx_1.0.100.v20111006_r372.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.launching.ui.macosx_1.0.100.v20111006_r372.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.carbon.macosx' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2054959'/>
+        <property name='download.size' value='2054959'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.carbon.macosx_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.carbon.macosx_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.linux.s390.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1989419'/>
+        <property name='download.size' value='1989419'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.linux.s390.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.linux.s390.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.carbon.macosx' version='1.1.100.v20110502'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.carbon.macosx_1.1.100.v20110502/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.carbon.macosx_1.1.100.v20110502'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.gtk.hpux.ia64_32' version='1.0.0.v20110502'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.gtk.hpux.ia64_32_1.0.0.v20110502/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.gtk.hpux.ia64_32_1.0.0.v20110502'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.launching.ui.macosx.source' version='1.0.100.v20111006_r372'>
+      <properties size='2'>
+        <property name='artifact.size' value='25113'/>
+        <property name='download.size' value='25113'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.launching.ui.macosx.source_1.0.100.v20111006_r372.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.launching.ui.macosx.source_1.0.100.v20111006_r372.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.core.net.linux.x86_64' version='1.1.0.I20110331-0827'>
+      <properties size='2'>
+        <property name='artifact.size' value='37753'/>
+        <property name='download.size' value='37753'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.core.net.linux.x86_64_1.1.0.I20110331-0827.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.core.net.linux.x86_64_1.1.0.I20110331-0827.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.draw2d' version='3.9.0.201308190730'>
+      <properties size='2'>
+        <property name='artifact.size' value='570306'/>
+        <property name='download.size' value='570306'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.draw2d_3.9.0.201308190730.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.draw2d_3.9.0.201308190730.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.draw2d.sdk' version='3.9.1.201308190730'>
+      <properties size='3'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+        <property name='download.contentType' value='application/zip'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/features/org.eclipse.draw2d.sdk_3.9.1.201308190730/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\features\org.eclipse.draw2d.sdk_3.9.1.201308190730'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core' version='3.7.3.v20120119-1537'>
+      <properties size='2'>
+        <property name='artifact.size' value='4606140'/>
+        <property name='download.size' value='4606140'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.jdt.core_3.7.3.v20120119-1537.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.jdt.core_3.7.3.v20120119-1537.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.linux.x86.source' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='1991886'/>
+        <property name='download.size' value='1991886'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.linux.x86.source_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.linux.x86.source_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.ui.carbon' version='4.0.100.I20101109-0800'>
+      <properties size='2'>
+        <property name='artifact.size' value='17498'/>
+        <property name='download.size' value='17498'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.ui.carbon_4.0.100.I20101109-0800.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.ui.carbon_4.0.100.I20101109-0800.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.swt.gtk.solaris.sparc' version='3.7.2.v3740f'>
+      <properties size='2'>
+        <property name='artifact.size' value='2260014'/>
+        <property name='download.size' value='2260014'/>
+      </properties>
+      <repositoryProperties size='2'>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.swt.gtk.solaris.sparc_3.7.2.v3740f.jar'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.swt.gtk.solaris.sparc_3.7.2.v3740f.jar'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.equinox.launcher.gtk.linux.s390' version='1.1.100.v20110505'>
+      <properties size='2'>
+        <property name='artifact.size' value='4096'/>
+        <property name='download.size' value='4096'/>
+      </properties>
+      <repositoryProperties size='3'>
+        <property name='artifact.folder' value='true'/>
+        <property name='artifact.reference' value='file:/C:/targets/eclipse-platform-3.7.2-win32/eclipse/plugins/org.eclipse.equinox.launcher.gtk.linux.s390_1.1.100.v20110505/'/>
+        <property name='file.name' value='C:\targets\eclipse-platform-3.7.2-win32\eclipse\plugins\org.eclipse.equinox.launcher.gtk.linux.s390_1.1.100.v20110505'/>
+      </repositoryProperties>
+    </artifact>
+  </artifacts>
+</repository>

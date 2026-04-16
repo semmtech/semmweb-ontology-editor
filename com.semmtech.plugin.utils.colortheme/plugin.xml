@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="com.semmtech.plugin.utils.colortheme.toolbar"
+               label="Colortheme">
+            <command
+                  commandId="com.semmtech.plugin.utils.colortheme.commands.switchTheme"
+                  icon="icons/switcher-default.png"
+                  label="Default"
+                  style="push">
+               <parameter
+                     name="com.semmtech.plugin.utils.colortheme.themeId"
+                     value="0">
+               </parameter>
+            </command>
+            <command
+                  commandId="com.semmtech.plugin.utils.colortheme.commands.switchTheme"
+                  icon="icons/switcher-oblivion.png"
+                  label="Oblivion"
+                  style="push">
+               <parameter
+                     name="com.semmtech.plugin.utils.colortheme.themeId"
+                     value="1">
+               </parameter>
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.semmtech.plugin.utils.colortheme.commands.SwitchColorthemeHandler"
+            id="com.semmtech.plugin.utils.colortheme.commands.switchTheme"
+            name="Switch Theme">
+         <commandParameter
+               id="com.semmtech.plugin.utils.colortheme.themeId"
+               name="Theme ID"
+               optional="true">
+         </commandParameter>
+      </command>
+   </extension>
+
+</plugin>

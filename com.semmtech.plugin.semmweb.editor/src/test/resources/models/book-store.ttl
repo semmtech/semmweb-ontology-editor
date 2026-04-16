@@ -1,0 +1,109 @@
+@base          <http://www.semmtech.nl/bs/2014/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix omv:   <http://omv.ontoware.org/2005/05/ontology#> .
+@prefix bs:    <http://www.semmtech.nl/bs/2014/> .
+
+bs:montalbano  a      bs:Book ;
+        rdfs:label    "Commissario Montalbano"@en ;
+        bs:hasAuthor  bs:andreaCamilleri ;
+        bs:hasTitle   "Commissario Montalbano" .
+
+bs:Author  a             owl:Class ;
+        rdfs:comment     "Author of a Book"@en ;
+        rdfs:label       "Author"@en ;
+        rdfs:seeAlso     "http://www.google.com"^^xsd:anyURI ;
+        rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  [ a                         owl:Restriction ;
+                           owl:onClass               rdfs:Literal ;
+                           owl:onProperty            bs:hasName ;
+                           owl:qualifiedCardinality  "1"
+                         ] ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  "1" ;
+                           owl:onProperty   bs:hasAuthor
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      bs:hasWritten ;
+                           owl:someValuesFrom  rdfs:Literal
+                         ] .
+
+bs:hasName  a        rdf:Property ;
+        rdfs:domain  bs:Author ;
+        rdfs:label   "Author Name"@en .
+
+bs:     a                        omv:Ontology , owl:Ontology ;
+        rdfs:comment             "Don't need explaination!" ;
+        rdfs:label               "Book Store" ;
+        omv:URI                  "http://www.semmtech.nl/bs/2014/" ;
+        omv:acronym              "bs" ;
+        omv:creationDate         "2014-09-29T08:57:21"^^xsd:dateTime ;
+        omv:description          "Don't need explaination!" ;
+        omv:hasCreator           [ a              omv:Person ;
+                                   omv:eMail      "mone.java@gmail.com" ;
+                                   omv:firstName  "Simone" ;
+                                   omv:lastName   "Rondelli"
+                                 ] ;
+        omv:hasOntologyLanguage  omv:OWL ;
+        omv:name                 "Book Store" ;
+        omv:resourceLocator      "" ;
+        omv:version              "" ;
+        owl:imports              <http://omv.ontoware.org/2005/05/ontology> .
+
+bs:hasTitle  a       rdf:Property ;
+        rdfs:domain  bs:Book ;
+        rdfs:label   "Title"@en .
+
+bs:cliveCussler  a  bs:Author ;
+        rdfs:label  "Clive Cussler"@en .
+
+bs:hasWritten  a       rdf:Property ;
+        rdfs:comment   "Denote a books written by an author"@en ;
+        rdfs:label     "Has Written"@en ;
+        owl:inverseOf  bs:hasAuthor .
+
+[ a       bs:Author ] .
+
+bs:containsbook  a       rdf:Property ;
+        rdfs:domain      bs:Library ;
+        rdfs:label       "Contains Book"@en ;
+        rdfs:range       bs:Book ;
+        owl:versionInfo  "1.0"@en .
+
+bs:sander  a        omv:Person ;
+        rdfs:label  "Sander Stolk"@nl .
+
+bs:Library  a            owl:Class ;
+        rdfs:label       "Library"@en ;
+        rdfs:subClassOf  owl:Thing .
+
+bs:Book  a               owl:Class ;
+        rdfs:comment     "This class denote a book"@en ;
+        rdfs:label       "Book"@en ;
+        rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  [ a                         owl:Restriction ;
+                           owl:onClass               bs:Author ;
+                           owl:onProperty            bs:hasAuthor ;
+                           owl:qualifiedCardinality  "1"
+                         ] ;
+        rdfs:subClassOf  [ a                         owl:Restriction ;
+                           owl:onClass               rdfs:Literal ;
+                           owl:onProperty            bs:hasTitle ;
+                           owl:qualifiedCardinality  "1"
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:onProperty      bs:hasWritten ;
+                           owl:someValuesFrom  rdfs:Literal
+                         ] .
+
+bs:andreaCamilleri  a  bs:Author ;
+        rdfs:label     "Andrea Camilleri"@en ;
+        bs:hasName     "Andrea Camilleri" ;
+        bs:hasWritten  bs:montalbano .
+
+bs:hasAuthor  a      rdf:Property ;
+        rdfs:domain  bs:Book ;
+        rdfs:label   "Author of The Book"@en ;
+        rdfs:range   bs:Author .

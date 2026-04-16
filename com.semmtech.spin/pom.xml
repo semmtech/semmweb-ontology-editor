@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<parent>
+		<groupId>com.semmtech</groupId>
+		<artifactId>semmtech-parent</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>spin</artifactId>
+
+	<repositories>
+		<repository>
+			<id>org.topbraid</id>
+			<url>http://topquadrant.com/repository/spin</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.semmtech</groupId>
+			<artifactId>jena</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.topbraid</groupId>
+			<artifactId>spin</artifactId>
+			<version>1.3.1</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>jena-arq</artifactId>
+					<groupId>org.apache.jena</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+</project>

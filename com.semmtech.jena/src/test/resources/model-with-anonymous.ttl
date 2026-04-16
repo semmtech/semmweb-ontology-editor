@@ -1,0 +1,38 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix :     <http://example.com/test/model/> .
+
+
+:Gender rdf:type owl:Class ;
+    rdfs:label "Gender" ;
+    rdfs:comment "The class of genders" ;
+    rdfs:subClassOf owl:Thing ;
+    owl:equivalentClass [
+        rdf:type owl:Class ;
+        owl:oneOf ( :Male :Female )
+    ] .
+
+:Male rdf:type :Gender ;
+    rdfs:label "Male" .
+
+:Female rdf:type :Gender ;
+    rdfs:label "Male" .    
+
+:gender rdf:type owl:ObjectProperty ;
+    rdfs:label "has gender" ;
+    rdfs:range :Gender .
+
+:Person rdf:type owl:Class ;
+    rdfs:subClassOf owl:Thing ;
+    rdfs:subClassOf [
+        rdf:type owl:Restriction ;
+        owl:onProperty :gender ;
+        owl:cardinality 1
+    ] .
+    
+[] rdf:type :Person ;
+    rdfs:label "Mike Henrichs" ;
+    :gender :Male .
+    
+

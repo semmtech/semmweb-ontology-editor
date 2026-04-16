@@ -1,0 +1,38 @@
+﻿@base          <http://www.example.org/restriction/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rt:    <http://www.example.org/restriction/> .
+
+rt:Book  a               owl:Class ;
+        rdfs:subClassOf  owl:Thing ;
+        rdfs:subClassOf  [ a                         owl:Restriction ;
+                           owl:onClass               rt:Author ;
+                           owl:onProperty            rt:hasAuthor ;
+                           owl:qualifiedCardinality  "1"^^xsd:nonNegativeInteger
+                         ] .
+
+rt:gomorra  a         rt:Book ;
+        rt:hasAuthor  rt:saviano .
+
+rt:saviano  a   rt:Author .
+
+[ a                owl:Restriction ;
+  owl:cardinality  "1"^^xsd:nonNegativeInteger
+] .
+
+rt:monatlbanoGomorra  a  rt:Book ;
+        rt:hasAuthor  rt:saviano , rt:camilleri .
+
+rt:camilleri  a  rt:Author .
+
+rt:hasAuthor  a      rdf:Property ;
+        rdfs:domain  rt:Book ;
+        rdfs:range   rt:Author .
+
+rt:     a           owl:Ontology ;
+        rdfs:label  "Restriction" .
+
+rt:Author  a             owl:Class ;
+        rdfs:subClassOf  owl:Thing .

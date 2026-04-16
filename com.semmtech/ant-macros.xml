@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<project name="com.semmtech" default="" basedir=".">
+
+	<!-- Macro to require a property is set and not blank -->
+	<macrodef name="prop-require">
+		<attribute name="property" />
+		<sequential>
+			<fail message="Property &quot;@{property}&quot; must be set">
+				<condition>
+					<not>
+						<isset property="@{property}" />
+					</not>
+				</condition>
+			</fail>
+			<fail message="Property &quot;@{property}&quot; must not be empty">
+				<condition>
+					<equals arg1="${@{property}}" arg2="" />
+				</condition>
+			</fail>
+		</sequential>
+	</macrodef>
+
+	<macrodef name="acquire-release">
+		<attribute name="buildfile" />
+		<attribute name="target" />
+		<sequential>
+			<ant antfile="@{buildfile}" target="release" inheritall="false" inheritrefs="true">
+				<property name="release.tofile" location="@{target}" />
+			</ant>
+		</sequential>
+	</macrodef>
+
+</project>

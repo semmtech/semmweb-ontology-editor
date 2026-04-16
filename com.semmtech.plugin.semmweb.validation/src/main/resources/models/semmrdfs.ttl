@@ -1,0 +1,109 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix spin:  <http://spinrdf.org/spin#> .
+@prefix sp:    <http://spinrdf.org/sp#> .
+@prefix spl:   <http://spinrdf.org/spl#> .
+@prefix smf:   <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix spinrdfs: <http://topbraid.org/spin/spinrdfs#> .
+@prefix semmcore: <http://www.semmweb.com/semmweb/core/functions#> .
+@prefix semmrdfs: <http://www.semmtech.com/spin/semmrdfs#> .
+
+semmrdfs:
+        a                owl:Ontology ;
+        rdfs:comment     "Contains axioms to run constraint checks on a subset of RDF Schema." ;
+        owl:imports      <http://spinrdf.org/spin>, <http://topbraid.org/spin/spinrdfs> .
+
+
+rdfs:Resource  spin:constraint  [ a  semmrdfs:RangeConstraintWithLiterals ] .
+
+
+semmrdfs:RangeConstraintWithLiterals
+        a                   spin:Template ;
+        rdfs:comment        "Checks whether all literal property values of ?this have a type compatible with the declared rdfs:ranges on the property, or have no type."^^xsd:string ;
+        rdfs:label          "Range constraint prohibits literal"^^xsd:string ;
+        rdfs:subClassOf     spin:Templates ;
+        spin:body           [ a             sp:Construct ;
+                              sp:templates  ( [ sp:object     spin:ConstraintViolation ;
+                                                sp:predicate  rdf:type ;
+                                                sp:subject    _:b0
+                                              ] [ sp:object     _:b1 ;
+                                                  sp:predicate  rdfs:label ;
+                                                  sp:subject    _:b0
+                                                ] [ sp:object     spin:_this ;
+                                                    sp:predicate  spin:violationRoot ;
+                                                    sp:subject    _:b0
+                                                  ] [ sp:object     _:b2 ;
+                                                      sp:predicate  spin:violationPath ;
+                                                      sp:subject    _:b0
+                                                    ] ) ;
+                              sp:where      ( [ a              sp:Filter ;
+                                                sp:expression  [ a        sp:and ;
+                                                                 sp:arg1  [ a        sp:isURI ;
+                                                                            sp:arg1  spin:_this
+                                                                          ] ;
+                                                                 sp:arg2  [ a        sp:not ;
+                                                                            sp:arg1  [ a        spinrdfs:isSystem ;
+                                                                                       sp:arg1  spin:_this
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                              ] [ sp:object     _:b3 ;
+                                                  sp:predicate  _:b2 ;
+                                                  sp:subject    spin:_this
+                                                ] [ a              sp:Filter ;
+                                                    sp:expression  [ a        sp:isLiteral ;
+                                                                     sp:arg1  _:b3
+                                                                   ]
+                                                  ] [ a           sp:TriplePath ;
+                                                      sp:object   _:b4 ;
+                                                      sp:path     [ a           sp:ModPath ;
+                                                                    sp:modMax   -2 ;
+                                                                    sp:modMin   0 ;
+                                                                    sp:subPath  rdfs:subPropertyOf
+                                                                  ] ;
+                                                      sp:subject  _:b2
+                                                    ] [ sp:object     _:b5 ;
+                                                        sp:predicate  rdfs:range ;
+                                                        sp:subject    _:b4
+                                                      ] [ a       sp:NotExists ;
+                                                          sp:elements ([ a  sp:TriplePath ;
+                                                                         sp:object   rdfs:Literal ;
+                                                                         sp:path     [ a           sp:ModPath ;
+                                                                                       sp:modMax   -2 ;
+                                                                                       sp:modMin   0 ;
+                                                                                       sp:subPath  rdfs:subClassOf
+                                                                                     ] ;
+                                                                         sp:subject  _:b5
+                                                                       ])
+                                                         ] [ a       sp:NotExists ;
+                                                            sp:elements ([ a  sp:TriplePath ;
+                                                                           sp:object    _:b5 ;
+                                                                           sp:path     [ a           sp:ModPath ;
+                                                                                         sp:modMax   -2 ;
+                                                                                         sp:modMin   0 ;
+                                                                                         sp:subPath  rdfs:subClassOf
+                                                                                       ] ;
+                                                                           sp:subject  rdfs:Literal
+                                                                         ])
+                                                           ] [ a              sp:Let ;
+                                                                sp:expression  [ a        smf:buildString ;
+                                                                                 sp:arg1  "Range violation: {?range} expected for {?value} at {?property}"
+                                                                               ] ;
+                                                                sp:variable    _:b1
+                                                              ] )
+                            ] ;
+        spin:labelTemplate  "rdfs:range constraint prohibiting literals"^^xsd:string .
+
+
+
+
+
+_:b1    sp:varName  "label"^^xsd:string .
+_:b2    sp:varName  "property"^^xsd:string .
+_:b3    sp:varName  "value"^^xsd:string .
+_:b4    sp:varName  "p"^^xsd:string .
+_:b5    sp:varName  "range"^^xsd:string .
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.semmtech</groupId>
+		<artifactId>semmweb-parent</artifactId>
+		<version>2.1.14-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>com.semmtech.plugin.semmweb.branding</artifactId>
+	<packaging>eclipse-plugin</packaging>
+	<version>2.2.0-SNAPSHOT</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.semmtech</groupId>
+			<artifactId>semmtech</artifactId>
+			<version>1.3.11</version>
+			<classifier>osgi</classifier>
+		</dependency>
+		<dependency>
+			<groupId>com.semmtech</groupId>
+			<artifactId>com.semmtech.plugin.semmweb.core</artifactId>
+			<version>1.9.1</version>
+		</dependency>
+	</dependencies>
+
+</project>
