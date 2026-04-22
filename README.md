@@ -7,6 +7,7 @@ The SEMMweb Ontology Editor is a Windows desktop application that allows users t
 ## Using the editor
 
 Documentation on how to use this application is available [here](docs/use/README.md). 
+You can download an installer for Windows [in the Releases section](https://github.com/semmtech/semmweb-ontology-editor/releases) of this repository. 
 The SEMMweb Ontology Editor is no longer being actively maintained and is now made available open source to the public. 
 Should you find any issues, please do report them using Github issues. in order to inform software developers who wish to continue work on the software. 
 
