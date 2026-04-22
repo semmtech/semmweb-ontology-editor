@@ -7,10 +7,10 @@
       <product
             application="org.eclipse.ui.ide.workbench"
             description="The SEMMweb Editor product allows users to work with and create semantic files."
-            name="SEMMweb Editor">
+            name="SEMMweb Ontology Editor">
          <property
                name="appName"
-               value="SEMMweb Editor">
+               value="SEMMweb Ontology Editor">
          </property>
          <property
                name="introTitle"

@@ -1,13 +1,9 @@
-# SEMMweb Model Editor
+# SEMMweb Ontology Editor
 
 
 ## Installation
 - Install Java SDK (JDK) version 8; make sure this is a 32-bit version (x86) as other versions DO NOT WORK.
-- Extract the .zip file of the editor to a location on your machine (e.g., "C:\Program Files (x86)\Semmtech\SEMMweb Editor").
-- Open the "SEMMweb Editor.ini" file found in the root of the extracted folder.
-  - Update the line underneath "-data" by changing this to a folder in your own User folder (e.g., "C:\Users\YOURUSERNAME\SEMMweb Workspace"). The editor will create the folder if it does not yet exist. This location will be used for storing the projects and files (including models) with which you work in the editor.
-  - Update the line underneath "-vm". This should point to the file "javaw.exe" located in the folder where you have installed the Java SDK (JDK).
-  - Save the .ini file and then start the editor with the "SEMMweb Editor.exe" executable.
+- Install the SEMMweb Ontology Editor to a location on your Windows computer and run it.
 
 
 ## User interface

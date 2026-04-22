@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<p:Palette xmlns:p="http://jeeeyul.net/pde-tools" fieldName="ICONS" folder="/com.semmtech.plugin.semmweb.sparql/icons">
+  <subPalettes fieldName="COMMANDS" folder="/com.semmtech.plugin.semmweb.sparql/icons/commands">
+    <imageFiles fieldName="EXECUTE_SPARQL" file="/com.semmtech.plugin.semmweb.sparql/icons/commands/execute_sparql.png"/>
+    <imageFiles fieldName="HORIZONTAL_VIEW" file="/com.semmtech.plugin.semmweb.sparql/icons/commands/horizontal_view.gif"/>
+    <imageFiles fieldName="VERTICAL_VIEW" file="/com.semmtech.plugin.semmweb.sparql/icons/commands/vertical_view.gif"/>
+  </subPalettes>
+  <imageFiles fieldName="SAMPLE" file="/com.semmtech.plugin.semmweb.sparql/icons/sample.gif"/>
+  <imageFiles fieldName="SPARQL" file="/com.semmtech.plugin.semmweb.sparql/icons/sparql.png"/>
+  <imageFiles fieldName="SPARQL_FILE" file="/com.semmtech.plugin.semmweb.sparql/icons/sparql_file.png"/>
+  <imageFiles fieldName="XSLT_OUTPUT" file="/com.semmtech.plugin.semmweb.sparql/icons/xslt_output.gif"/>
+</p:Palette>

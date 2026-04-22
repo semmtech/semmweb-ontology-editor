@@ -1,0 +1,9 @@
+HKEY_CLASSES_ROOT\.[extension]\@="name"
+HKEY_CLASSES_ROOT\[name]\@="Full description for extension"
+
+# Zero-based index of the actual icon within an .ico or .exe file
+HKEY_CLASSES_ROOT\[name]\DefaultIcon\@="editor.exe,0"
+
+HKEY_CLASSES_ROOT\[name]\Shell\open\command\@="[exe]" "%1"
+HKEY_CLASSES_ROOT\[name]\Shell\edit\@="Edit with Semmweb Editor"
+HKEY_CLASSES_ROOT\[name]\Shell\open\command\@="[exe]" "%1"

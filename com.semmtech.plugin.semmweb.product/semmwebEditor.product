@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="SEMMweb Editor" uid="com.semmtech.plugin.semmweb.product" id="com.semmtech.plugin.semmweb.branding.semmwebEditor" application="org.eclipse.ui.ide.workbench" version="2.2.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="SEMMweb Ontology Editor" uid="com.semmtech.plugin.semmweb.product" id="com.semmtech.plugin.semmweb.branding.semmwebEditor" application="org.eclipse.ui.ide.workbench" version="2.3.0.qualifier" useFeatures="false" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/com.semmtech.plugin.semmweb.branding/icons/product_image.png"/>
@@ -24,12 +24,14 @@ Apache Software Foundation http://apache.org/
    </configIni>
 
    <launcherArgs>
-      <programArgs>-perspective
+      <programArgs>#-data
+#C:\Users\Default\SEMMweb_Workspace
+
+-perspective
 com.semmtech.plugin.semmweb.editor.perspectives.editor
 
 --launcher.defaultAction
-openFile
-      </programArgs>
+openFile</programArgs>
       <vmArgs>-Dfile.encoding=UTF8 -Dosgi.requiredJavaVersion=1.7 -Xms40m -Xmx1024m
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
@@ -43,7 +45,7 @@ openFile
       startupProgressRect="10,258,360,12"
       startupMessageRect="10,238,360,20"
       startupForegroundColor="808080" />
-   <launcher name="SEMMweb Editor">
+   <launcher name="SEMMweb Ontology Editor">
       <solaris/>
       <win useIco="true">
          <ico path="/com.semmtech.plugin.semmweb.branding/cloud-closed-shadow.ico"/>
@@ -57,10 +59,133 @@ openFile
 
 
    <plugins>
+      <plugin id="com.github.eclipsecolortheme"/>
+      <plugin id="com.ibm.icu"/>
+      <plugin id="com.semmtech"/>
+      <plugin id="com.semmtech.cryptography"/>
+      <plugin id="com.semmtech.grammars"/>
+      <plugin id="com.semmtech.jena"/>
+      <plugin id="com.semmtech.jena.performance"/>
+      <plugin id="com.semmtech.plugin.semmweb.branding"/>
+      <plugin id="com.semmtech.plugin.semmweb.core"/>
+      <plugin id="com.semmtech.plugin.semmweb.core.help"/>
+      <plugin id="com.semmtech.plugin.semmweb.core.search"/>
+      <plugin id="com.semmtech.plugin.semmweb.dictionary"/>
+      <plugin id="com.semmtech.plugin.semmweb.editor"/>
+      <plugin id="com.semmtech.plugin.semmweb.laces.ldp"/>
+      <plugin id="com.semmtech.plugin.semmweb.sparql"/>
+      <plugin id="com.semmtech.plugin.semmweb.validation"/>
+      <plugin id="com.semmtech.plugin.utils.colortheme"/>
+      <plugin id="com.semmtech.plugin.utils.jena.schemagen"/>
+      <plugin id="com.semmtech.semantics"/>
+      <plugin id="com.semmtech.semantics.rdfmeta"/>
+      <plugin id="com.semmtech.spin"/>
+      <plugin id="com.semmtech.ui.plugin"/>
+      <plugin id="javax.servlet"/>
+      <plugin id="javax.servlet.jsp"/>
+      <plugin id="org.apache.ant"/>
+      <plugin id="org.apache.commons.el"/>
+      <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.apache.jasper"/>
+      <plugin id="org.apache.lucene"/>
+      <plugin id="org.apache.lucene.analysis"/>
+      <plugin id="org.apache.lucene.core"/>
+      <plugin id="org.apache.lucene.highlighter"/>
+      <plugin id="org.apache.lucene.memory"/>
+      <plugin id="org.apache.lucene.misc"/>
+      <plugin id="org.apache.lucene.queries"/>
+      <plugin id="org.apache.lucene.snowball"/>
+      <plugin id="org.apache.lucene.spellchecker"/>
+      <plugin id="org.eclipse.ant.core"/>
+      <plugin id="org.eclipse.compare"/>
+      <plugin id="org.eclipse.compare.core"/>
+      <plugin id="org.eclipse.core.commands"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.databinding"/>
+      <plugin id="org.eclipse.core.databinding.observable"/>
+      <plugin id="org.eclipse.core.databinding.property"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filebuffers"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.net"/>
+      <plugin id="org.eclipse.core.net.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.resources.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.auth"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.core.variables"/>
+      <plugin id="org.eclipse.debug.core"/>
+      <plugin id="org.eclipse.debug.ui"/>
+      <plugin id="org.eclipse.draw2d"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.http.jetty"/>
+      <plugin id="org.eclipse.equinox.http.registry"/>
+      <plugin id="org.eclipse.equinox.http.servlet"/>
+      <plugin id="org.eclipse.equinox.jsp.jasper"/>
+      <plugin id="org.eclipse.equinox.jsp.jasper.registry"/>
+      <plugin id="org.eclipse.equinox.p2.artifact.repository"/>
+      <plugin id="org.eclipse.equinox.p2.core"/>
+      <plugin id="org.eclipse.equinox.p2.director"/>
+      <plugin id="org.eclipse.equinox.p2.engine"/>
+      <plugin id="org.eclipse.equinox.p2.jarprocessor"/>
+      <plugin id="org.eclipse.equinox.p2.metadata"/>
+      <plugin id="org.eclipse.equinox.p2.metadata.repository"/>
+      <plugin id="org.eclipse.equinox.p2.operations"/>
+      <plugin id="org.eclipse.equinox.p2.repository"/>
+      <plugin id="org.eclipse.equinox.p2.ui"/>
+      <plugin id="org.eclipse.equinox.p2.ui.sdk"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.security"/>
+      <plugin id="org.eclipse.equinox.security.ui"/>
+      <plugin id="org.eclipse.equinox.security.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.equinox.simpleconfigurator"/>
+      <plugin id="org.eclipse.help"/>
+      <plugin id="org.eclipse.help.base"/>
+      <plugin id="org.eclipse.help.ui"/>
+      <plugin id="org.eclipse.help.webapp"/>
+      <plugin id="org.eclipse.jface"/>
+      <plugin id="org.eclipse.jface.databinding"/>
+      <plugin id="org.eclipse.jface.text"/>
+      <plugin id="org.eclipse.ltk.core.refactoring"/>
+      <plugin id="org.eclipse.ltk.ui.refactoring"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.services"/>
+      <plugin id="org.eclipse.search"/>
+      <plugin id="org.eclipse.swt"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86" fragment="true"/>
+      <plugin id="org.eclipse.team.core"/>
+      <plugin id="org.eclipse.team.ui"/>
+      <plugin id="org.eclipse.text"/>
+      <plugin id="org.eclipse.ui"/>
+      <plugin id="org.eclipse.ui.console"/>
+      <plugin id="org.eclipse.ui.editors"/>
+      <plugin id="org.eclipse.ui.forms"/>
+      <plugin id="org.eclipse.ui.ide"/>
+      <plugin id="org.eclipse.ui.ide.application"/>
+      <plugin id="org.eclipse.ui.intro"/>
+      <plugin id="org.eclipse.ui.navigator"/>
+      <plugin id="org.eclipse.ui.navigator.resources"/>
+      <plugin id="org.eclipse.ui.views"/>
+      <plugin id="org.eclipse.ui.views.properties.tabbed"/>
+      <plugin id="org.eclipse.ui.win32" fragment="true"/>
+      <plugin id="org.eclipse.ui.workbench"/>
+      <plugin id="org.eclipse.ui.workbench.texteditor"/>
+      <plugin id="org.eclipse.zest.core"/>
+      <plugin id="org.eclipse.zest.layouts"/>
+      <plugin id="org.mortbay.jetty.server"/>
+      <plugin id="org.mortbay.jetty.util"/>
+      <plugin id="org.sat4j.core"/>
+      <plugin id="org.sat4j.pb"/>
+      <plugin id="tech.laces.ldp"/>
    </plugins>
 
    <features>
-      <feature id="com.semmtech.plugin.semmweb.feature" version="2.2.0.qualifier"/>
+      <feature id="com.semmtech.plugin.semmweb.feature" version="2.3.0.qualifier"/>
    </features>
 
    <configurations>

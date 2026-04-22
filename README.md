@@ -10,6 +10,8 @@ Documentation on how to use this application is available [here](docs/use/README
 The SEMMweb Ontology Editor is no longer being actively maintained and is now made available open source to the public. 
 Should you find any issues, please do report them using Github issues. in order to inform software developers who wish to continue work on the software. 
 
+For a more modern ontology management solution that is built on the same principles, please view our software at https://laceshub.com/. Our latest software is web-based and considerably more user-friendly to those not intimate with Linked Data technology on a technical level.
+
 ## Developing the application
 
 Documentation on how to contribute to the development of this application is available [here](docs/dev/README.md).
@@ -17,9 +19,8 @@ Documentation on how to contribute to the development of this application is ava
 ## Copyright and license
 
 This software is copyright [Semmtech B.V.](https://semmtech.com/) 2011-2016, 2026.  All rights reserved. 
-For a more modern ontology management solution that is built on the same principles, please view our latest software at https://laceshub.com/ . Our latest software is web-based and considerably more user-friendly to those not intimate with Linked Data technology on a technical level.
 
-The main contributors to the source code are:
+The main contributors to the source code of the SEMMweb Ontology Editor are:
  - [Mike Henrichs](https://github.com/mikehenrichs)
  - [Sander Stolk](https://github.com/ssstolk)
  - [Simone Rondelli](https://github.com/monejava)

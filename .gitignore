@@ -4,11 +4,6 @@
 *.exe
 */bin
 */target
-.project
-.classpath
-.checkstyle
-
-.settings/
 
 # OS files #
 ############

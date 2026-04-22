@@ -14,78 +14,273 @@
       SEMMweb Editor (c) Copyright Semmtech B.V., Hoofddorp 2011-2016, 2026. All rights reserved.
    </copyright>
 
-   <license url="http://editor.semmweb.com/license">
-      Software License Agreement
+   <license url="https://www.eclipse.org/legal/epl/epl-v20.html">
+      Eclipse Public License - v 2.0
 
-(visit http://editor.semmweb.com/license for Dutch version of this agreement)
+    THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE
+    PUBLIC LICENSE (&quot;AGREEMENT&quot;). ANY USE, REPRODUCTION OR DISTRIBUTION
+    OF THE PROGRAM CONSTITUTES RECIPIENT&apos;S ACCEPTANCE OF THIS AGREEMENT.
 
-Please read this software license agreement (&quot;License&quot;) carefully before using Semmtech software (&quot;Software&quot;).  By using Semmtech Software, you are agreeing to be bound by the terms of this License. If you do not agree to the terms of this License, do not use the software. If you do not agree to the terms of the License, you may return the Software to the place where you obtained it.  By clicking &quot;agree&quot; you explicitly accept the terms of this license agreement. 
+1. DEFINITIONS
 
-1. General. The Software and documentation accompanying this License whether on disk, in read only memory, on any other media or in any other form (collectively the &quot;Software&quot;) are licensed, not sold, to you by Semmtech B.V. (&quot;Semmtech&quot;) for use only under the terms of this License. Semmtech reserves all rights not expressly granted to you. The rights granted herein are limited to Semmtech and its licensors&apos; intellectual property rights in the Software and do not include any other patents or intellectual property rights. 
+&quot;Contribution&quot; means:
 
-The terms of this License will govern any Software upgrades provided by Semmtech that replace and/or supplement the original Software product, unless such upgrade is accompanied by a separate license in which case the terms of that license will govern. Semmtech is no longer obliged to offer maintenance and support of previous versions three months after a release of a newer version of the Software.
+  a) in the case of the initial Contributor, the initial content
+     Distributed under this Agreement, and
 
-2. Use and restrictions 
-A. Subject to the terms and conditions of this License, you are granted a non-exclusive, not transferable license to install and use the Software. 
-B. Except as and only to the extent expressly permitted in this License or by applicable law, you may not copy, decompile, reverse engineer, disassemble, modify, or create derivative works of the Semmtech Software or any part thereof. 
-C. The Licence is restricted to you and your company and cannot be used by other companies or their employees.
-D. You are responsible for careful handling of possible login information handed to you by the Software and you are accountable for all use of the login information. You are not allowed to transfer login information to third parties/others or let third parties/others use your login information if the act is conflicting with the interests of Semmtech. 
-E. It is not allowed to use the Software if you are employed by or owner of a company that provides services such as provided by Semmtech or that develops, distributes or sells software with comparable functionality.
-F. Semmtech has the right to undertake technical measures in order to protect the Software against unpermitted use. Semmtech is entitled to check, if needed on location, if the agreement is complied with.
-G. Semmtech has the right to improve the Software in its own discretion and to enrich or renew Software through new releases of the Software. Semmtech will notify you if changes affect you. 
-H. If you identify a Bug in the Software we request you to describe the bug in as much detail as possible and at most within three work days. It concerns information needed for reproduction of a Bug.
-I. After receiving notifications Semmtech will execute standard procedures and do its utmost to restore bugs or to make improvements in newer versions of the Software. Results will be communicated with you depending on level of urgency and term defined by Semmtech. Semmtech has the right to offer temporary solutions, work-arounds, or to implement problem preventing functionality in the Software.
-J. If Semmtech offers data storage and Software via the Internet or intranet (&quot;Hosting&quot;) than Semmtech will put in a commercially reasonable effort to offer you 24 hours a day, seven days a week the latest version of the Software, except for planned unavailability for maintenance. Maintenance will be executed within announced time frames and not within office hours as much as possible.
-K. Semmtech has the right to contract third parties for Hosting.
-L. If Semmtech is responsible for Hosting than Semmtech will put in as much effort as can reasonably be expected to secure information for loss, theft and unauthorized access. If you use the Software on your local computer, then you are responsible for storage and making back ups and security.
-M. If Semmtech is responsible for Hosting than Semmtech will make sure there is made a minimum of one daily backup of data files. This backup is made only to prevent loss in case of calamities like fire or brown outs in order to be able to continue Hosting. The backups will not be transferred.
-N. If Semmtech is not responsible for Hosting then installation and maintenance of required hard and software is your responsibility.
-O. Semmtech will not look into your data, unless Semmtech is forced to by judicial order or by law.
-P. You remain, at any circumstances, owner of your data created with the Software.
+  b) in the case of each subsequent Contributor:
+     i) changes to the Program, and
+     ii) additions to the Program;
+  where such changes and/or additions to the Program originate from
+  and are Distributed by that particular Contributor. A Contribution
+  &quot;originates&quot; from a Contributor if it was added to the Program by
+  such Contributor itself or anyone acting on such Contributor&apos;s behalf.
+  Contributions do not include changes or additions to the Program that
+  are not Modified Works.
 
-3. Use of Third party material and open source programs
-A. The files created by you and contained by the Software are your property, but Semmtech and or licensors of Semmtech have the exclusive ownership of the Software.
-B. The Software may enable you to access and use content, data, information, applications or other material of third parties (&quot;Third party Material&quot;). Semmtech takes no responsibility for correctness or completeness of information provided by third parties. The use of Third party material can be subject of additional terms. You are expected to be informed of and agree upon third party terms if you make use of Third party material.
-C. The Software possibly presents or contains Third party material or make the before mentioned available or may contain links to Third party material. By using the Software you acknowledge and accept that it is not the obligation of Semmtech to inspect or evaluate legitimacy, decency, timeliness, consistency, applicability, quality, conformance with property rights or any other aspect of such Third party material or links to third parties. Semmtech accepts no responsibility at all for such material.
-D. You acknowledge that open source programs are distributed under the terms of the open source license applicable to each such program and only such license. Any rights associated with open source programs are applicable to only that program and not to any programs owned by Semmtech or its licensors. Where required by open source licenses the appropriate references are made in Software. 
-E. You acknowledge that you need to obtain your own copy, own account or own subscription of any program that is identified by Semmtech as Third part material that is embedded in Software and required to use Software.
-F. Third party material is made available for your convenience. You agree upon not using Third party material in any way conflicting with the interests of the third party or its legal rights and that Semmtech cannot be hold responsible for incorrect use from your part.
+&quot;Contributor&quot; means any person or entity that Distributes the Program.
 
-4. Consent to Use of Data. 
-By accepting the terms of the License you agree that Semmtech and its subsidiaries and agents may collect, maintain, process and use diagnostic, technical, usage and related information, that is gathered periodically to facilitate the provision of software updates, product support and other services to you (if any) related to the Software, and to verify compliance with the terms of this License. Semmtech may use this information, as long as it is collected in a form that does not personally identify you, to provide and improve products and services. 
+&quot;Licensed Patents&quot; mean patent claims licensable by a Contributor which
+are necessarily infringed by the use or sale of its Contribution alone
+or when combined with the Program.
 
-5. Transfer. 
-You may not rent, lease, lend, redistribute or sublicense the Software. 
+&quot;Program&quot; means the Contributions Distributed in accordance with this
+Agreement.
 
-6. Termination. 
-This License is effective until terminated. Your rights under this License will 
-terminate automatically without notice from Semmtech if you fail to comply with any term(s) of this License. Upon the termination of this License, you must cease all use of the Semmtech Software and destroy all copies, full or partial, of the Software. Sections regarding ownership shall survive any such termination. 
+&quot;Recipient&quot; means anyone who receives the Program under this Agreement
+or any Secondary License (as applicable), including Contributors.
 
-7. Disclaimer of Warranties. 
-A. You expressly acknowledge and agree that, to the extent permitted by applicable law, use of the software and services is at your sole risk and that the entire risk as to satisfactory quality, performance, accuracy and effort is with you. 
-B. To the maximum extent permitted by applicable law, the Software and services are provided &quot;as is&quot; and &quot;as available&quot;, with all faults and without warranty of any kind, and Semmtech and Semmtech&apos;s licensors hereby disclaim all warranties and conditions with respect to the software and services, either express, implied or statutory, including, but not limited to, the implied warranties and/or conditions of merchantability, satisfactory quality, fitness for a particular purpose, accuracy, quiet enjoyment, and non-infringement of third party rights. 
-C. Semmtech does not warrant against interference with your enjoyment of the Software and services, that the functions contained in or services performed by the Software will meet your requirements, that the operation of the Software and services will be uninterrupted or error-free, that any services will be corrected, or that defects in the Software or services will be corrected, or that the Software will be compatible or work with any third party software, applications or third party services. Installations of this Software may affect the usability of third party software, applications or third party services.
-D. You further acknowledge that the software and services are not intended or suitable for use in situations or environments where the failure or time delays of, or errors or inaccuracies in, the content, data or information provided by the Software or services could lead to death, personal injury, or severe physical or environmental damage. 
-E. No oral or written information or advice given by Semmtech shall create a warranty.  
+&quot;Derivative Works&quot; shall mean any work, whether in Source Code or other
+form, that is based on (or derived from) the Program and for which the
+editorial revisions, annotations, elaborations, or other modifications
+represent, as a whole, an original work of authorship.
 
-8. Limitation of Liability. 
-A. To the extent not prohibited by applicable law, in no event shall Semmtech be liable for personal injury, or any incidental, special, indirect or consequential damages whatsoever, including, without limitation, damages for loss of profits, corruption or loss of data, failure to transmit or receive any data, business interruption or any other commercial damages or losses, arising out of or related to your use of or inability to use the Software or services or any third party software or applications in conjunction with the Software, however caused, regardless of the theory of liability (contract, tort or otherwise) and even if Semmtech has been advised of the possibility of such damages. In no event shall Semmtech&apos;s total liability to you for all damages (other than as may be required by applicable law in cases involving personal injury) exceed the amount of one thousand euro (€ 1000.00). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose. 
+&quot;Modified Works&quot; shall mean any work in Source Code or other form that
+results from an addition to, deletion from, or modification of the
+contents of the Program, including, for purposes of clarity any new file
+in Source Code form that contains any contents of the Program. Modified
+Works shall not include works that contain only declarations,
+interfaces, types, classes, structures, or files of the Program solely
+in each case in order to link to, bind by name, or subclass the Program
+or Modified Works thereof.
 
-9. Complete Agreement; Governing Language. 
-This License constitutes the entire agreement between the parties with respect to the use of the Software licensed hereunder and supersedes all prior or contemporaneous understandings regarding such subject matter, with the exception of any additional terms and conditions you are required to. No amendment to or modification of this License will be binding unless in writing and signed by Semmtech. Any translation of this License is done for local requirements and in the event of a dispute between the English and any non-English versions, the English version of this License shall govern, to the extent not prohibited by local law in your jurisdiction. 
+&quot;Distribute&quot; means the acts of a) distributing or b) making available
+in any manner that enables the transfer of a copy.
 
-10. Controlling Law and Severability. 
-This License will be governed by and construed in accordance with the laws of the Netherlands. If for any reason a court of competent jurisdiction finds any provision, or portion thereof, to be unenforceable, the remainder of this License shall continue in full force and effect.  
+&quot;Source Code&quot; means the form of a Program preferred for making
+modifications, including but not limited to software source code,
+documentation source, and configuration files.
 
-11. Intellectual Property
-A. All rights, including intellectual property rights, regarding the Software and documentation lay with Semmtech and its licensors. Excluding open source components from third parties.
-B. it is not allowed to remove, edit any copyright, brand name, trade name,  or any other intellectual property right. Nor to distribute it to third parties.
-C. All proposals, request for improvement and/or recommendations or any other feedback regarding the Software provided by you, including all changes and improvements resulting from it, are the intellectual property of Semmtech.
+&quot;Secondary License&quot; means either the GNU General Public License,
+Version 2.0, or any later versions of that license, including any
+exceptions or additional permissions as identified by the initial
+Contributor.
 
-12. Third Party Notices. 
-A. Portions of the Software utilize or include third party software and other copyrighted material. Acknowledgements, licensing terms and disclaimers for such material are contained in the electronic documentation for the Software, and your use of such material is governed by their respective terms. By using the Software, you agree that your use of the Software is governed by this agreement and/or the terms and conditions of any applicable license agreements or notices indicated or referenced below. If you do not agree to the terms and conditions of this agreement and the terms and conditions of any applicable license agreement or notices indicated or referenced below, then you may not use the content. Some of the other license agreements may include (but are not limited to):
+2. GRANT OF RIGHTS
 
-- Eclipse Public License Version 1.0 (http://www.eclipse.org/legal/epl-v10.html.)
+  a) Subject to the terms of this Agreement, each Contributor hereby
+  grants Recipient a non-exclusive, worldwide, royalty-free copyright
+  license to reproduce, prepare Derivative Works of, publicly display,
+  publicly perform, Distribute and sublicense the Contribution of such
+  Contributor, if any, and such Derivative Works.
+
+  b) Subject to the terms of this Agreement, each Contributor hereby
+  grants Recipient a non-exclusive, worldwide, royalty-free patent
+  license under Licensed Patents to make, use, sell, offer to sell,
+  import and otherwise transfer the Contribution of such Contributor,
+  if any, in Source Code or other form. This patent license shall
+  apply to the combination of the Contribution and the Program if, at
+  the time the Contribution is added by the Contributor, such addition
+  of the Contribution causes such combination to be covered by the
+  Licensed Patents. The patent license shall not apply to any other
+  combinations which include the Contribution. No hardware per se is
+  licensed hereunder.
+
+  c) Recipient understands that although each Contributor grants the
+  licenses to its Contributions set forth herein, no assurances are
+  provided by any Contributor that the Program does not infringe the
+  patent or other intellectual property rights of any other entity.
+  Each Contributor disclaims any liability to Recipient for claims
+  brought by any other entity based on infringement of intellectual
+  property rights or otherwise. As a condition to exercising the
+  rights and licenses granted hereunder, each Recipient hereby
+  assumes sole responsibility to secure any other intellectual
+  property rights needed, if any. For example, if a third party
+  patent license is required to allow Recipient to Distribute the
+  Program, it is Recipient&apos;s responsibility to acquire that license
+  before distributing the Program.
+
+  d) Each Contributor represents that to its knowledge it has
+  sufficient copyright rights in its Contribution, if any, to grant
+  the copyright license set forth in this Agreement.
+
+  e) Notwithstanding the terms of any Secondary License, no
+  Contributor makes additional grants to any Recipient (other than
+  those set forth in this Agreement) as a result of such Recipient&apos;s
+  receipt of the Program under the terms of a Secondary License
+  (if permitted under the terms of Section 3).
+
+3. REQUIREMENTS
+
+3.1 If a Contributor Distributes the Program in any form, then:
+
+  a) the Program must also be made available as Source Code, in
+  accordance with section 3.2, and the Contributor must accompany
+  the Program with a statement that the Source Code for the Program
+  is available under this Agreement, and informs Recipients how to
+  obtain it in a reasonable manner on or through a medium customarily
+  used for software exchange; and
+
+  b) the Contributor may Distribute the Program under a license
+  different than this Agreement, provided that such license:
+     i) effectively disclaims on behalf of all other Contributors all
+     warranties and conditions, express and implied, including
+     warranties or conditions of title and non-infringement, and
+     implied warranties or conditions of merchantability and fitness
+     for a particular purpose;
+
+     ii) effectively excludes on behalf of all other Contributors all
+     liability for damages, including direct, indirect, special,
+     incidental and consequential damages, such as lost profits;
+
+     iii) does not attempt to limit or alter the recipients&apos; rights
+     in the Source Code under section 3.2; and
+
+     iv) requires any subsequent distribution of the Program by any
+     party to be under a license that satisfies the requirements
+     of this section 3.
+
+3.2 When the Program is Distributed as Source Code:
+
+  a) it must be made available under this Agreement, or if the
+  Program (i) is combined with other material in a separate file or
+  files made available under a Secondary License, and (ii) the initial
+  Contributor attached to the Source Code the notice described in
+  Exhibit A of this Agreement, then the Program may be made available
+  under the terms of such Secondary Licenses, and
+
+  b) a copy of this Agreement must be included with each copy of
+  the Program.
+
+3.3 Contributors may not remove or alter any copyright, patent,
+trademark, attribution notices, disclaimers of warranty, or limitations
+of liability (&quot;notices&quot;) contained within the Program from any copy of
+the Program which they Distribute, provided that Contributors may add
+their own appropriate notices.
+
+4. COMMERCIAL DISTRIBUTION
+
+Commercial distributors of software may accept certain responsibilities
+with respect to end users, business partners and the like. While this
+license is intended to facilitate the commercial use of the Program,
+the Contributor who includes the Program in a commercial product
+offering should do so in a manner which does not create potential
+liability for other Contributors. Therefore, if a Contributor includes
+the Program in a commercial product offering, such Contributor
+(&quot;Commercial Contributor&quot;) hereby agrees to defend and indemnify every
+other Contributor (&quot;Indemnified Contributor&quot;) against any losses,
+damages and costs (collectively &quot;Losses&quot;) arising from claims, lawsuits
+and other legal actions brought by a third party against the Indemnified
+Contributor to the extent caused by the acts or omissions of such
+Commercial Contributor in connection with its distribution of the Program
+in a commercial product offering. The obligations in this section do not
+apply to any claims or Losses relating to any actual or alleged
+intellectual property infringement. In order to qualify, an Indemnified
+Contributor must: a) promptly notify the Commercial Contributor in
+writing of such claim, and b) allow the Commercial Contributor to control,
+and cooperate with the Commercial Contributor in, the defense and any
+related settlement negotiations. The Indemnified Contributor may
+participate in any such claim at its own expense.
+
+For example, a Contributor might include the Program in a commercial
+product offering, Product X. That Contributor is then a Commercial
+Contributor. If that Commercial Contributor then makes performance
+claims, or offers warranties related to Product X, those performance
+claims and warranties are such Commercial Contributor&apos;s responsibility
+alone. Under this section, the Commercial Contributor would have to
+defend claims against the other Contributors related to those performance
+claims and warranties, and if a court requires any other Contributor to
+pay any damages as a result, the Commercial Contributor must pay
+those damages.
+
+5. NO WARRANTY
+
+EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, AND TO THE EXTENT
+PERMITTED BY APPLICABLE LAW, THE PROGRAM IS PROVIDED ON AN &quot;AS IS&quot;
+BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR
+IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF
+TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR
+PURPOSE. Each Recipient is solely responsible for determining the
+appropriateness of using and distributing the Program and assumes all
+risks associated with its exercise of rights under this Agreement,
+including but not limited to the risks and costs of program errors,
+compliance with applicable laws, damage to or loss of data, programs
+or equipment, and unavailability or interruption of operations.
+
+6. DISCLAIMER OF LIABILITY
+
+EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, AND TO THE EXTENT
+PERMITTED BY APPLICABLE LAW, NEITHER RECIPIENT NOR ANY CONTRIBUTORS
+SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST
+PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE
+EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+7. GENERAL
+
+If any provision of this Agreement is invalid or unenforceable under
+applicable law, it shall not affect the validity or enforceability of
+the remainder of the terms of this Agreement, and without further
+action by the parties hereto, such provision shall be reformed to the
+minimum extent necessary to make such provision valid and enforceable.
+
+If Recipient institutes patent litigation against any entity
+(including a cross-claim or counterclaim in a lawsuit) alleging that the
+Program itself (excluding combinations of the Program with other software
+or hardware) infringes such Recipient&apos;s patent(s), then such Recipient&apos;s
+rights granted under Section 2(b) shall terminate as of the date such
+litigation is filed.
+
+All Recipient&apos;s rights under this Agreement shall terminate if it
+fails to comply with any of the material terms or conditions of this
+Agreement and does not cure such failure in a reasonable period of
+time after becoming aware of such noncompliance. If all Recipient&apos;s
+rights under this Agreement terminate, Recipient agrees to cease use
+and distribution of the Program as soon as reasonably practicable.
+However, Recipient&apos;s obligations under this Agreement and any licenses
+granted by Recipient relating to the Program shall continue and survive.
+
+Everyone is permitted to copy and distribute copies of this Agreement,
+but in order to avoid inconsistency the Agreement is copyrighted and
+may only be modified in the following manner. The Agreement Steward
+reserves the right to publish new versions (including revisions) of
+this Agreement from time to time. No one other than the Agreement
+Steward has the right to modify this Agreement. The Eclipse Foundation
+is the initial Agreement Steward. The Eclipse Foundation may assign the
+responsibility to serve as the Agreement Steward to a suitable separate
+entity. Each new version of the Agreement will be given a distinguishing
+version number. The Program (including Contributions) may always be
+Distributed subject to the version of the Agreement under which it was
+received. In addition, after a new version of the Agreement is published,
+Contributor may elect to Distribute the Program (including its
+Contributions) under the new version.
+
+Except as expressly stated in Sections 2(a) and 2(b) above, Recipient
+receives no rights or licenses to the intellectual property of any
+Contributor under this Agreement, whether expressly, by implication,
+estoppel or otherwise. All rights in the Program not expressly granted
+under this Agreement are reserved. Nothing in this Agreement is intended
+to be enforceable by any entity that is not a Contributor or Recipient.
+No third-party beneficiary rights are created under this Agreement.
+
+
+Portions of the Software utilize or include third party software and other copyrighted material. Acknowledgements, licensing terms and disclaimers for such material are contained in the electronic documentation for the Software, and your use of such material is governed by their respective terms. By using the Software, you agree that your use of the Software is governed by this agreement and/or the terms and conditions of any applicable license agreements or notices indicated or referenced below. If you do not agree to the terms and conditions of this agreement and the terms and conditions of any applicable license agreement or notices indicated or referenced below, then you may not use the content. Some of the other license agreements may include (but are not limited to):
+
+- Eclipse Public License Version 2.0 (https://www.eclipse.org/legal/epl-v20.html)
+- Eclipse Public License Version 1.0 (https://www.eclipse.org/legal/epl-v10.html)
 - Eclipse Distribution License Version 1.0 (available at http://www.eclipse.org/licenses/edl-v1.0.html)
 - Common Public License Version 1.0 (available at http://www.eclipse.org/legal/cpl-v10.html)
 - Apache Software License 1.1 (available at http://www.apache.org/licenses/LICENSE)
@@ -104,9 +299,9 @@ A. Portions of the Software utilize or include third party software and other co
 
    <requires>
       <import plugin="org.eclipse.osgi" version="3.7.2" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
-      <import plugin="org.eclipse.core.expressions" version="3.4.300" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.ui.forms" version="3.5.101" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ui.intro" version="3.4.100" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ui.ide" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ui.ide.application" version="1.0.300" match="greaterOrEqual"/>
@@ -114,24 +309,27 @@ A. Portions of the Software utilize or include third party software and other co
       <import plugin="org.eclipse.ui.editors" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.jface.text" version="3.7.1" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ui.navigator" version="3.5.100" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.ui.forms" version="3.5.101" match="greaterOrEqual"/>
       <import plugin="org.eclipse.zest.core" version="1.3.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.zest.layouts" version="1.1.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.help" version="3.5.100" match="greaterOrEqual"/>
       <import plugin="org.eclipse.core.variables" version="3.2.500" match="greaterOrEqual"/>
       <import plugin="org.eclipse.debug.ui" version="3.7.102" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ltk.core.refactoring"/>
+      <import plugin="org.eclipse.equinox.p2.ui.sdk" version="1.0.200" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.compare"/>
+      <import plugin="org.eclipse.ui.navigator.resources" version="3.4.300" match="greaterOrEqual"/>
       <import plugin="org.eclipse.search" version="3.7.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.core.resources" version="3.7.101" match="greaterOrEqual"/>
-      <import plugin="com.semmtech.plugin.semmweb.core" version="1.4.4" match="greaterOrEqual"/>
       <import plugin="org.eclipse.core.resources" version="3.7.100" match="greaterOrEqual"/>
       <import plugin="org.eclipse.ui.forms" version="3.5.100" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.ui.navigator" version="3.5.101" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.expressions" version="3.4.300" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.swt"/>
+      <import plugin="org.eclipse.jface"/>
       <import plugin="org.eclipse.jface.text" version="3.7.2" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.ui.navigator.resources" version="3.4.300" match="greaterOrEqual"/>
       <import plugin="org.eclipse.debug.core" version="3.7.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.navigator" version="3.5.101" match="greaterOrEqual"/>
       <import plugin="javax.servlet" version="2.5.0" match="greaterOrEqual"/>
-      <import plugin="com.semmtech" version="1.2.1" match="greaterOrEqual"/>
-      <import plugin="com.semmtech.jena" version="2.11.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.equinox.security"/>
       <import plugin="org.eclipse.ui" version="3.6.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.equinox.security.ui" version="1.0.0" match="compatible"/>
       <import plugin="com.ibm.icu"/>
@@ -145,6 +343,11 @@ A. Portions of the Software utilize or include third party software and other co
       <import plugin="org.eclipse.equinox.p2.engine"/>
       <import plugin="org.eclipse.equinox.p2.operations"/>
       <import plugin="org.eclipse.equinox.p2.updatechecker"/>
+      <import plugin="org.eclipse.core.runtime" version="3.2.0" match="compatible"/>
+      <import plugin="org.eclipse.ui" version="3.3.0" match="compatible"/>
+      <import plugin="org.eclipse.help.ui"/>
+      <import plugin="org.eclipse.help.webapp"/>
+      <import plugin="org.eclipse.equinox.http.jetty"/>
    </requires>
 
    <plugin

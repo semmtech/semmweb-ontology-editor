@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/slf4j-api-1.6.4.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/slf4j-log4j12-1.6.4.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/commons-codec-1.6.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/httpclient-4.2.3.jar" sourcepath="C:/Users/Simone/.m2/repository/org/apache/httpcomponents/httpclient/4.2.3/httpclient-4.2.3-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/httpcore-4.2.2.jar" sourcepath="C:/Users/Simone/.m2/repository/org/apache/httpcomponents/httpcore/4.2.2/httpcore-4.2.2-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/jena-arq-2.11.0.jar" sourcepath="apache-jena-2.11.0/lib-src/jena-arq-2.11.0-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/jena-core-2.11.0.jar" sourcepath="apache-jena-2.11.0/lib-src/jena-core-2.11.0-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/jena-iri-1.0.0.jar" sourcepath="apache-jena-2.11.0/lib-src/jena-iri-1.0.0-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/jena-sdb-1.4.0.jar" sourcepath="apache-jena-2.11.0/lib-src/jena-sdb-1.4.0-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/jena-tdb-1.0.0.jar" sourcepath="apache-jena-2.11.0/lib-src/jena-tdb-1.0.0-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/log4j-1.2.16.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="apache-jena-2.11.0/lib/xercesImpl-2.7.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="lib/junit-4.9/junit-4.9.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/semargl/semargl-core-0.6.1.jar" sourcepath="C:/Users/Simone/.m2/repository/org/semarglproject/semargl-core/0.6.1/semargl-core-0.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/semargl/semargl-jena-0.6.1.jar" sourcepath="C:/Users/Simone/.m2/repository/org/semarglproject/semargl-jena/0.6.1/semargl-jena-0.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/semargl/semargl-rdf-0.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/semargl/semargl-rdfa-0.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/semargl/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/nekohtml-1.9.21/nekohtml.jar"/>
+	<classpathentry kind="lib" path="lib/nekohtml-1.9.21/lib/bcel-5.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
