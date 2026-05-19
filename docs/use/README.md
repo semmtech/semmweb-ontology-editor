@@ -8,7 +8,7 @@
 
 ## User interface
 
-The SEMMWeb Editor displays the information stored in a semantic model, often referred to as an ontology, and provides ways to manipulate that information. The user interface has been created with just that in mind. The picture below shows a SEMMWeb Editor in which the semantic model 'Top level permit ontology' (from [DigiChecks]([https://digichecks.eu/](https://semmtech.github.io/digichecks-ontology/))) has been opened. As can be seen, the interface contains a number of windows, called `views`. Which views are displayed exactly depends on the chosen `perspective`. Any available perspective can be customized to suit your own taste. The perspective opened by default in the SEMMweb Editor is the Ontology perspective. This perspective is geared specifically towards viewing and modifying semantic models.
+The SEMMWeb Editor displays the information stored in a semantic model, often referred to as an ontology, and provides ways to manipulate that information. The user interface has been created with just that in mind. The picture below shows a SEMMWeb Editor in which the semantic model 'Top level permit ontology' (from [DigiChecks](https://semmtech.github.io/digichecks-ontology/) has been opened. As can be seen, the interface contains a number of windows, called `views`. Which views are displayed exactly depends on the chosen `perspective`. Any available perspective can be customized to suit your own taste. The perspective opened by default in the SEMMweb Editor is the Ontology perspective. This perspective is geared specifically towards viewing and modifying semantic models.
 
 ![semmweb-modelopened](img/semmweb-modelopen-digichecks-resourceopen-verification.png?raw=true "The SEMMweb Editor with a semantic model opened")
 
